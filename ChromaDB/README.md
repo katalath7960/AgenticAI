@@ -12,7 +12,10 @@ ChromaDB/
 ├── rag_agent.py           # LangGraph agentic RAG graph definition
 ├── api.py                 # FastAPI REST API (chat + streaming endpoints)
 ├── upload_documents.py    # Streamlit UI for document ingestion
-└── requirements.txt       # Python dependencies
+├── requirements.txt       # Python dependencies
+├── Dockerfile             # Single image for both services
+├── docker-compose.yml     # Orchestrates API + Ingest UI containers
+└── .dockerignore          # Excludes cache, secrets, and editor files
 ```
 
 ---
@@ -294,7 +297,90 @@ END                                    (retry loop)
 
 ---
 
-## Quick Start
+## Docker Deployment (Docker Desktop)
+
+### Prerequisites
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
+- `.env` file in the **project root** (`Python/.env`) with all required keys (see Environment Variables above)
+
+### Deployment diagram
+
+```
+Docker Desktop
+┌──────────────────────────────────────────────────────────┐
+│                                                          │
+│  ┌────────────────────────┐  ┌────────────────────────┐  │
+│  │   chromadb-api         │  │   chromadb-ingest       │  │
+│  │   FastAPI + uvicorn    │  │   Streamlit             │  │
+│  │   localhost:8000       │  │   localhost:8501        │  │
+│  └───────────┬────────────┘  └───────────┬────────────┘  │
+│              │                            │               │
+│              └──────────┬─────────────────┘               │
+│                         │  (same Docker image)            │
+│              ┌──────────▼──────────┐                      │
+│              │   python:3.11-slim  │                      │
+│              │   + requirements    │                      │
+│              └─────────────────────┘                      │
+└──────────────────────────────────────────────────────────┘
+                         │
+              ┌──────────▼──────────┐    ┌──────────────────┐
+              │   ChromaDB Cloud    │    │   OpenAI API      │
+              │   (external)        │    │   (external)      │
+              └─────────────────────┘    └──────────────────┘
+```
+
+### Build and run
+
+```bash
+# From inside the ChromaDB/ folder:
+cd ChromaDB
+
+# Build images and start both containers
+docker compose up --build
+
+# Run in the background (detached mode)
+docker compose up --build -d
+```
+
+| Service | URL |
+|---|---|
+| FastAPI (chat API) | http://localhost:8000 |
+| FastAPI docs (Swagger) | http://localhost:8000/docs |
+| Streamlit ingest UI | http://localhost:8501 |
+
+### Useful commands
+
+```bash
+# View running containers
+docker compose ps
+
+# Tail logs for both services
+docker compose logs -f
+
+# Tail logs for one service only
+docker compose logs -f api
+docker compose logs -f ingest
+
+# Stop containers (keep images)
+docker compose down
+
+# Stop and remove images
+docker compose down --rmi all
+
+# Rebuild after code changes
+docker compose up --build
+```
+
+### Docker Desktop GUI
+After running `docker compose up`, open **Docker Desktop** and you will see:
+- `chromadb-api` container — green (healthy) after ~10 s
+- `chromadb-ingest` container — green (healthy) after ~15 s
+
+Click either container → **Logs** tab to see live output.
+
+---
+
+## Quick Start (local, no Docker)
 
 ```bash
 # 1. Install dependencies
