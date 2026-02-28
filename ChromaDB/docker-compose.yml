@@ -1,0 +1,49 @@
+version: "3.9"
+
+# ── Shared build config ────────────────────────────────────────────────────────
+x-build: &common-build
+  build:
+    context: .
+    dockerfile: Dockerfile
+  env_file:
+    - ../.env          # project-root .env (OPENAI_API_KEY, CHROMA_* keys)
+  restart: unless-stopped
+
+# ── Services ───────────────────────────────────────────────────────────────────
+services:
+
+  # FastAPI — REST / streaming chat API
+  api:
+    <<: *common-build
+    container_name: chromadb-api
+    command: >
+      uvicorn api:app
+      --host 0.0.0.0
+      --port 8000
+      --reload
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # Streamlit — document ingestion UI
+  ingest:
+    <<: *common-build
+    container_name: chromadb-ingest
+    command: >
+      streamlit run upload_documents.py
+      --server.port 8501
+      --server.address 0.0.0.0
+      --server.headless true
+    ports:
+      - "8501:8501"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
