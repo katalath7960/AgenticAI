@@ -299,9 +299,137 @@ END                                    (retry loop)
 
 ## Docker Deployment (Docker Desktop)
 
+### Docker files in this folder
+
+| File | Purpose |
+|---|---|
+| `Dockerfile` | Builds a single `python:3.11-slim` image used by both services |
+| `docker-compose.yml` | Defines and orchestrates the two containers |
+| `.dockerignore` | Prevents `__pycache__`, `.env`, `.venv`, and editor files from entering the image |
+
+---
+
 ### Prerequisites
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
-- `.env` file in the **project root** (`Python/.env`) with all required keys (see Environment Variables above)
+
+#### 1. Docker Desktop
+Download and install from https://www.docker.com/products/docker-desktop/
+
+#### 2. WSL2 (Windows only — required by Docker Desktop)
+Docker Desktop on Windows uses WSL2 as its Linux kernel backend.
+Check if WSL2 is installed:
+```powershell
+wsl --status
+```
+If not installed, run this in an **admin PowerShell**:
+```powershell
+wsl --install
+```
+Then **restart your PC**. After restart, Ubuntu will open once to finish setup (create a username/password).
+
+#### 3. `.env` file
+Place a `.env` file in the **project root** (`Python/.env`) — one level above the `ChromaDB/` folder.
+The `docker-compose.yml` references it as `../.env`.
+
+```env
+CHROMA_API_KEY=your_chroma_api_key
+CHROMA_TENANT=your_tenant_name
+CHROMA_DATABASE=your_database_name
+OPENAI_API_KEY=your_openai_api_key
+```
+
+> **Note:** The env var must be named `OPENAI_API_KEY` (not `OPEN_API_KEY`).
+
+---
+
+### Dockerfile — explained
+
+```dockerfile
+FROM python:3.11-slim AS base
+```
+Uses the official slim Python 3.11 image (~50 MB) as the base.
+
+```dockerfile
+RUN apt-get update && apt-get install -y --no-install-recommends curl \
+    && rm -rf /var/lib/apt/lists/*
+```
+Installs `curl` (needed by the container healthcheck) and cleans up apt cache to keep the image small.
+
+```dockerfile
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+```
+Sets `/app` as the working directory, copies only `requirements.txt` first so pip install is cached as a separate layer — rebuilds are fast when only source files change.
+
+```dockerfile
+COPY . .
+```
+Copies all application source files (`api.py`, `rag_agent.py`, `chroma_client.py`, `upload_documents.py`) into `/app`.
+
+```dockerfile
+CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000"]
+```
+Default command runs the FastAPI server. The Streamlit service overrides this in `docker-compose.yml`.
+
+---
+
+### docker-compose.yml — explained
+
+```yaml
+x-build: &common-build
+  build:
+    context: .
+    dockerfile: Dockerfile
+  env_file:
+    - ../.env
+  restart: unless-stopped
+```
+A YAML anchor (`&common-build`) shared by both services — avoids repetition. Both services:
+- Build from the same `Dockerfile` in the current (`ChromaDB/`) directory
+- Load environment variables from `../.env` (project root)
+- Restart automatically unless manually stopped
+
+#### Service: `api` (FastAPI)
+
+```yaml
+api:
+  <<: *common-build
+  container_name: chromadb-api
+  command: uvicorn api:app --host 0.0.0.0 --port 8000 --reload
+  ports:
+    - "8000:8000"
+  healthcheck:
+    test: ["CMD", "curl", "-f", "http://localhost:8000/"]
+    interval: 30s
+    timeout: 10s
+    retries: 3
+    start_period: 10s
+```
+- Runs `uvicorn` with `--reload` so code changes inside the container are picked up automatically
+- Exposes port `8000` on the host
+- Healthcheck polls `GET /` every 30 s; marked healthy after 1 passing check
+
+#### Service: `ingest` (Streamlit)
+
+```yaml
+ingest:
+  <<: *common-build
+  container_name: chromadb-ingest
+  command: streamlit run upload_documents.py --server.port 8501 --server.address 0.0.0.0 --server.headless true
+  ports:
+    - "8501:8501"
+  healthcheck:
+    test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+    interval: 30s
+    timeout: 10s
+    retries: 3
+    start_period: 15s
+```
+- `--server.headless true` suppresses the "open browser" prompt inside the container
+- `--server.address 0.0.0.0` makes Streamlit accessible from outside the container
+- Healthcheck uses Streamlit's built-in `/_stcore/health` endpoint
+
+---
 
 ### Deployment diagram
 
@@ -319,6 +447,7 @@ Docker Desktop
 │                         │  (same Docker image)            │
 │              ┌──────────▼──────────┐                      │
 │              │   python:3.11-slim  │                      │
+│              │   + curl            │                      │
 │              │   + requirements    │                      │
 │              └─────────────────────┘                      │
 └──────────────────────────────────────────────────────────┘
@@ -329,13 +458,15 @@ Docker Desktop
               └─────────────────────┘    └──────────────────┘
 ```
 
+---
+
 ### Build and run
 
 ```bash
 # From inside the ChromaDB/ folder:
 cd ChromaDB
 
-# Build images and start both containers
+# Build images and start both containers (foreground — see live logs)
 docker compose up --build
 
 # Run in the background (detached mode)
@@ -345,38 +476,71 @@ docker compose up --build -d
 | Service | URL |
 |---|---|
 | FastAPI (chat API) | http://localhost:8000 |
-| FastAPI docs (Swagger) | http://localhost:8000/docs |
+| FastAPI docs (Swagger UI) | http://localhost:8000/docs |
+| FastAPI docs (ReDoc) | http://localhost:8000/redoc |
 | Streamlit ingest UI | http://localhost:8501 |
+
+---
 
 ### Useful commands
 
 ```bash
-# View running containers
+# Show running containers and their health
 docker compose ps
 
-# Tail logs for both services
+# Tail live logs from both services
 docker compose logs -f
 
-# Tail logs for one service only
+# Tail logs from one service only
 docker compose logs -f api
 docker compose logs -f ingest
 
-# Stop containers (keep images)
+# Exec into a running container (for debugging)
+docker exec -it chromadb-api bash
+docker exec -it chromadb-ingest bash
+
+# Stop containers (keep images and volumes)
 docker compose down
 
-# Stop and remove images
+# Stop and remove built images
 docker compose down --rmi all
 
-# Rebuild after code changes
-docker compose up --build
+# Rebuild and restart after code changes
+docker compose up --build -d
+
+# Check resource usage (CPU/memory per container)
+docker stats
 ```
 
-### Docker Desktop GUI
-After running `docker compose up`, open **Docker Desktop** and you will see:
-- `chromadb-api` container — green (healthy) after ~10 s
-- `chromadb-ingest` container — green (healthy) after ~15 s
+---
 
-Click either container → **Logs** tab to see live output.
+### Docker Desktop GUI
+
+After running `docker compose up --build -d`, open **Docker Desktop** and navigate to the **Containers** tab. You will see:
+
+```
+chromadb-api      Running   healthy   0.0.0.0:8000->8000/tcp
+chromadb-ingest   Running   healthy   0.0.0.0:8501->8501/tcp
+```
+
+- Green dot = healthy
+- Click a container → **Logs** tab to see live output
+- Click a container → **Inspect** tab to view env vars, mounts, and network settings
+- Click a container → **Terminal** tab to open an interactive shell inside it
+
+---
+
+### Troubleshooting
+
+| Problem | Cause | Fix |
+|---|---|---|
+| `Docker Desktop is unable to start` | WSL2 not installed | Run `wsl --install` in admin PowerShell, then restart |
+| `docker: command not found` | Docker not in PATH | Use full path: `"C:\Program Files\Docker\Docker\resources\bin\docker.exe"` or restart terminal after Docker Desktop install |
+| `Attribute "app" not found in module "api"` | uvicorn run from wrong directory | Always run from inside `ChromaDB/` folder |
+| `No module named 'chroma_client'` | Wrong working directory or filename case | Ensure file is named `chroma_client.py` (lowercase) and run from `ChromaDB/` |
+| Container unhealthy | Missing env vars | Check `.env` file exists one level up and contains all required keys |
+| `OPENAI_API_KEY` error | Typo in `.env` | Ensure the key is `OPENAI_API_KEY` not `OPEN_API_KEY` |
+| Port already in use | Another process on 8000 or 8501 | Stop the conflicting process or change port mapping in `docker-compose.yml` |
 
 ---
 
