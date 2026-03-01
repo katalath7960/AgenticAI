@@ -1,5 +1,3 @@
-version: "3.9"
-
 # ── Shared build config ────────────────────────────────────────────────────────
 x-build: &common-build
   build:
