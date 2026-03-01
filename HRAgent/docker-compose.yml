@@ -1,0 +1,52 @@
+# ── Shared build config ────────────────────────────────────────────────────────
+x-build: &common-build
+  build:
+    context: .
+    dockerfile: Dockerfile
+  env_file:
+    - ../.env          # project-root .env (OPENAI_API_KEY)
+  restart: unless-stopped
+
+# ── Services ───────────────────────────────────────────────────────────────────
+services:
+
+  # FastAPI — HR Agent REST API
+  hr-api:
+    <<: *common-build
+    container_name: hr-api
+    command: >
+      uvicorn api:app
+      --host 0.0.0.0
+      --port 8001
+      --reload
+    ports:
+      - "8001:8001"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # Streamlit — HR Agent Dashboard UI
+  hr-app:
+    <<: *common-build
+    container_name: hr-app
+    command: >
+      streamlit run app.py
+      --server.port 8502
+      --server.address 0.0.0.0
+      --server.headless true
+    ports:
+      - "8502:8502"
+    environment:
+      HR_API_URL: http://hr-api:8001
+    depends_on:
+      hr-api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8502/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
