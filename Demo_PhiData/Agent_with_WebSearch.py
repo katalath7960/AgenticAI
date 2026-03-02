@@ -7,9 +7,7 @@ from phi.agent import Agent
 from phi.model.openai import OpenAIChat
 from phi.tools.duckduckgo import DuckDuckGo
 from phi.tools.newspaper4k import Newspaper4k
-
 from dotenv import load_dotenv
-
 
 def get_current_datetime() -> str:
     """Returns the current date and time."""
@@ -97,4 +95,5 @@ def create_websearch_agent():
 
 if __name__ == "__main__":
     agent = create_websearch_agent()
-    agent.print_response("what is the value of pi", stream=True)
+    agent.print_response("please scrape bbc.com and list out all the news about Iran-US-Isreal war and list out all latest news", stream=True)
+    
