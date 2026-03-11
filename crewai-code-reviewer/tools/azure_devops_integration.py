@@ -258,14 +258,21 @@ class AzureDevOpsIntegration:
         url = (
             f"{self._base_url}/repositories/{quote(repo_name)}"
             f"/items?path={quote(file_path)}"
-            f"&includeContent=true"
         )
         if version:
             url += f"&versionDescriptor.version={quote(version)}"
             url += f"&versionDescriptor.versionType={version_type}"
-
-        data = self._get(url)
-        return data.get("content", "")
+        sep = "&" if "?" in url else "?"
+        full_url = f"{url}{sep}api-version={self.API_VERSION}"
+        req = Request(full_url, headers=self._auth_header())
+        try:
+            with urlopen(req, timeout=30) as resp:
+                return resp.read().decode("utf-8", errors="replace")
+        except HTTPError as e:
+            body = e.read().decode("utf-8", errors="replace")
+            raise RuntimeError(
+                f"Azure DevOps API error {e.code} fetching {file_path}:\n{body}"
+            ) from e
 
     def get_pr_file_contents(
         self, repo_name: str, pr_id: int, max_files: int = 50
