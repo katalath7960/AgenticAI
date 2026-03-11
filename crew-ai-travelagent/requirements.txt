@@ -1,0 +1,9 @@
+crewai
+crewai-tools
+openai
+python-dotenv
+requests
+pydantic
+typing-extensions
+pydantic-settings
+streamlit>=1.37.0
