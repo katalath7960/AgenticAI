@@ -8,15 +8,15 @@ from typing import Any
 
 from langchain_openai import ChatOpenAI
 
-from langfuse.api.client import FernLangfuse
+from langfuse.api.client import LangfuseAPI
 
 from hotel_agent.config import settings
 from hotel_agent.models.schemas import EvaluationScore
 from hotel_agent.observability.tracing import score_trace
 
 
-def _get_langfuse_api() -> FernLangfuse:
-    return FernLangfuse(
+def _get_langfuse_api() -> LangfuseAPI:
+    return LangfuseAPI(
         base_url=settings.langfuse_host,
         username=settings.langfuse_public_key,
         password=settings.langfuse_secret_key,

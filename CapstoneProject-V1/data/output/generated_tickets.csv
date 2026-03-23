@@ -1,0 +1,2493 @@
+ticket_id,source_id,source_type,title,description,category,priority,severity,assignee_team,tags,created_at,status,is_duplicate,duplicate_of
+TKT-20260323-d2412805-0001,REV-0003,review,[Critical] Data Sync: Data sync completely broken. Notes not syncing between pho,"**Summary**
+Data sync completely broken. Notes not syncing between phone and iPad since 3.0.5. Losing important work data. This is critical.
+
+**Technical Details**
+- Platform: iOS
+- Device: Unknown
+- OS: Unknown
+- App version: 3.0.5
+- Affected feature: Data Sync
+
+**Steps to Reproduce**
+  1. Attempt to sync notes between iPhone and iPad
+  2. Create a note on iPhone
+  3. Check if the note appears on iPad
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"review,ios,data-sync",2026-03-23T20:17:58.576666+00:00,closed,False,
+TKT-20260323-d2412805-0002,REV-0040,review,Interface is cluttered — too many menus buried inside menus.,"**Summary**
+Interface is cluttered — too many menus buried inside menus.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:17:59.622377+00:00,open,False,
+TKT-20260323-d2412805-0003,REV-0034,review,App is very slow to load. Takes 10+ seconds every time. Unacceptable.,"**Summary**
+App is very slow to load. Takes 10+ seconds every time. Unacceptable.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:18:00.499866+00:00,open,False,
+TKT-20260323-d2412805-0004,REV-0022,review,Collaboration features so teams can share and edit together would be perfect.,"**Summary**
+Collaboration features so teams can share and edit together would be perfect.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:18:01.467622+00:00,open,False,
+TKT-20260323-d2412805-0005,REV-0039,review,App uses over 500MB storage on my phone. Ridiculous for what it does.,"**Summary**
+App uses over 500MB storage on my phone. Ridiculous for what it does.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:18:02.734041+00:00,open,False,
+TKT-20260323-d2412805-0006,REV-0014,review,Would love a calendar view for tasks. The list gets overwhelming.,"**Summary**
+Would love a calendar view for tasks. The list gets overwhelming.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:18:03.632262+00:00,resolved,False,
+TKT-20260323-d2412805-0007,REV-0036,review,Onboarding is confusing and there are no tutorial videos.,"**Summary**
+Onboarding is confusing and there are no tutorial videos.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:18:07.843997+00:00,open,False,
+TKT-20260323-d2412805-0008,REV-0001,review,[Critical] Profile: App crashes every time I open my profile since the 3.0.1 upd,"**Summary**
+App crashes every time I open my profile since the 3.0.1 update. Steps: 1) Open app 2) Tap Profile icon 3) App freezes and closes. iPhone 14, iOS 16.5. Very frustrating!
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 14
+- OS: iOS 16.5
+- App version: 3.0.1
+- Affected feature: Profile
+
+**Steps to Reproduce**
+  1. Open app
+  2. Tap Profile icon
+  3. App freezes and closes
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"review,ios,profile",2026-03-23T20:18:08.789087+00:00,open,False,
+TKT-20260323-d2412805-0009,REV-0041,review,No offline support whatsoever. Useless without internet.,"**Summary**
+No offline support whatsoever. Useless without internet.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:18:10.889160+00:00,open,False,
+TKT-20260323-d2412805-0010,REV-0019,review,"Siri shortcut integration so I can open items hands-free, please!","**Summary**
+Siri shortcut integration so I can open items hands-free, please!
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:18:13.440055+00:00,open,False,
+TKT-20260323-d2412805-0011,REV-0033,review,Premium subscription price is way too high. Competitors offer more for less.,"**Summary**
+Premium subscription price is way too high. Competitors offer more for less.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:18:15.073948+00:00,open,False,
+TKT-20260323-d2412805-0012,REV-0015,review,Export data to PDF directly from the app would be fantastic.,"**Summary**
+Export data to PDF directly from the app would be fantastic.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:18:16.478367+00:00,open,False,
+TKT-20260323-d2412805-0013,REV-0012,review,[Critical] App Launch: App shows blank white screen after splash. Must reopen 3-,"**Summary**
+App shows blank white screen after splash. Must reopen 3-4 times before it loads. iPhone 12 Mini, iOS 16.4, v3.1.0.
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 12 Mini
+- OS: iOS 16.4
+- App version: v3.1.0
+- Affected feature: App Launch
+
+**Steps to Reproduce**
+  1. Open the app
+  2. Observe the blank white screen after splash
+  3. Reopen the app 3-4 times until it loads
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"review,ios,app-launch",2026-03-23T20:18:17.869954+00:00,open,False,
+TKT-20260323-d2412805-0014,REV-0021,review,Reminder/snooze feature for tasks is desperately needed.,"**Summary**
+Reminder/snooze feature for tasks is desperately needed.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:18:19.197384+00:00,open,False,
+TKT-20260323-d2412805-0015,REV-0013,review,Please add dark mode! My eyes hurt at night. Would be a huge improvement.,"**Summary**
+Please add dark mode! My eyes hurt at night. Would be a huge improvement.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:18:21.219061+00:00,open,False,
+TKT-20260323-d2412805-0016,REV-0010,review,[Medium] Battery Usage: Battery drain extreme after 3.1.0 — phone loses 30%/hr w,"**Summary**
+Battery drain extreme after 3.1.0 — phone loses 30%/hr with app in background. iPhone 15, iOS 17.1.
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 15
+- OS: iOS 17.4
+- App version: 3.1.0
+- Affected feature: Battery Usage
+
+**Steps to Reproduce**
+  1. Open the app on iPhone 15 running iOS 17.4
+  2. Leave the app running in the background
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Medium,Medium,Engineering,"review,ios,battery-usage",2026-03-23T20:18:22.695799+00:00,open,False,
+TKT-20260323-d2412805-0017,REV-0018,review,Multiple account support for switching between work and personal would be amazin,"**Summary**
+Multiple account support for switching between work and personal would be amazing.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:18:23.802906+00:00,open,False,
+TKT-20260323-d2412805-0018,REV-0007,review,[High] Search: Search returns no results even for exact matches. Broken sin,"**Summary**
+Search returns no results even for exact matches. Broken since v3.0.5. OnePlus 10 Pro, Android 13.
+
+**Technical Details**
+- Platform: Android
+- Device: OnePlus 10 Pro
+- OS: 13
+- App version: 3.0.5
+- Affected feature: Search
+
+**Steps to Reproduce**
+  1. Open the app on a OnePlus 10 Pro running Android 13.
+  2. Ensure the app version is 3.0.5.
+  3. Attempt to use the search feature by typing exact phrases that are known to exist in notes.
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"review,android,search",2026-03-23T20:18:24.945163+00:00,open,False,
+TKT-20260323-d2412805-0019,REV-0038,review,[Critical] Data Management: Cancelled subscription because app keeps losing my d,"**Summary**
+Cancelled subscription because app keeps losing my data. Completely unreliable.
+
+**Technical Details**
+- Platform: Unknown
+- Device: Unknown
+- OS: Unknown
+- App version: Unknown
+- Affected feature: Data Management
+
+**Steps to Reproduce**
+  1. Use the app normally
+  2. Observe data loss
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"review,data-management",2026-03-23T20:18:26.767931+00:00,open,False,
+TKT-20260323-d2412805-0020,REV-0017,review,Widget support for the home screen showing daily summary would be great.,"**Summary**
+Widget support for the home screen showing daily summary would be great.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:18:28.180268+00:00,open,False,
+TKT-20260323-d2412805-0021,REV-0011,review,[High] Attachment in Messages: Cannot attach files in messages. Tap attachment i,"**Summary**
+Cannot attach files in messages. Tap attachment icon — nothing happens. Galaxy S21, Android 13, v3.0.1.
+
+**Technical Details**
+- Platform: Android
+- Device: Samsung Galaxy S21
+- OS: Android 13
+- App version: 3.0.1
+- Affected feature: Attachment in Messages
+
+**Steps to Reproduce**
+  1. Open the app on a Samsung Galaxy S21 running Android 13.
+  2. Navigate to the messaging feature.
+  3. Tap the attachment icon.
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"review,android,attachment-in-messages",2026-03-23T20:18:29.594312+00:00,open,False,
+TKT-20260323-d2412805-0022,REV-0009,review,[High] Offline Mode: Offline mode broken — app shows 'No connection' even with f,"**Summary**
+Offline mode broken — app shows 'No connection' even with full WiFi. Pixel 6a, Android 12, v3.0.5.
+
+**Technical Details**
+- Platform: Android
+- Device: Pixel 6a
+- OS: Android 12
+- App version: v3.0.5
+- Affected feature: Offline Mode
+
+**Steps to Reproduce**
+  1. Ensure device is connected to WiFi with full signal.
+  2. Open the app.
+  3. Attempt to use the app in offline mode.
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"review,android,offline-mode",2026-03-23T20:18:31.234514+00:00,open,False,
+TKT-20260323-d2412805-0023,REV-0035,review,Customer support takes days to respond. Had an issue two weeks with no resolutio,"**Summary**
+Customer support takes days to respond. Had an issue two weeks with no resolution.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:18:34.036249+00:00,open,False,
+TKT-20260323-d2412805-0024,REV-0005,review,[Critical] App Startup: Crash on startup after latest update. Cleared cache — no,"**Summary**
+Crash on startup after latest update. Cleared cache — no help. Galaxy Note 20, Android 12. Steps: just open the app.
+
+**Technical Details**
+- Platform: Android
+- Device: Samsung Galaxy Note 20
+- OS: Android 12
+- App version: Unknown
+- Affected feature: App Startup
+
+**Steps to Reproduce**
+  1. Open the app
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"review,android,app-startup",2026-03-23T20:18:35.157755+00:00,open,False,
+TKT-20260323-d2412805-0025,REV-0042,review,[Medium] Analytics: Analytics section never loads properly. Always shows 'Data u,"**Summary**
+Analytics section never loads properly. Always shows 'Data unavailable'.
+
+**Technical Details**
+- Platform: Unknown
+- Device: Unknown
+- OS: Unknown
+- App version: 3.0.1
+- Affected feature: Analytics
+
+**Steps to Reproduce**
+  1. Open the app
+  2. Navigate to the Analytics section
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Medium,Medium,Engineering,"review,analytics",2026-03-23T20:18:37.467548+00:00,open,False,
+TKT-20260323-d2412805-0026,REV-0006,review,[Medium] Push Notifications: Push notifications stopped working on iOS 17. Missi,"**Summary**
+Push notifications stopped working on iOS 17. Missing important alerts. iPhone 15 Pro, app version 3.1.0.
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 15 Pro
+- OS: iOS 17
+- App version: 3.1.0
+- Affected feature: Push Notifications
+
+**Steps to Reproduce**
+  1. Upgrade to iOS 17
+  2. Ensure app version is 3.1.0
+  3. Wait for a push notification
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Medium,Medium,Engineering,"review,ios,push-notifications",2026-03-23T20:18:39.216493+00:00,open,False,
+TKT-20260323-d2412805-0027,REV-0037,review,Too many ads in the free tier. They interrupt my workflow constantly.,"**Summary**
+Too many ads in the free tier. They interrupt my workflow constantly.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:18:40.365630+00:00,open,False,
+TKT-20260323-d2412805-0028,REV-0004,review,[Critical] Home Screen: App freezes on the home screen after about 30 seconds. M,"**Summary**
+App freezes on the home screen after about 30 seconds. Must force-close every time. Pixel 7, Android 14.
+
+**Technical Details**
+- Platform: Android
+- Device: Pixel 7
+- OS: Android 14
+- App version: Unknown
+- Affected feature: Home Screen
+
+**Steps to Reproduce**
+  1. Open the app on a Pixel 7 device running Android 14.
+  2. Wait for approximately 30 seconds on the home screen.
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"review,android,home-screen",2026-03-23T20:18:40.379779+00:00,open,False,
+TKT-20260323-d2412805-0029,REV-0016,review,Please add fingerprint/Face ID login. Typing password every time is annoying.,"**Summary**
+Please add fingerprint/Face ID login. Typing password every time is annoying.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:18:42.020086+00:00,open,False,
+TKT-20260323-d2412805-0030,REV-0020,review,Bulk action feature to archive or delete multiple items would save time.,"**Summary**
+Bulk action feature to archive or delete multiple items would save time.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:18:43.307151+00:00,open,False,
+TKT-20260323-d2412805-0031,REV-0008,review,[High] Video Upload: Video upload fails with a generic error. Tried on WiFi and ,"**Summary**
+Video upload fails with a generic error. Tried on WiFi and LTE. iPhone 13, iOS 16.6, app v3.0.1.
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 13
+- OS: iOS 16.6
+- App version: 3.0.1
+- Affected feature: Video Upload
+
+**Steps to Reproduce**
+  1. Attempt to upload a video file using the app.
+  2. Observe the error message that appears.
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"review,ios,video-upload",2026-03-23T20:18:44.717433+00:00,open,False,
+TKT-20260323-d2412805-0032,REV-0002,review,"[High] Login: Cannot login after updating to v3.1.0. Enter credentials, sp","**Summary**
+Cannot login after updating to v3.1.0. Enter credentials, spinner spins forever. Tried uninstall/reinstall — still broken. Samsung Galaxy S22, Android 13.
+
+**Technical Details**
+- Platform: Android
+- Device: Samsung Galaxy S22
+- OS: Android 13
+- App version: 3.1.0
+- Affected feature: Login
+
+**Steps to Reproduce**
+  1. Update app to version 3.1.0
+  2. Open the app
+  3. Enter login credentials
+  4. Observe the spinner spinning indefinitely
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"review,android,login",2026-03-23T20:18:46.250509+00:00,open,False,
+TKT-20260323-d2412805-0033,EML-0001,email,"[Critical] Account Details: App Crash Report — iPhone 15 iOS 17.4
+
+Hi Support,
+
+","**Summary**
+App Crash Report — iPhone 15 iOS 17.4
+
+Hi Support,
+
+I'm experiencing repeated crashes on iPhone 15 running iOS 17.4, app version 3.1.0.
+
+Steps:
+1. Open app
+2. Go to Settings tab
+3. Tap 'Account Details'
+4. App crashes immediately
+
+Device: iPhone 15 | OS: iOS 17.4 | App: 3.1.0
+
+Please fix ASAP.
+John
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 15
+- OS: iOS 17.4
+- App version: 3.1.0
+- Affected feature: Account Details
+
+**Steps to Reproduce**
+  1. Open app
+  2. Go to Settings tab
+  3. Tap 'Account Details'
+  4. App crashes immediately
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"email,ios,account-details",2026-03-23T20:18:47.737313+00:00,open,False,
+TKT-20260323-d2412805-0034,EML-0002,email,"[High] Login: Login Issue Since v3.0.1 Update
+
+Hello,
+
+Since v3.0.1 I cann","**Summary**
+Login Issue Since v3.0.1 Update
+
+Hello,
+
+Since v3.0.1 I cannot log in. Enter credentials, spinner appears for 5 seconds then vanishes — not logged in.
+
+Device: Samsung Galaxy S22 | OS: Android 13 | App: 3.0.1
+
+Steps:
+1. Open app
+2. Enter valid credentials
+3. Tap Sign In
+4. Spinner vanishes — not log
+
+**Technical Details**
+- Platform: Android
+- Device: Samsung Galaxy S22
+- OS: Android 13
+- App version: 3.0.1
+- Affected feature: Login
+
+**Steps to Reproduce**
+  1. Open app
+  2. Enter valid credentials
+  3. Tap Sign In
+  4. Spinner vanishes — not logged in
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"email,android,login",2026-03-23T20:18:49.064159+00:00,open,False,
+TKT-20260323-d2412805-0035,EML-0003,email,"[Critical] Data Management: Data Loss Problem — Urgent
+
+URGENT — Lost 3 weeks of","**Summary**
+Data Loss Problem — Urgent
+
+URGENT — Lost 3 weeks of data after the 3.0.5 update. All notes/task history before March 2024 are gone. History tab shows empty state.
+
+Device: Google Pixel 7 | OS: Android 14 | App: 3.0.5
+
+Steps:
+1. Update to 3.0.5
+2. Open app
+3. Navigate to History
+4. All previous entr
+
+**Technical Details**
+- Platform: Android
+- Device: Google Pixel 7
+- OS: Android 14
+- App version: 3.0.5
+- Affected feature: Data Management
+
+**Steps to Reproduce**
+  1. Update to 3.0.5
+  2. Open app
+  3. Navigate to History
+  4. All previous entries gone
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"email,android,data-management",2026-03-23T20:18:50.362129+00:00,open,False,
+TKT-20260323-d2412805-0036,EML-0004,email,"[Medium] Push Notifications: Notification Bug — Not Receiving Alerts
+
+Hi,
+
+Push ","**Summary**
+Notification Bug — Not Receiving Alerts
+
+Hi,
+
+Push notifications stopped working after iOS 17.1 upgrade.
+
+Device: iPhone 14 Pro | OS: iOS 17.1 | App: 3.1.0
+
+Steps:
+1. Enable notifications in app and iOS Settings
+2. Set reminder 5 minutes from now
+3. Wait — no notification arrives
+
+Tried toggling per
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 14 Pro
+- OS: iOS 17.1
+- App version: 3.1.0
+- Affected feature: Push Notifications
+
+**Steps to Reproduce**
+  1. Enable notifications in app and iOS Settings
+  2. Set reminder 5 minutes from now
+  3. Wait — no notification arrives
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Medium,Medium,Engineering,"email,ios,push-notifications",2026-03-23T20:18:51.864571+00:00,open,False,
+TKT-20260323-d2412805-0037,EML-0005,email,"[High] Data Sync: Sync Failure Between iPad and iPhone
+
+Hello Support,
+
+Data n","**Summary**
+Sync Failure Between iPad and iPhone
+
+Hello Support,
+
+Data not syncing between iPhone and iPad. Create item on iPhone — never appears on iPad after 30 minutes.
+
+iPhone 13, iOS 16.6, App v3.0.5
+iPad Pro, iPadOS 16.6, App v3.0.5
+
+Steps:
+1. Create task on iPhone
+2. Open iPad (same account)
+3. Task miss
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 13, iPad Pro
+- OS: iOS 16.6, iPadOS 16.6
+- App version: 3.0.5
+- Affected feature: Data Sync
+
+**Steps to Reproduce**
+  1. Create task on iPhone
+  2. Open iPad (same account)
+  3. Task missing
+  4. Pull to refresh — still missing
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"email,ios,data-sync",2026-03-23T20:18:52.906218+00:00,open,False,
+TKT-20260323-d2412805-0038,EML-0006,email,"[Critical] Dashboard: App Freezes on Android 14 — Galaxy S23
+
+Hi,
+
+App freezes c","**Summary**
+App Freezes on Android 14 — Galaxy S23
+
+Hi,
+
+App freezes completely on Galaxy S23 running Android 14.
+
+Device: Samsung Galaxy S23 | OS: Android 14 | App: 3.1.0
+
+Steps:
+1. Open app
+2. Go to Dashboard
+3. Scroll down rapidly
+4. App becomes unresponsive — must force-kill
+
+Clearing cache does not help.
+
+**Technical Details**
+- Platform: Android
+- Device: Samsung Galaxy S23
+- OS: Android 14
+- App version: 3.1.0
+- Affected feature: Dashboard
+
+**Steps to Reproduce**
+  1. Open app
+  2. Go to Dashboard
+  3. Scroll down rapidly
+  4. App becomes unresponsive — must force-kill
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"email,android,dashboard",2026-03-23T20:18:54.196053+00:00,open,False,
+TKT-20260323-d2412805-0039,EML-0007,email,"[High] Search: Search Not Returning Results
+
+Hi,
+
+Search completely broken.","**Summary**
+Search Not Returning Results
+
+Hi,
+
+Search completely broken. Type exact phrases that are in my notes — get zero results.
+
+Device: OnePlus 10 Pro | OS: Android 13 | App: 3.0.5
+
+Steps:
+1. Navigate to Search
+2. Type 'meeting notes'
+3. Results: 'No items found' (I have 20 notes with that phrase)
+
+Please
+
+**Technical Details**
+- Platform: Android
+- Device: OnePlus 10 Pro
+- OS: Android 13
+- App version: 3.0.5
+- Affected feature: Search
+
+**Steps to Reproduce**
+  1. Navigate to Search
+  2. Type 'meeting notes'
+  3. Observe 'No items found' despite having 20 notes with that phrase
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"email,android,search",2026-03-23T20:18:55.594239+00:00,open,False,
+TKT-20260323-d2412805-0040,EML-0008,email,"[Critical] File Upload: Crash When Uploading Large Files
+
+Hello,
+
+App crashes up","**Summary**
+Crash When Uploading Large Files
+
+Hello,
+
+App crashes uploading files >10MB.
+
+Device: iPhone 13 Pro | OS: iOS 16.6 | App: 3.0.1
+
+Steps:
+1. Tap '+' to add attachment
+2. Select 15MB PDF from Files
+3. Upload progress bar appears
+4. At ~60% progress, app crashes
+
+Consistent across multiple files and net
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 13 Pro
+- OS: iOS 16.6
+- App version: 3.0.1
+- Affected feature: File Upload
+
+**Steps to Reproduce**
+  1. Tap '+' to add attachment
+  2. Select 15MB PDF from Files
+  3. Upload progress bar appears
+  4. At ~60% progress, app crashes
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"email,ios,file-upload",2026-03-23T20:18:57.097065+00:00,open,False,
+TKT-20260323-d2412805-0041,EML-0009,email,"[High] Two-Factor Authentication: Two-Factor Authentication Not Working
+
+Hi Supp","**Summary**
+Two-Factor Authentication Not Working
+
+Hi Support,
+
+2FA SMS codes not delivered. Cannot log in at all.
+
+Device: Samsung Galaxy A52 | OS: Android 12 | App: 3.0.5
+
+Steps:
+1. Open app
+2. Enter email + password
+3. 2FA screen appears — wait for SMS
+4. SMS never arrives (checked spam, tried resend 5×)
+
+Th
+
+**Technical Details**
+- Platform: Android
+- Device: Samsung Galaxy A52
+- OS: Android 12
+- App version: 3.0.5
+- Affected feature: Two-Factor Authentication
+
+**Steps to Reproduce**
+  1. Open app
+  2. Enter email + password
+  3. 2FA screen appears — wait for SMS
+  4. SMS never arrives (checked spam, tried resend 5×)
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"email,android,two-factor-authentication",2026-03-23T20:18:58.761546+00:00,open,False,
+TKT-20260323-d2412805-0042,EML-0010,email,"[Critical] Home Screen Widget: Widget Crashes Home Screen
+
+Hello,
+
+Home screen w","**Summary**
+Widget Crashes Home Screen
+
+Hello,
+
+Home screen widget crashes launcher when I try to add it.
+
+Device: Pixel 7a | OS: Android 14 | App: 3.1.0
+
+Steps:
+1. Long press home screen
+2. Select Widgets
+3. Find app widget
+4. Drag to home screen — launcher crashes
+
+Every time.
+
+**Technical Details**
+- Platform: Android
+- Device: Pixel 7a
+- OS: Android 14
+- App version: 3.1.0
+- Affected feature: Home Screen Widget
+
+**Steps to Reproduce**
+  1. Long press home screen
+  2. Select Widgets
+  3. Find app widget
+  4. Drag to home screen — launcher crashes
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"email,android,home-screen-widget",2026-03-23T20:19:00.417503+00:00,open,False,
+TKT-20260323-d2412805-0043,EML-0011,email,"Subscription Price Too High  Hello,  The recent price increase to $15/month is t","**Summary**
+Subscription Price Too High
+
+Hello,
+
+The recent price increase to $15/month is too much. Competitors charge $5-8/month for more features. Considering cancelling.
+
+Thanks
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:19:01.840645+00:00,open,False,
+TKT-20260323-d2412805-0044,EML-0012,email,"Very Slow App Performance  Hi,  The app has become extremely slow. Dashboard tak","**Summary**
+Very Slow App Performance
+
+Hi,
+
+The app has become extremely slow. Dashboard takes 8-10 seconds to load, switching tabs takes 3-4 seconds. Considering switching to a competitor.
+
+Frustrated
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:19:02.917097+00:00,open,False,
+TKT-20260323-d2412805-0045,EML-0013,email,"Poor Customer Support Experience  To Whom It May Concern,  Submitted a ticket 2","**Summary**
+Poor Customer Support Experience
+
+To Whom It May Concern,
+
+Submitted a ticket 2 weeks ago about a billing issue and received only one automated response. I am a premium subscriber and this level of support is unacceptable.
+
+Disappointed
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:19:04.037583+00:00,open,False,
+TKT-20260323-d2412805-0046,EML-0014,email,"Too Many Ads in Free Tier  Hello,  Ads appear every 2-3 actions in the free tier","**Summary**
+Too Many Ads in Free Tier
+
+Hello,
+
+Ads appear every 2-3 actions in the free tier. This makes the app nearly unusable without paying. Excessive.
+
+Regards
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:19:05.258220+00:00,open,False,
+TKT-20260323-d2412805-0047,EML-0015,email,"App Uses Too Much Storage  Hi,  The app uses 600MB on my phone. Far too much. Pl","**Summary**
+App Uses Too Much Storage
+
+Hi,
+
+The app uses 600MB on my phone. Far too much. Please add a 'Clear Cache' option in settings or reduce the storage footprint.
+
+Thanks
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:19:06.819233+00:00,open,False,
+TKT-20260323-d2412805-0048,EML-0016,email,"No Refund for Cancelled Subscription  Hello,  I cancelled my annual subscription","**Summary**
+No Refund for Cancelled Subscription
+
+Hello,
+
+I cancelled my annual subscription mid-year and was told I would not receive a refund for unused months. This is against consumer protection rules in my country. I expect a pro-rata refund.
+
+Regards
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:19:07.614994+00:00,open,False,
+TKT-20260323-d2412805-0049,EML-0017,email,"Quick Question About Storage Limits  Hi,  I'm a free user — what is the storage","**Summary**
+Quick Question About Storage Limits
+
+Hi,
+
+I'm a free user — what is the storage limit before I need to upgrade? Can't find this information in the app. Also, love the app — very well designed!
+Thanks
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:19:08.535084+00:00,open,False,
+TKT-20260323-d2412805-0050,EML-0018,email,"Feature Request: Dark Mode Support  Hello,  I love the app but really need dark","**Summary**
+Feature Request: Dark Mode Support
+
+Hello,
+
+I love the app but really need dark mode. Use it late at night and the bright white is hard on my eyes. Many apps have this now.
+
+Laura
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:19:08.552713+00:00,open,False,
+TKT-20260323-d2412805-0051,EML-0019,email,"Request: Export to PDF Functionality  Hi Team,  Exporting task lists and notes a","**Summary**
+Request: Export to PDF Functionality
+
+Hi Team,
+
+Exporting task lists and notes as PDF directly from the app would be incredibly useful. I share progress reports with my manager and currently copy everything manually.
+
+A simple export button would save 30 mins/week.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:19:09.581893+00:00,open,False,
+TKT-20260323-d2412805-0052,EML-0020,email,"Suggestion: Biometric Login  Hello,  Face ID / fingerprint login support would i","**Summary**
+Suggestion: Biometric Login
+
+Hello,
+
+Face ID / fingerprint login support would improve daily usability. Typing my long password every time is inconvenient, especially on mobile.
+Thanks
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:19:10.866016+00:00,open,False,
+TKT-20260323-d2412805-0053,EML-0021,email,"Suggestion for Improvement: Calendar Integration  Hi,  Calendar integration (Goo","**Summary**
+Suggestion for Improvement: Calendar Integration
+
+Hi,
+
+Calendar integration (Google/Apple) would make this app a complete productivity solution. Currently switch between two apps to manage tasks and calendar. Even a read-only calendar view would be great.
+
+Best regards
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:19:12.495404+00:00,open,False,
+TKT-20260323-d2412805-0054,EML-0022,email,"Feature Request: Team Collaboration  Dear Team,  Our company is evaluating the a","**Summary**
+Feature Request: Team Collaboration
+
+Dear Team,
+
+Our company is evaluating the app for enterprise use. One key missing feature is real-time collaboration — multiple users editing the same project simultaneously. This is a deal-breaker for us.
+
+Enterprise Team
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:19:13.784302+00:00,open,False,
+TKT-20260323-d2412805-0055,EML-0023,email,"Feedback: Offline Mode Would Be Great  Hello,  I travel frequently and often hav","**Summary**
+Feedback: Offline Mode Would Be Great
+
+Hello,
+
+I travel frequently and often have no internet. Full offline mode with sync when back online would make this perfect for frequent travelers.
+
+Thanks
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:19:15.124884+00:00,open,False,
+TKT-20260323-d2412805-0056,EML-0024,email,"Request: Apple Watch App  Hello,  An Apple Watch companion app would be a great","**Summary**
+Request: Apple Watch App
+
+Hello,
+
+An Apple Watch companion app would be a great addition. Checking and ticking off tasks from my wrist would save a lot of time.
+
+Thank you
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:19:16.769542+00:00,open,False,
+TKT-20260323-d2412805-0057,EML-0025,email,"Suggestion: Custom Themes  Hi Team,  Custom color themes beyond light/dark would","**Summary**
+Suggestion: Custom Themes
+
+Hi Team,
+
+Custom color themes beyond light/dark would let users personalise the experience. Custom accent colors would be a nice touch.
+
+Keep up the work!
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:19:18.478620+00:00,open,False,
+TKT-20260323-7fca7786-0001,REV-0003,review,[Critical] Data Sync: Data sync completely broken. Notes not syncing between pho,"**Summary**
+Data sync completely broken. Notes not syncing between phone and iPad since 3.0.5. Losing important work data. This is critical.
+
+**Technical Details**
+- Platform: iOS
+- Device: Unknown
+- OS: Unknown
+- App version: 3.0.5
+- Affected feature: Data Sync
+
+**Steps to Reproduce**
+  1. Attempt to sync notes between iPhone and iPad
+  2. Create a note on iPhone
+  3. Check if the note appears on iPad
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"review,ios,data-sync",2026-03-23T20:43:52.088488+00:00,open,True,TKT-20260323-d2412805-0001
+TKT-20260323-7fca7786-0002,REV-0040,review,Interface is cluttered — too many menus buried inside menus.,"**Summary**
+Interface is cluttered — too many menus buried inside menus.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:43:53.729595+00:00,open,False,
+TKT-20260323-7fca7786-0003,REV-0034,review,App is very slow to load. Takes 10+ seconds every time. Unacceptable.,"**Summary**
+App is very slow to load. Takes 10+ seconds every time. Unacceptable.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:43:54.628052+00:00,open,False,
+TKT-20260323-7fca7786-0004,REV-0022,review,Collaboration features so teams can share and edit together would be perfect.,"**Summary**
+Collaboration features so teams can share and edit together would be perfect.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:43:55.699366+00:00,open,True,TKT-20260323-d2412805-0004
+TKT-20260323-7fca7786-0005,REV-0039,review,App uses over 500MB storage on my phone. Ridiculous for what it does.,"**Summary**
+App uses over 500MB storage on my phone. Ridiculous for what it does.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:43:57.008382+00:00,open,False,
+TKT-20260323-7fca7786-0006,REV-0014,review,Would love a calendar view for tasks. The list gets overwhelming.,"**Summary**
+Would love a calendar view for tasks. The list gets overwhelming.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:43:58.086680+00:00,open,True,TKT-20260323-d2412805-0006
+TKT-20260323-7fca7786-0007,REV-0036,review,Onboarding is confusing and there are no tutorial videos.,"**Summary**
+Onboarding is confusing and there are no tutorial videos.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:43:59.225381+00:00,open,False,
+TKT-20260323-7fca7786-0008,REV-0001,review,[Critical] Profile: App crashes every time I open my profile since the 3.0.1 upd,"**Summary**
+App crashes every time I open my profile since the 3.0.1 update. Steps: 1) Open app 2) Tap Profile icon 3) App freezes and closes. iPhone 14, iOS 16.5. Very frustrating!
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 14
+- OS: iOS 16.5
+- App version: 3.0.1
+- Affected feature: Profile
+
+**Steps to Reproduce**
+  1. Open app
+  2. Tap Profile icon
+  3. App freezes and closes
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"review,ios,profile",2026-03-23T20:44:00.189870+00:00,open,True,TKT-20260323-d2412805-0008
+TKT-20260323-7fca7786-0009,REV-0041,review,No offline support whatsoever. Useless without internet.,"**Summary**
+No offline support whatsoever. Useless without internet.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:44:02.368610+00:00,open,True,TKT-20260323-d2412805-0009
+TKT-20260323-7fca7786-0010,REV-0019,review,"Siri shortcut integration so I can open items hands-free, please!","**Summary**
+Siri shortcut integration so I can open items hands-free, please!
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:44:03.594147+00:00,open,True,TKT-20260323-d2412805-0010
+TKT-20260323-7fca7786-0011,REV-0033,review,Premium subscription price is way too high. Competitors offer more for less.,"**Summary**
+Premium subscription price is way too high. Competitors offer more for less.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:44:04.866814+00:00,open,False,
+TKT-20260323-7fca7786-0012,REV-0015,review,Export data to PDF directly from the app would be fantastic.,"**Summary**
+Export data to PDF directly from the app would be fantastic.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:44:05.813520+00:00,open,True,TKT-20260323-d2412805-0012
+TKT-20260323-7fca7786-0013,REV-0012,review,[Critical] App Launch: App shows blank white screen after splash. Must reopen 3-,"**Summary**
+App shows blank white screen after splash. Must reopen 3-4 times before it loads. iPhone 12 Mini, iOS 16.4, v3.1.0.
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 12 Mini
+- OS: iOS 16.4
+- App version: v3.1.0
+- Affected feature: App Launch
+
+**Steps to Reproduce**
+  1. Open the app
+  2. Observe the blank white screen after splash
+  3. Reopen the app 3-4 times until it loads
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"review,ios,app-launch",2026-03-23T20:44:07.087643+00:00,open,True,TKT-20260323-d2412805-0013
+TKT-20260323-7fca7786-0014,REV-0021,review,Reminder/snooze feature for tasks is desperately needed.,"**Summary**
+Reminder/snooze feature for tasks is desperately needed.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:44:07.036584+00:00,open,True,TKT-20260323-d2412805-0014
+TKT-20260323-7fca7786-0015,REV-0013,review,Please add dark mode! My eyes hurt at night. Would be a huge improvement.,"**Summary**
+Please add dark mode! My eyes hurt at night. Would be a huge improvement.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:44:08.413646+00:00,open,True,TKT-20260323-d2412805-0015
+TKT-20260323-7fca7786-0016,REV-0010,review,[Medium] Battery Usage: Battery drain extreme after 3.1.0 — phone loses 30%/hr w,"**Summary**
+Battery drain extreme after 3.1.0 — phone loses 30%/hr with app in background. iPhone 15, iOS 17.1.
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 15
+- OS: iOS 17.4
+- App version: 3.1.0
+- Affected feature: Battery Usage
+
+**Steps to Reproduce**
+  1. Open the app on iPhone 15 running iOS 17.4
+  2. Leave the app running in the background
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Medium,Medium,Engineering,"review,ios,battery-usage",2026-03-23T20:44:09.843565+00:00,open,True,TKT-20260323-d2412805-0016
+TKT-20260323-7fca7786-0017,REV-0018,review,Multiple account support for switching between work and personal would be amazin,"**Summary**
+Multiple account support for switching between work and personal would be amazing.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:44:11.840214+00:00,open,True,TKT-20260323-d2412805-0017
+TKT-20260323-7fca7786-0018,REV-0007,review,[High] Search: Search returns no results even for exact matches. Broken sin,"**Summary**
+Search returns no results even for exact matches. Broken since v3.0.5. OnePlus 10 Pro, Android 13.
+
+**Technical Details**
+- Platform: Android
+- Device: OnePlus 10 Pro
+- OS: Android 13
+- App version: v3.0.5
+- Affected feature: Search
+
+**Steps to Reproduce**
+  1. Open the app on OnePlus 10 Pro with Android 13.
+  2. Navigate to the search feature.
+  3. Type an exact phrase that exists in the notes.
+  4. Observe that no results are returned.
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"review,android,search",2026-03-23T20:44:13.356506+00:00,open,True,TKT-20260323-d2412805-0018
+TKT-20260323-7fca7786-0019,REV-0038,review,[Critical] Data Management: Cancelled subscription because app keeps losing my d,"**Summary**
+Cancelled subscription because app keeps losing my data. Completely unreliable.
+
+**Technical Details**
+- Platform: Unknown
+- Device: Unknown
+- OS: Unknown
+- App version: Unknown
+- Affected feature: Data Management
+
+**Steps to Reproduce**
+  1. Use the app normally
+  2. Observe data loss
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"review,data-management",2026-03-23T20:44:15.123897+00:00,open,True,TKT-20260323-d2412805-0019
+TKT-20260323-7fca7786-0020,REV-0017,review,Widget support for the home screen showing daily summary would be great.,"**Summary**
+Widget support for the home screen showing daily summary would be great.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:44:16.402399+00:00,open,True,TKT-20260323-d2412805-0020
+TKT-20260323-7fca7786-0021,REV-0011,review,[High] Attachment in Messages: Cannot attach files in messages. Tap attachment i,"**Summary**
+Cannot attach files in messages. Tap attachment icon — nothing happens. Galaxy S21, Android 13, v3.0.1.
+
+**Technical Details**
+- Platform: Android
+- Device: Samsung Galaxy S21
+- OS: Android 13
+- App version: 3.0.1
+- Affected feature: Attachment in Messages
+
+**Steps to Reproduce**
+  1. Open the app on a Samsung Galaxy S21 running Android 13.
+  2. Navigate to the messaging feature.
+  3. Tap the attachment icon.
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"review,android,attachment-in-messages",2026-03-23T20:44:17.609287+00:00,open,True,TKT-20260323-d2412805-0021
+TKT-20260323-7fca7786-0022,REV-0009,review,[High] Offline Mode: Offline mode broken — app shows 'No connection' even with f,"**Summary**
+Offline mode broken — app shows 'No connection' even with full WiFi. Pixel 6a, Android 12, v3.0.5.
+
+**Technical Details**
+- Platform: Android
+- Device: Pixel 6a
+- OS: Android 12
+- App version: v3.0.5
+- Affected feature: Offline Mode
+
+**Steps to Reproduce**
+  1. Ensure device is connected to WiFi with full signal.
+  2. Open the app.
+  3. Attempt to use the app in offline mode.
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"review,android,offline-mode",2026-03-23T20:44:18.929194+00:00,open,True,TKT-20260323-d2412805-0022
+TKT-20260323-7fca7786-0023,REV-0035,review,Customer support takes days to respond. Had an issue two weeks with no resolutio,"**Summary**
+Customer support takes days to respond. Had an issue two weeks with no resolution.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:44:20.578942+00:00,open,False,
+TKT-20260323-7fca7786-0024,REV-0005,review,[Critical] App Startup: Crash on startup after latest update. Cleared cache — no,"**Summary**
+Crash on startup after latest update. Cleared cache — no help. Galaxy Note 20, Android 12. Steps: just open the app.
+
+**Technical Details**
+- Platform: Android
+- Device: Samsung Galaxy Note 20
+- OS: Android 12
+- App version: Unknown
+- Affected feature: App Startup
+
+**Steps to Reproduce**
+  1. Open the app
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"review,android,app-startup",2026-03-23T20:44:21.495483+00:00,open,True,TKT-20260323-d2412805-0024
+TKT-20260323-7fca7786-0025,REV-0042,review,[Medium] Analytics: Analytics section never loads properly. Always shows 'Data u,"**Summary**
+Analytics section never loads properly. Always shows 'Data unavailable'.
+
+**Technical Details**
+- Platform: Unknown
+- Device: Unknown
+- OS: Unknown
+- App version: Unknown
+- Affected feature: Analytics
+
+**Steps to Reproduce**
+  1. Open the app.
+  2. Navigate to the Analytics section.
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Medium,Medium,Engineering,"review,analytics",2026-03-23T20:44:23.268847+00:00,open,True,TKT-20260323-d2412805-0025
+TKT-20260323-7fca7786-0026,REV-0006,review,[Medium] Push Notifications: Push notifications stopped working on iOS 17. Missi,"**Summary**
+Push notifications stopped working on iOS 17. Missing important alerts. iPhone 15 Pro, app version 3.1.0.
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 15 Pro
+- OS: iOS 17.0
+- App version: 3.1.0
+- Affected feature: Push Notifications
+
+**Steps to Reproduce**
+  1. Upgrade to iOS 17.0 on iPhone 15 Pro
+  2. Ensure app version is 3.1.0
+  3. Wait for a push notification
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Medium,Medium,Engineering,"review,ios,push-notifications",2026-03-23T20:44:24.629957+00:00,open,True,TKT-20260323-d2412805-0026
+TKT-20260323-7fca7786-0027,REV-0037,review,Too many ads in the free tier. They interrupt my workflow constantly.,"**Summary**
+Too many ads in the free tier. They interrupt my workflow constantly.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:44:26.025243+00:00,open,False,
+TKT-20260323-7fca7786-0028,REV-0004,review,[Critical] Home Screen: App freezes on the home screen after about 30 seconds. M,"**Summary**
+App freezes on the home screen after about 30 seconds. Must force-close every time. Pixel 7, Android 14.
+
+**Technical Details**
+- Platform: Android
+- Device: Pixel 7
+- OS: Android 14
+- App version: Unknown
+- Affected feature: Home Screen
+
+**Steps to Reproduce**
+  1. Open the app on a Pixel 7 device running Android 14.
+  2. Wait for approximately 30 seconds on the home screen.
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"review,android,home-screen",2026-03-23T20:44:29.307822+00:00,open,True,TKT-20260323-d2412805-0028
+TKT-20260323-7fca7786-0029,REV-0016,review,Please add fingerprint/Face ID login. Typing password every time is annoying.,"**Summary**
+Please add fingerprint/Face ID login. Typing password every time is annoying.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:44:30.788135+00:00,open,True,TKT-20260323-d2412805-0029
+TKT-20260323-7fca7786-0030,REV-0020,review,Bulk action feature to archive or delete multiple items would save time.,"**Summary**
+Bulk action feature to archive or delete multiple items would save time.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:44:32.117948+00:00,open,True,TKT-20260323-d2412805-0030
+TKT-20260323-7fca7786-0031,REV-0008,review,[High] Video Upload: Video upload fails with a generic error. Tried on WiFi and ,"**Summary**
+Video upload fails with a generic error. Tried on WiFi and LTE. iPhone 13, iOS 16.6, app v3.0.1.
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 13
+- OS: iOS 16.6
+- App version: 3.0.1
+- Affected feature: Video Upload
+
+**Steps to Reproduce**
+  1. Attempt to upload a video file using the app
+  2. Observe the error message that appears
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"review,ios,video-upload",2026-03-23T20:44:33.466152+00:00,open,True,TKT-20260323-d2412805-0031
+TKT-20260323-7fca7786-0032,REV-0002,review,"[High] Login: Cannot login after updating to v3.1.0. Enter credentials, sp","**Summary**
+Cannot login after updating to v3.1.0. Enter credentials, spinner spins forever. Tried uninstall/reinstall — still broken. Samsung Galaxy S22, Android 13.
+
+**Technical Details**
+- Platform: Android
+- Device: Samsung Galaxy S22
+- OS: Android 13
+- App version: 3.1.0
+- Affected feature: Login
+
+**Steps to Reproduce**
+  1. Update app to version 3.1.0
+  2. Open the app
+  3. Enter login credentials
+  4. Observe the spinner spinning indefinitely
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"review,android,login",2026-03-23T20:44:35.196477+00:00,open,True,TKT-20260323-d2412805-0032
+TKT-20260323-7fca7786-0033,EML-0001,email,"[Critical] Account Details: App Crash Report — iPhone 15 iOS 17.4
+
+Hi Support,
+
+","**Summary**
+App Crash Report — iPhone 15 iOS 17.4
+
+Hi Support,
+
+I'm experiencing repeated crashes on iPhone 15 running iOS 17.4, app version 3.1.0.
+
+Steps:
+1. Open app
+2. Go to Settings tab
+3. Tap 'Account Details'
+4. App crashes immediately
+
+Device: iPhone 15 | OS: iOS 17.4 | App: 3.1.0
+
+Please fix ASAP.
+John
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 15
+- OS: iOS 17.4
+- App version: 3.1.0
+- Affected feature: Account Details
+
+**Steps to Reproduce**
+  1. Open app
+  2. Go to Settings tab
+  3. Tap 'Account Details'
+  4. App crashes immediately
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"email,ios,account-details",2026-03-23T20:44:35.512749+00:00,open,True,TKT-20260323-d2412805-0033
+TKT-20260323-7fca7786-0034,EML-0002,email,"[High] Login: Login Issue Since v3.0.1 Update
+
+Hello,
+
+Since v3.0.1 I cann","**Summary**
+Login Issue Since v3.0.1 Update
+
+Hello,
+
+Since v3.0.1 I cannot log in. Enter credentials, spinner appears for 5 seconds then vanishes — not logged in.
+
+Device: Samsung Galaxy S22 | OS: Android 13 | App: 3.0.1
+
+Steps:
+1. Open app
+2. Enter valid credentials
+3. Tap Sign In
+4. Spinner vanishes — not log
+
+**Technical Details**
+- Platform: Android
+- Device: Samsung Galaxy S22
+- OS: Android 13
+- App version: 3.0.1
+- Affected feature: Login
+
+**Steps to Reproduce**
+  1. Open app
+  2. Enter valid credentials
+  3. Tap Sign In
+  4. Spinner vanishes — not logged in
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"email,android,login",2026-03-23T20:44:36.872835+00:00,open,True,TKT-20260323-d2412805-0034
+TKT-20260323-7fca7786-0035,EML-0003,email,"[Critical] Data Management: Data Loss Problem — Urgent
+
+URGENT — Lost 3 weeks of","**Summary**
+Data Loss Problem — Urgent
+
+URGENT — Lost 3 weeks of data after the 3.0.5 update. All notes/task history before March 2024 are gone. History tab shows empty state.
+
+Device: Google Pixel 7 | OS: Android 14 | App: 3.0.5
+
+Steps:
+1. Update to 3.0.5
+2. Open app
+3. Navigate to History
+4. All previous entr
+
+**Technical Details**
+- Platform: Android
+- Device: Google Pixel 7
+- OS: Android 14
+- App version: 3.0.5
+- Affected feature: Data Management
+
+**Steps to Reproduce**
+  1. Update to 3.0.5
+  2. Open app
+  3. Navigate to History
+  4. All previous entries gone
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"email,android,data-management",2026-03-23T20:44:38.551283+00:00,open,True,TKT-20260323-d2412805-0035
+TKT-20260323-7fca7786-0036,EML-0004,email,"[Medium] Push Notifications: Notification Bug — Not Receiving Alerts
+
+Hi,
+
+Push ","**Summary**
+Notification Bug — Not Receiving Alerts
+
+Hi,
+
+Push notifications stopped working after iOS 17.1 upgrade.
+
+Device: iPhone 14 Pro | OS: iOS 17.1 | App: 3.1.0
+
+Steps:
+1. Enable notifications in app and iOS Settings
+2. Set reminder 5 minutes from now
+3. Wait — no notification arrives
+
+Tried toggling per
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 14 Pro
+- OS: iOS 17.1
+- App version: 3.1.0
+- Affected feature: Push Notifications
+
+**Steps to Reproduce**
+  1. Enable notifications in app and iOS Settings
+  2. Set reminder 5 minutes from now
+  3. Wait — no notification arrives
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Medium,Medium,Engineering,"email,ios,push-notifications",2026-03-23T20:44:39.998309+00:00,open,True,TKT-20260323-d2412805-0036
+TKT-20260323-7fca7786-0037,EML-0005,email,"[High] Data Sync: Sync Failure Between iPad and iPhone
+
+Hello Support,
+
+Data n","**Summary**
+Sync Failure Between iPad and iPhone
+
+Hello Support,
+
+Data not syncing between iPhone and iPad. Create item on iPhone — never appears on iPad after 30 minutes.
+
+iPhone 13, iOS 16.6, App v3.0.5
+iPad Pro, iPadOS 16.6, App v3.0.5
+
+Steps:
+1. Create task on iPhone
+2. Open iPad (same account)
+3. Task miss
+
+**Technical Details**
+- Platform: iOS and iPadOS
+- Device: iPhone 13 and iPad Pro
+- OS: iOS 16.6 and iPadOS 16.6
+- App version: 3.0.5
+- Affected feature: Data Sync
+
+**Steps to Reproduce**
+  1. Create task on iPhone
+  2. Open iPad (same account)
+  3. Task missing
+  4. Pull to refresh — still missing
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"email,ios and ipados,data-sync",2026-03-23T20:44:41.413283+00:00,open,True,TKT-20260323-d2412805-0037
+TKT-20260323-7fca7786-0038,EML-0006,email,"[Critical] Dashboard: App Freezes on Android 14 — Galaxy S23
+
+Hi,
+
+App freezes c","**Summary**
+App Freezes on Android 14 — Galaxy S23
+
+Hi,
+
+App freezes completely on Galaxy S23 running Android 14.
+
+Device: Samsung Galaxy S23 | OS: Android 14 | App: 3.1.0
+
+Steps:
+1. Open app
+2. Go to Dashboard
+3. Scroll down rapidly
+4. App becomes unresponsive — must force-kill
+
+Clearing cache does not help.
+
+**Technical Details**
+- Platform: Android
+- Device: Samsung Galaxy S23
+- OS: Android 14
+- App version: 3.1.0
+- Affected feature: Dashboard
+
+**Steps to Reproduce**
+  1. Open app
+  2. Go to Dashboard
+  3. Scroll down rapidly
+  4. App becomes unresponsive — must force-kill
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"email,android,dashboard",2026-03-23T20:44:42.800958+00:00,open,True,TKT-20260323-d2412805-0038
+TKT-20260323-7fca7786-0039,EML-0007,email,"[High] Search: Search Not Returning Results
+
+Hi,
+
+Search completely broken.","**Summary**
+Search Not Returning Results
+
+Hi,
+
+Search completely broken. Type exact phrases that are in my notes — get zero results.
+
+Device: OnePlus 10 Pro | OS: Android 13 | App: 3.0.5
+
+Steps:
+1. Navigate to Search
+2. Type 'meeting notes'
+3. Results: 'No items found' (I have 20 notes with that phrase)
+
+Please
+
+**Technical Details**
+- Platform: Android
+- Device: OnePlus 10 Pro
+- OS: Android 13
+- App version: 3.0.5
+- Affected feature: Search
+
+**Steps to Reproduce**
+  1. Navigate to Search
+  2. Type 'meeting notes'
+  3. Observe 'No items found' despite having 20 notes with that phrase
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"email,android,search",2026-03-23T20:44:44.359850+00:00,open,True,TKT-20260323-d2412805-0039
+TKT-20260323-7fca7786-0040,EML-0008,email,"[Critical] File Upload: Crash When Uploading Large Files
+
+Hello,
+
+App crashes up","**Summary**
+Crash When Uploading Large Files
+
+Hello,
+
+App crashes uploading files >10MB.
+
+Device: iPhone 13 Pro | OS: iOS 16.6 | App: 3.0.1
+
+Steps:
+1. Tap '+' to add attachment
+2. Select 15MB PDF from Files
+3. Upload progress bar appears
+4. At ~60% progress, app crashes
+
+Consistent across multiple files and net
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 13 Pro
+- OS: iOS 16.6
+- App version: 3.0.1
+- Affected feature: File Upload
+
+**Steps to Reproduce**
+  1. Tap '+' to add attachment
+  2. Select 15MB PDF from Files
+  3. Upload progress bar appears
+  4. At ~60% progress, app crashes
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"email,ios,file-upload",2026-03-23T20:44:45.866809+00:00,open,True,TKT-20260323-d2412805-0040
+TKT-20260323-7fca7786-0041,EML-0009,email,"[High] Two-Factor Authentication: Two-Factor Authentication Not Working
+
+Hi Supp","**Summary**
+Two-Factor Authentication Not Working
+
+Hi Support,
+
+2FA SMS codes not delivered. Cannot log in at all.
+
+Device: Samsung Galaxy A52 | OS: Android 12 | App: 3.0.5
+
+Steps:
+1. Open app
+2. Enter email + password
+3. 2FA screen appears — wait for SMS
+4. SMS never arrives (checked spam, tried resend 5×)
+
+Th
+
+**Technical Details**
+- Platform: Android
+- Device: Samsung Galaxy A52
+- OS: Android 12
+- App version: 3.0.5
+- Affected feature: Two-Factor Authentication
+
+**Steps to Reproduce**
+  1. Open app
+  2. Enter email + password
+  3. 2FA screen appears — wait for SMS
+  4. SMS never arrives (checked spam, tried resend 5×)
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"email,android,two-factor-authentication",2026-03-23T20:44:47.097279+00:00,open,True,TKT-20260323-d2412805-0041
+TKT-20260323-7fca7786-0042,EML-0010,email,"[Critical] Home Screen Widget: Widget Crashes Home Screen
+
+Hello,
+
+Home screen w","**Summary**
+Widget Crashes Home Screen
+
+Hello,
+
+Home screen widget crashes launcher when I try to add it.
+
+Device: Pixel 7a | OS: Android 14 | App: 3.1.0
+
+Steps:
+1. Long press home screen
+2. Select Widgets
+3. Find app widget
+4. Drag to home screen — launcher crashes
+
+Every time.
+
+**Technical Details**
+- Platform: Android
+- Device: Pixel 7a
+- OS: Android 14
+- App version: 3.1.0
+- Affected feature: Home Screen Widget
+
+**Steps to Reproduce**
+  1. Long press home screen
+  2. Select Widgets
+  3. Find app widget
+  4. Drag to home screen — launcher crashes
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"email,android,home-screen-widget",2026-03-23T20:44:48.407953+00:00,open,True,TKT-20260323-d2412805-0042
+TKT-20260323-7fca7786-0043,EML-0011,email,"Subscription Price Too High  Hello,  The recent price increase to $15/month is t","**Summary**
+Subscription Price Too High
+
+Hello,
+
+The recent price increase to $15/month is too much. Competitors charge $5-8/month for more features. Considering cancelling.
+
+Thanks
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:44:49.997451+00:00,open,False,
+TKT-20260323-7fca7786-0044,EML-0012,email,"Very Slow App Performance  Hi,  The app has become extremely slow. Dashboard tak","**Summary**
+Very Slow App Performance
+
+Hi,
+
+The app has become extremely slow. Dashboard takes 8-10 seconds to load, switching tabs takes 3-4 seconds. Considering switching to a competitor.
+
+Frustrated
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:44:51.121416+00:00,open,False,
+TKT-20260323-7fca7786-0045,EML-0013,email,"Poor Customer Support Experience  To Whom It May Concern,  Submitted a ticket 2","**Summary**
+Poor Customer Support Experience
+
+To Whom It May Concern,
+
+Submitted a ticket 2 weeks ago about a billing issue and received only one automated response. I am a premium subscriber and this level of support is unacceptable.
+
+Disappointed
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:44:52.178495+00:00,open,False,
+TKT-20260323-7fca7786-0046,EML-0014,email,"Too Many Ads in Free Tier  Hello,  Ads appear every 2-3 actions in the free tier","**Summary**
+Too Many Ads in Free Tier
+
+Hello,
+
+Ads appear every 2-3 actions in the free tier. This makes the app nearly unusable without paying. Excessive.
+
+Regards
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:44:53.285232+00:00,open,False,
+TKT-20260323-7fca7786-0047,EML-0015,email,"App Uses Too Much Storage  Hi,  The app uses 600MB on my phone. Far too much. Pl","**Summary**
+App Uses Too Much Storage
+
+Hi,
+
+The app uses 600MB on my phone. Far too much. Please add a 'Clear Cache' option in settings or reduce the storage footprint.
+
+Thanks
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:44:54.486986+00:00,open,False,
+TKT-20260323-7fca7786-0048,EML-0016,email,"No Refund for Cancelled Subscription  Hello,  I cancelled my annual subscription","**Summary**
+No Refund for Cancelled Subscription
+
+Hello,
+
+I cancelled my annual subscription mid-year and was told I would not receive a refund for unused months. This is against consumer protection rules in my country. I expect a pro-rata refund.
+
+Regards
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:44:55.610746+00:00,open,False,
+TKT-20260323-7fca7786-0049,EML-0017,email,"Quick Question About Storage Limits  Hi,  I'm a free user — what is the storage","**Summary**
+Quick Question About Storage Limits
+
+Hi,
+
+I'm a free user — what is the storage limit before I need to upgrade? Can't find this information in the app. Also, love the app — very well designed!
+Thanks
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:44:56.571737+00:00,open,False,
+TKT-20260323-7fca7786-0050,EML-0018,email,"Feature Request: Dark Mode Support  Hello,  I love the app but really need dark","**Summary**
+Feature Request: Dark Mode Support
+
+Hello,
+
+I love the app but really need dark mode. Use it late at night and the bright white is hard on my eyes. Many apps have this now.
+
+Laura
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:44:57.753162+00:00,open,True,TKT-20260323-d2412805-0050
+TKT-20260323-7fca7786-0051,EML-0019,email,"Request: Export to PDF Functionality  Hi Team,  Exporting task lists and notes a","**Summary**
+Request: Export to PDF Functionality
+
+Hi Team,
+
+Exporting task lists and notes as PDF directly from the app would be incredibly useful. I share progress reports with my manager and currently copy everything manually.
+
+A simple export button would save 30 mins/week.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:44:59.289064+00:00,open,True,TKT-20260323-d2412805-0051
+TKT-20260323-7fca7786-0052,EML-0020,email,"Suggestion: Biometric Login  Hello,  Face ID / fingerprint login support would i","**Summary**
+Suggestion: Biometric Login
+
+Hello,
+
+Face ID / fingerprint login support would improve daily usability. Typing my long password every time is inconvenient, especially on mobile.
+Thanks
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:45:00.710826+00:00,open,True,TKT-20260323-d2412805-0052
+TKT-20260323-7fca7786-0053,EML-0021,email,"Suggestion for Improvement: Calendar Integration  Hi,  Calendar integration (Goo","**Summary**
+Suggestion for Improvement: Calendar Integration
+
+Hi,
+
+Calendar integration (Google/Apple) would make this app a complete productivity solution. Currently switch between two apps to manage tasks and calendar. Even a read-only calendar view would be great.
+
+Best regards
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:45:02.342924+00:00,open,True,TKT-20260323-d2412805-0053
+TKT-20260323-7fca7786-0054,EML-0022,email,"Feature Request: Team Collaboration  Dear Team,  Our company is evaluating the a","**Summary**
+Feature Request: Team Collaboration
+
+Dear Team,
+
+Our company is evaluating the app for enterprise use. One key missing feature is real-time collaboration — multiple users editing the same project simultaneously. This is a deal-breaker for us.
+
+Enterprise Team
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:45:03.942326+00:00,open,True,TKT-20260323-d2412805-0054
+TKT-20260323-7fca7786-0055,EML-0023,email,"Feedback: Offline Mode Would Be Great  Hello,  I travel frequently and often hav","**Summary**
+Feedback: Offline Mode Would Be Great
+
+Hello,
+
+I travel frequently and often have no internet. Full offline mode with sync when back online would make this perfect for frequent travelers.
+
+Thanks
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:45:04.137273+00:00,open,True,TKT-20260323-d2412805-0055
+TKT-20260323-7fca7786-0056,EML-0024,email,"Request: Apple Watch App  Hello,  An Apple Watch companion app would be a great","**Summary**
+Request: Apple Watch App
+
+Hello,
+
+An Apple Watch companion app would be a great addition. Checking and ticking off tasks from my wrist would save a lot of time.
+
+Thank you
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:45:05.662429+00:00,open,True,TKT-20260323-d2412805-0056
+TKT-20260323-7fca7786-0057,EML-0025,email,"Suggestion: Custom Themes  Hi Team,  Custom color themes beyond light/dark would","**Summary**
+Suggestion: Custom Themes
+
+Hi Team,
+
+Custom color themes beyond light/dark would let users personalise the experience. Custom accent colors would be a nice touch.
+
+Keep up the work!
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:45:07.200451+00:00,open,True,TKT-20260323-d2412805-0057
+TKT-20260323-53550a5b-0001,REV-0003,review,[Critical] Data Sync: Data sync completely broken. Notes not syncing between pho,"**Summary**
+Data sync completely broken. Notes not syncing between phone and iPad since 3.0.5. Losing important work data. This is critical.
+
+**Technical Details**
+- Platform: iOS
+- Device: Unknown
+- OS: Unknown
+- App version: 3.0.5
+- Affected feature: Data Sync
+
+**Steps to Reproduce**
+  1. Attempt to sync notes between iPhone and iPad
+  2. Create a note on iPhone
+  3. Check if the note appears on iPad
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"review,ios,data-sync",2026-03-23T20:45:17.775781+00:00,open,True,TKT-20260323-7fca7786-0001
+TKT-20260323-53550a5b-0002,REV-0040,review,Interface is cluttered — too many menus buried inside menus.,"**Summary**
+Interface is cluttered — too many menus buried inside menus.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:45:19.170886+00:00,open,False,
+TKT-20260323-53550a5b-0003,REV-0034,review,App is very slow to load. Takes 10+ seconds every time. Unacceptable.,"**Summary**
+App is very slow to load. Takes 10+ seconds every time. Unacceptable.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:45:20.213835+00:00,open,False,
+TKT-20260323-53550a5b-0004,REV-0022,review,Collaboration features so teams can share and edit together would be perfect.,"**Summary**
+Collaboration features so teams can share and edit together would be perfect.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:45:21.275180+00:00,open,True,TKT-20260323-d2412805-0004
+TKT-20260323-53550a5b-0005,REV-0039,review,App uses over 500MB storage on my phone. Ridiculous for what it does.,"**Summary**
+App uses over 500MB storage on my phone. Ridiculous for what it does.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:45:25.233146+00:00,open,False,
+TKT-20260323-53550a5b-0006,REV-0014,review,Would love a calendar view for tasks. The list gets overwhelming.,"**Summary**
+Would love a calendar view for tasks. The list gets overwhelming.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:45:27.538116+00:00,open,True,TKT-20260323-d2412805-0006
+TKT-20260323-53550a5b-0007,REV-0036,review,Onboarding is confusing and there are no tutorial videos.,"**Summary**
+Onboarding is confusing and there are no tutorial videos.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:45:28.875680+00:00,open,False,
+TKT-20260323-53550a5b-0008,REV-0001,review,[Critical] Profile: App crashes every time I open my profile since the 3.0.1 upd,"**Summary**
+App crashes every time I open my profile since the 3.0.1 update. Steps: 1) Open app 2) Tap Profile icon 3) App freezes and closes. iPhone 14, iOS 16.5. Very frustrating!
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 14
+- OS: iOS 16.5
+- App version: 3.0.1
+- Affected feature: Profile
+
+**Steps to Reproduce**
+  1. Open app
+  2. Tap Profile icon
+  3. App freezes and closes
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"review,ios,profile",2026-03-23T20:45:29.881784+00:00,open,True,TKT-20260323-d2412805-0008
+TKT-20260323-53550a5b-0009,REV-0041,review,No offline support whatsoever. Useless without internet.,"**Summary**
+No offline support whatsoever. Useless without internet.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:45:31.198150+00:00,open,True,TKT-20260323-7fca7786-0009
+TKT-20260323-53550a5b-0010,REV-0019,review,"Siri shortcut integration so I can open items hands-free, please!","**Summary**
+Siri shortcut integration so I can open items hands-free, please!
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:45:32.520058+00:00,open,True,TKT-20260323-d2412805-0010
+TKT-20260323-53550a5b-0011,REV-0033,review,Premium subscription price is way too high. Competitors offer more for less.,"**Summary**
+Premium subscription price is way too high. Competitors offer more for less.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:45:32.928811+00:00,open,False,
+TKT-20260323-53550a5b-0012,REV-0015,review,Export data to PDF directly from the app would be fantastic.,"**Summary**
+Export data to PDF directly from the app would be fantastic.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:45:33.898205+00:00,open,True,TKT-20260323-7fca7786-0012
+TKT-20260323-53550a5b-0013,REV-0012,review,[Critical] App Launch: App shows blank white screen after splash. Must reopen 3-,"**Summary**
+App shows blank white screen after splash. Must reopen 3-4 times before it loads. iPhone 12 Mini, iOS 16.4, v3.1.0.
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 12 Mini
+- OS: iOS 16.4
+- App version: v3.1.0
+- Affected feature: App Launch
+
+**Steps to Reproduce**
+  1. Open the app
+  2. Observe the blank white screen after splash
+  3. Reopen the app 3-4 times until it loads
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"review,ios,app-launch",2026-03-23T20:45:35.293616+00:00,open,True,TKT-20260323-d2412805-0013
+TKT-20260323-53550a5b-0014,REV-0021,review,Reminder/snooze feature for tasks is desperately needed.,"**Summary**
+Reminder/snooze feature for tasks is desperately needed.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:45:36.546076+00:00,open,True,TKT-20260323-d2412805-0014
+TKT-20260323-53550a5b-0015,REV-0013,review,Please add dark mode! My eyes hurt at night. Would be a huge improvement.,"**Summary**
+Please add dark mode! My eyes hurt at night. Would be a huge improvement.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:45:38.112966+00:00,open,True,TKT-20260323-d2412805-0015
+TKT-20260323-53550a5b-0016,REV-0010,review,[Medium] Battery Usage: Battery drain extreme after 3.1.0 — phone loses 30%/hr w,"**Summary**
+Battery drain extreme after 3.1.0 — phone loses 30%/hr with app in background. iPhone 15, iOS 17.1.
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 15
+- OS: iOS 17.4
+- App version: 3.1.0
+- Affected feature: Battery Usage
+
+**Steps to Reproduce**
+  1. Open the app on iPhone 15 running iOS 17.4
+  2. Leave the app running in the background
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Medium,Medium,Engineering,"review,ios,battery-usage",2026-03-23T20:45:39.837043+00:00,open,True,TKT-20260323-d2412805-0016
+TKT-20260323-53550a5b-0017,REV-0018,review,Multiple account support for switching between work and personal would be amazin,"**Summary**
+Multiple account support for switching between work and personal would be amazing.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:45:41.232561+00:00,open,True,TKT-20260323-d2412805-0017
+TKT-20260323-53550a5b-0018,REV-0007,review,[High] Search: Search returns no results even for exact matches. Broken sin,"**Summary**
+Search returns no results even for exact matches. Broken since v3.0.5. OnePlus 10 Pro, Android 13.
+
+**Technical Details**
+- Platform: Android
+- Device: OnePlus 10 Pro
+- OS: Android 13
+- App version: 3.0.5
+- Affected feature: Search
+
+**Steps to Reproduce**
+  1. Open the app on a OnePlus 10 Pro running Android 13.
+  2. Ensure the app version is 3.0.5.
+  3. Attempt to use the search feature by typing exact phrases that are known to exist in notes.
+  4. Observe that no results are returned.
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"review,android,search",2026-03-23T20:45:42.522843+00:00,open,True,TKT-20260323-d2412805-0018
+TKT-20260323-53550a5b-0019,REV-0038,review,[Critical] Data Management: Cancelled subscription because app keeps losing my d,"**Summary**
+Cancelled subscription because app keeps losing my data. Completely unreliable.
+
+**Technical Details**
+- Platform: Unknown
+- Device: Unknown
+- OS: Unknown
+- App version: Unknown
+- Affected feature: Data Management
+
+**Steps to Reproduce**
+  1. Use the app normally
+  2. Observe data loss
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"review,data-management",2026-03-23T20:45:44.037456+00:00,open,True,TKT-20260323-7fca7786-0019
+TKT-20260323-53550a5b-0020,REV-0017,review,Widget support for the home screen showing daily summary would be great.,"**Summary**
+Widget support for the home screen showing daily summary would be great.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:45:45.542351+00:00,open,True,TKT-20260323-d2412805-0020
+TKT-20260323-53550a5b-0021,REV-0011,review,[High] Attachment in Messages: Cannot attach files in messages. Tap attachment i,"**Summary**
+Cannot attach files in messages. Tap attachment icon — nothing happens. Galaxy S21, Android 13, v3.0.1.
+
+**Technical Details**
+- Platform: Android
+- Device: Samsung Galaxy S21
+- OS: Android 13
+- App version: 3.0.1
+- Affected feature: Attachment in Messages
+
+**Steps to Reproduce**
+  1. Open the app on a Samsung Galaxy S21 running Android 13.
+  2. Navigate to the messaging feature.
+  3. Tap the attachment icon.
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"review,android,attachment-in-messages",2026-03-23T20:45:46.743807+00:00,open,True,TKT-20260323-d2412805-0021
+TKT-20260323-53550a5b-0022,REV-0009,review,[High] Offline Mode: Offline mode broken — app shows 'No connection' even with f,"**Summary**
+Offline mode broken — app shows 'No connection' even with full WiFi. Pixel 6a, Android 12, v3.0.5.
+
+**Technical Details**
+- Platform: Android
+- Device: Pixel 6a
+- OS: Android 12
+- App version: v3.0.5
+- Affected feature: Offline Mode
+
+**Steps to Reproduce**
+  1. Ensure device is connected to WiFi with full signal.
+  2. Open the app.
+  3. Attempt to use the app in offline mode.
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"review,android,offline-mode",2026-03-23T20:45:48.181086+00:00,open,True,TKT-20260323-d2412805-0022
+TKT-20260323-53550a5b-0023,REV-0035,review,Customer support takes days to respond. Had an issue two weeks with no resolutio,"**Summary**
+Customer support takes days to respond. Had an issue two weeks with no resolution.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:45:49.636842+00:00,open,False,
+TKT-20260323-53550a5b-0024,REV-0005,review,[Critical] App Startup: Crash on startup after latest update. Cleared cache — no,"**Summary**
+Crash on startup after latest update. Cleared cache — no help. Galaxy Note 20, Android 12. Steps: just open the app.
+
+**Technical Details**
+- Platform: Android
+- Device: Samsung Galaxy Note 20
+- OS: Android 12
+- App version: Unknown
+- Affected feature: App Startup
+
+**Steps to Reproduce**
+  1. Open the app
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"review,android,app-startup",2026-03-23T20:45:50.634465+00:00,open,True,TKT-20260323-d2412805-0024
+TKT-20260323-53550a5b-0025,REV-0042,review,[Medium] Analytics: Analytics section never loads properly. Always shows 'Data u,"**Summary**
+Analytics section never loads properly. Always shows 'Data unavailable'.
+
+**Technical Details**
+- Platform: Unknown
+- Device: Unknown
+- OS: Unknown
+- App version: Unknown
+- Affected feature: Analytics
+
+**Steps to Reproduce**
+  1. Open the app.
+  2. Navigate to the Analytics section.
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Medium,Medium,Engineering,"review,analytics",2026-03-23T20:45:52.220564+00:00,open,True,TKT-20260323-d2412805-0025
+TKT-20260323-53550a5b-0026,REV-0006,review,[Medium] Push Notifications: Push notifications stopped working on iOS 17. Missi,"**Summary**
+Push notifications stopped working on iOS 17. Missing important alerts. iPhone 15 Pro, app version 3.1.0.
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 15 Pro
+- OS: iOS 17.0
+- App version: 3.1.0
+- Affected feature: Push Notifications
+
+**Steps to Reproduce**
+  1. Upgrade to iOS 17.0 on iPhone 15 Pro
+  2. Ensure app version is 3.1.0
+  3. Wait for a push notification
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Medium,Medium,Engineering,"review,ios,push-notifications",2026-03-23T20:45:53.676924+00:00,open,True,TKT-20260323-7fca7786-0026
+TKT-20260323-53550a5b-0027,REV-0037,review,Too many ads in the free tier. They interrupt my workflow constantly.,"**Summary**
+Too many ads in the free tier. They interrupt my workflow constantly.
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,review,2026-03-23T20:45:55.030212+00:00,open,False,
+TKT-20260323-53550a5b-0028,REV-0004,review,[Critical] Home Screen: App freezes on the home screen after about 30 seconds. M,"**Summary**
+App freezes on the home screen after about 30 seconds. Must force-close every time. Pixel 7, Android 14.
+
+**Technical Details**
+- Platform: Android
+- Device: Pixel 7
+- OS: Android 14
+- App version: Unknown
+- Affected feature: Home Screen
+
+**Steps to Reproduce**
+  1. Open the app on a Pixel 7 device running Android 14.
+  2. Wait for approximately 30 seconds on the home screen.
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"review,android,home-screen",2026-03-23T20:45:55.943339+00:00,open,True,TKT-20260323-d2412805-0028
+TKT-20260323-53550a5b-0029,REV-0016,review,Please add fingerprint/Face ID login. Typing password every time is annoying.,"**Summary**
+Please add fingerprint/Face ID login. Typing password every time is annoying.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:45:57.343573+00:00,open,True,TKT-20260323-d2412805-0029
+TKT-20260323-53550a5b-0030,REV-0020,review,Bulk action feature to archive or delete multiple items would save time.,"**Summary**
+Bulk action feature to archive or delete multiple items would save time.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,review,2026-03-23T20:45:58.732918+00:00,open,True,TKT-20260323-d2412805-0030
+TKT-20260323-53550a5b-0031,REV-0008,review,[High] Video Upload: Video upload fails with a generic error. Tried on WiFi and ,"**Summary**
+Video upload fails with a generic error. Tried on WiFi and LTE. iPhone 13, iOS 16.6, app v3.0.1.
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 13
+- OS: iOS 16.6
+- App version: 3.0.1
+- Affected feature: Video Upload
+
+**Steps to Reproduce**
+  1. Attempt to upload a video file using the app.
+  2. Observe the error message that appears.
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"review,ios,video-upload",2026-03-23T20:46:00.132433+00:00,open,True,TKT-20260323-d2412805-0031
+TKT-20260323-53550a5b-0032,REV-0002,review,"[High] Login: Cannot login after updating to v3.1.0. Enter credentials, sp","**Summary**
+Cannot login after updating to v3.1.0. Enter credentials, spinner spins forever. Tried uninstall/reinstall — still broken. Samsung Galaxy S22, Android 13.
+
+**Technical Details**
+- Platform: Android
+- Device: Samsung Galaxy S22
+- OS: Android 13
+- App version: 3.1.0
+- Affected feature: Login
+
+**Steps to Reproduce**
+  1. Update app to version 3.1.0
+  2. Open the app
+  3. Enter login credentials
+  4. Observe the spinner spinning indefinitely
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"review,android,login",2026-03-23T20:46:01.713405+00:00,open,True,TKT-20260323-d2412805-0032
+TKT-20260323-53550a5b-0033,EML-0001,email,"[Critical] Account Details: App Crash Report — iPhone 15 iOS 17.4
+
+Hi Support,
+
+","**Summary**
+App Crash Report — iPhone 15 iOS 17.4
+
+Hi Support,
+
+I'm experiencing repeated crashes on iPhone 15 running iOS 17.4, app version 3.1.0.
+
+Steps:
+1. Open app
+2. Go to Settings tab
+3. Tap 'Account Details'
+4. App crashes immediately
+
+Device: iPhone 15 | OS: iOS 17.4 | App: 3.1.0
+
+Please fix ASAP.
+John
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 15
+- OS: iOS 17.4
+- App version: 3.1.0
+- Affected feature: Account Details
+
+**Steps to Reproduce**
+  1. Open app
+  2. Go to Settings tab
+  3. Tap 'Account Details'
+  4. App crashes immediately
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"email,ios,account-details",2026-03-23T20:46:01.873889+00:00,open,True,TKT-20260323-7fca7786-0033
+TKT-20260323-53550a5b-0034,EML-0002,email,"[High] Login: Login Issue Since v3.0.1 Update
+
+Hello,
+
+Since v3.0.1 I cann","**Summary**
+Login Issue Since v3.0.1 Update
+
+Hello,
+
+Since v3.0.1 I cannot log in. Enter credentials, spinner appears for 5 seconds then vanishes — not logged in.
+
+Device: Samsung Galaxy S22 | OS: Android 13 | App: 3.0.1
+
+Steps:
+1. Open app
+2. Enter valid credentials
+3. Tap Sign In
+4. Spinner vanishes — not log
+
+**Technical Details**
+- Platform: Android
+- Device: Samsung Galaxy S22
+- OS: Android 13
+- App version: 3.0.1
+- Affected feature: Login
+
+**Steps to Reproduce**
+  1. Open app
+  2. Enter valid credentials
+  3. Tap Sign In
+  4. Spinner vanishes — not logged in
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"email,android,login",2026-03-23T20:46:03.686735+00:00,open,True,TKT-20260323-d2412805-0034
+TKT-20260323-53550a5b-0035,EML-0003,email,"[Critical] Data Management: Data Loss Problem — Urgent
+
+URGENT — Lost 3 weeks of","**Summary**
+Data Loss Problem — Urgent
+
+URGENT — Lost 3 weeks of data after the 3.0.5 update. All notes/task history before March 2024 are gone. History tab shows empty state.
+
+Device: Google Pixel 7 | OS: Android 14 | App: 3.0.5
+
+Steps:
+1. Update to 3.0.5
+2. Open app
+3. Navigate to History
+4. All previous entr
+
+**Technical Details**
+- Platform: Android
+- Device: Google Pixel 7
+- OS: Android 14
+- App version: 3.0.5
+- Affected feature: Data Management
+
+**Steps to Reproduce**
+  1. Update to 3.0.5
+  2. Open app
+  3. Navigate to History
+  4. All previous entries gone
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"email,android,data-management",2026-03-23T20:46:05.350134+00:00,open,True,TKT-20260323-d2412805-0035
+TKT-20260323-53550a5b-0036,EML-0004,email,"[Medium] Push Notifications: Notification Bug — Not Receiving Alerts
+
+Hi,
+
+Push ","**Summary**
+Notification Bug — Not Receiving Alerts
+
+Hi,
+
+Push notifications stopped working after iOS 17.1 upgrade.
+
+Device: iPhone 14 Pro | OS: iOS 17.1 | App: 3.1.0
+
+Steps:
+1. Enable notifications in app and iOS Settings
+2. Set reminder 5 minutes from now
+3. Wait — no notification arrives
+
+Tried toggling per
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 14 Pro
+- OS: iOS 17.1
+- App version: 3.1.0
+- Affected feature: Push Notifications
+
+**Steps to Reproduce**
+  1. Enable notifications in app and iOS Settings
+  2. Set reminder 5 minutes from now
+  3. Wait — no notification arrives
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Medium,Medium,Engineering,"email,ios,push-notifications",2026-03-23T20:46:06.866762+00:00,open,True,TKT-20260323-7fca7786-0036
+TKT-20260323-53550a5b-0037,EML-0005,email,"[High] Data Sync: Sync Failure Between iPad and iPhone
+
+Hello Support,
+
+Data n","**Summary**
+Sync Failure Between iPad and iPhone
+
+Hello Support,
+
+Data not syncing between iPhone and iPad. Create item on iPhone — never appears on iPad after 30 minutes.
+
+iPhone 13, iOS 16.6, App v3.0.5
+iPad Pro, iPadOS 16.6, App v3.0.5
+
+Steps:
+1. Create task on iPhone
+2. Open iPad (same account)
+3. Task miss
+
+**Technical Details**
+- Platform: iOS and iPadOS
+- Device: iPhone 13 and iPad Pro
+- OS: iOS 16.6 and iPadOS 16.6
+- App version: 3.0.5
+- Affected feature: Data Sync
+
+**Steps to Reproduce**
+  1. Create task on iPhone
+  2. Open iPad (same account)
+  3. Task missing
+  4. Pull to refresh — still missing
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"email,ios and ipados,data-sync",2026-03-23T20:46:08.435055+00:00,open,True,TKT-20260323-7fca7786-0037
+TKT-20260323-53550a5b-0038,EML-0006,email,"[Critical] Dashboard: App Freezes on Android 14 — Galaxy S23
+
+Hi,
+
+App freezes c","**Summary**
+App Freezes on Android 14 — Galaxy S23
+
+Hi,
+
+App freezes completely on Galaxy S23 running Android 14.
+
+Device: Samsung Galaxy S23 | OS: Android 14 | App: 3.1.0
+
+Steps:
+1. Open app
+2. Go to Dashboard
+3. Scroll down rapidly
+4. App becomes unresponsive — must force-kill
+
+Clearing cache does not help.
+
+**Technical Details**
+- Platform: Android
+- Device: Samsung Galaxy S23
+- OS: Android 14
+- App version: 3.1.0
+- Affected feature: Dashboard
+
+**Steps to Reproduce**
+  1. Open app
+  2. Go to Dashboard
+  3. Scroll down rapidly
+  4. App becomes unresponsive — must force-kill
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"email,android,dashboard",2026-03-23T20:46:13.068361+00:00,open,True,TKT-20260323-7fca7786-0038
+TKT-20260323-53550a5b-0039,EML-0007,email,"[High] Search: Search Not Returning Results
+
+Hi,
+
+Search completely broken.","**Summary**
+Search Not Returning Results
+
+Hi,
+
+Search completely broken. Type exact phrases that are in my notes — get zero results.
+
+Device: OnePlus 10 Pro | OS: Android 13 | App: 3.0.5
+
+Steps:
+1. Navigate to Search
+2. Type 'meeting notes'
+3. Results: 'No items found' (I have 20 notes with that phrase)
+
+Please
+
+**Technical Details**
+- Platform: Android
+- Device: OnePlus 10 Pro
+- OS: Android 13
+- App version: 3.0.5
+- Affected feature: Search
+
+**Steps to Reproduce**
+  1. Navigate to Search
+  2. Type 'meeting notes'
+  3. Observe 'No items found' despite having 20 notes with that phrase
+
+**Expected Behavior**
+The feature should work without errors.",Bug,High,High,Engineering,"email,android,search",2026-03-23T20:46:14.513198+00:00,open,True,TKT-20260323-d2412805-0039
+TKT-20260323-53550a5b-0040,EML-0008,email,"[Critical] File Upload: Crash When Uploading Large Files
+
+Hello,
+
+App crashes up","**Summary**
+Crash When Uploading Large Files
+
+Hello,
+
+App crashes uploading files >10MB.
+
+Device: iPhone 13 Pro | OS: iOS 16.6 | App: 3.0.1
+
+Steps:
+1. Tap '+' to add attachment
+2. Select 15MB PDF from Files
+3. Upload progress bar appears
+4. At ~60% progress, app crashes
+
+Consistent across multiple files and net
+
+**Technical Details**
+- Platform: iOS
+- Device: iPhone 13 Pro
+- OS: iOS 16.6
+- App version: 3.0.1
+- Affected feature: File Upload
+
+**Steps to Reproduce**
+  1. Tap '+' to add attachment
+  2. Select 15MB PDF from Files
+  3. Upload progress bar appears
+  4. At ~60% progress, app crashes
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"email,ios,file-upload",2026-03-23T20:46:16.104013+00:00,open,True,TKT-20260323-d2412805-0040
+TKT-20260323-53550a5b-0041,EML-0009,email,"[Critical] Two-Factor Authentication: Two-Factor Authentication Not Working
+
+Hi ","**Summary**
+Two-Factor Authentication Not Working
+
+Hi Support,
+
+2FA SMS codes not delivered. Cannot log in at all.
+
+Device: Samsung Galaxy A52 | OS: Android 12 | App: 3.0.5
+
+Steps:
+1. Open app
+2. Enter email + password
+3. 2FA screen appears — wait for SMS
+4. SMS never arrives (checked spam, tried resend 5×)
+
+Th
+
+**Technical Details**
+- Platform: Android
+- Device: Samsung Galaxy A52
+- OS: Android 12
+- App version: 3.0.5
+- Affected feature: Two-Factor Authentication
+
+**Steps to Reproduce**
+  1. Open app
+  2. Enter email + password
+  3. 2FA screen appears — wait for SMS
+  4. SMS never arrives (checked spam, tried resend 5×)
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"email,android,two-factor-authentication",2026-03-23T20:46:17.573860+00:00,open,True,TKT-20260323-d2412805-0041
+TKT-20260323-53550a5b-0042,EML-0010,email,"[Critical] Home Screen Widget: Widget Crashes Home Screen
+
+Hello,
+
+Home screen w","**Summary**
+Widget Crashes Home Screen
+
+Hello,
+
+Home screen widget crashes launcher when I try to add it.
+
+Device: Pixel 7a | OS: Android 14 | App: 3.1.0
+
+Steps:
+1. Long press home screen
+2. Select Widgets
+3. Find app widget
+4. Drag to home screen — launcher crashes
+
+Every time.
+
+**Technical Details**
+- Platform: Android
+- Device: Pixel 7a
+- OS: Android 14
+- App version: 3.1.0
+- Affected feature: Home Screen Widget
+
+**Steps to Reproduce**
+  1. Long press home screen
+  2. Select Widgets
+  3. Find app widget
+  4. Drag to home screen — launcher crashes
+
+**Expected Behavior**
+The feature should work without errors.",Bug,Critical,Critical,Engineering,"email,android,home-screen-widget",2026-03-23T20:46:19.100139+00:00,open,True,TKT-20260323-7fca7786-0042
+TKT-20260323-53550a5b-0043,EML-0011,email,"Subscription Price Too High  Hello,  The recent price increase to $15/month is t","**Summary**
+Subscription Price Too High
+
+Hello,
+
+The recent price increase to $15/month is too much. Competitors charge $5-8/month for more features. Considering cancelling.
+
+Thanks
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:46:20.615592+00:00,open,False,
+TKT-20260323-53550a5b-0044,EML-0012,email,"Very Slow App Performance  Hi,  The app has become extremely slow. Dashboard tak","**Summary**
+Very Slow App Performance
+
+Hi,
+
+The app has become extremely slow. Dashboard takes 8-10 seconds to load, switching tabs takes 3-4 seconds. Considering switching to a competitor.
+
+Frustrated
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:46:21.990908+00:00,open,False,
+TKT-20260323-53550a5b-0045,EML-0013,email,"Poor Customer Support Experience  To Whom It May Concern,  Submitted a ticket 2","**Summary**
+Poor Customer Support Experience
+
+To Whom It May Concern,
+
+Submitted a ticket 2 weeks ago about a billing issue and received only one automated response. I am a premium subscriber and this level of support is unacceptable.
+
+Disappointed
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:46:23.045304+00:00,open,False,
+TKT-20260323-53550a5b-0046,EML-0014,email,"Too Many Ads in Free Tier  Hello,  Ads appear every 2-3 actions in the free tier","**Summary**
+Too Many Ads in Free Tier
+
+Hello,
+
+Ads appear every 2-3 actions in the free tier. This makes the app nearly unusable without paying. Excessive.
+
+Regards
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:46:24.534542+00:00,open,False,
+TKT-20260323-53550a5b-0047,EML-0015,email,"App Uses Too Much Storage  Hi,  The app uses 600MB on my phone. Far too much. Pl","**Summary**
+App Uses Too Much Storage
+
+Hi,
+
+The app uses 600MB on my phone. Far too much. Please add a 'Clear Cache' option in settings or reduce the storage footprint.
+
+Thanks
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:46:25.605497+00:00,open,False,
+TKT-20260323-53550a5b-0048,EML-0016,email,"No Refund for Cancelled Subscription  Hello,  I cancelled my annual subscription","**Summary**
+No Refund for Cancelled Subscription
+
+Hello,
+
+I cancelled my annual subscription mid-year and was told I would not receive a refund for unused months. This is against consumer protection rules in my country. I expect a pro-rata refund.
+
+Regards
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:46:26.919131+00:00,open,False,
+TKT-20260323-53550a5b-0049,EML-0017,email,"Quick Question About Storage Limits  Hi,  I'm a free user — what is the storage","**Summary**
+Quick Question About Storage Limits
+
+Hi,
+
+I'm a free user — what is the storage limit before I need to upgrade? Can't find this information in the app. Also, love the app — very well designed!
+Thanks
+
+**Expected Behavior**
+User satisfaction and resolution.",Complaint,Medium,,Support,email,2026-03-23T20:46:27.991754+00:00,open,False,
+TKT-20260323-53550a5b-0050,EML-0018,email,"Feature Request: Dark Mode Support  Hello,  I love the app but really need dark","**Summary**
+Feature Request: Dark Mode Support
+
+Hello,
+
+I love the app but really need dark mode. Use it late at night and the bright white is hard on my eyes. Many apps have this now.
+
+Laura
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:46:29.121176+00:00,open,True,TKT-20260323-7fca7786-0050
+TKT-20260323-53550a5b-0051,EML-0019,email,"Request: Export to PDF Functionality  Hi Team,  Exporting task lists and notes a","**Summary**
+Request: Export to PDF Functionality
+
+Hi Team,
+
+Exporting task lists and notes as PDF directly from the app would be incredibly useful. I share progress reports with my manager and currently copy everything manually.
+
+A simple export button would save 30 mins/week.
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:46:30.534196+00:00,open,True,TKT-20260323-7fca7786-0051
+TKT-20260323-53550a5b-0052,EML-0020,email,"Suggestion: Biometric Login  Hello,  Face ID / fingerprint login support would i","**Summary**
+Suggestion: Biometric Login
+
+Hello,
+
+Face ID / fingerprint login support would improve daily usability. Typing my long password every time is inconvenient, especially on mobile.
+Thanks
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:46:30.743287+00:00,open,True,TKT-20260323-7fca7786-0052
+TKT-20260323-53550a5b-0053,EML-0021,email,"Suggestion for Improvement: Calendar Integration  Hi,  Calendar integration (Goo","**Summary**
+Suggestion for Improvement: Calendar Integration
+
+Hi,
+
+Calendar integration (Google/Apple) would make this app a complete productivity solution. Currently switch between two apps to manage tasks and calendar. Even a read-only calendar view would be great.
+
+Best regards
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:46:34.747941+00:00,open,True,TKT-20260323-d2412805-0053
+TKT-20260323-53550a5b-0054,EML-0022,email,"Feature Request: Team Collaboration  Dear Team,  Our company is evaluating the a","**Summary**
+Feature Request: Team Collaboration
+
+Dear Team,
+
+Our company is evaluating the app for enterprise use. One key missing feature is real-time collaboration — multiple users editing the same project simultaneously. This is a deal-breaker for us.
+
+Enterprise Team
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:46:36.248810+00:00,open,True,TKT-20260323-d2412805-0054
+TKT-20260323-53550a5b-0055,EML-0023,email,"Feedback: Offline Mode Would Be Great  Hello,  I travel frequently and often hav","**Summary**
+Feedback: Offline Mode Would Be Great
+
+Hello,
+
+I travel frequently and often have no internet. Full offline mode with sync when back online would make this perfect for frequent travelers.
+
+Thanks
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:46:37.706806+00:00,open,True,TKT-20260323-d2412805-0055
+TKT-20260323-53550a5b-0056,EML-0024,email,"Request: Apple Watch App  Hello,  An Apple Watch companion app would be a great","**Summary**
+Request: Apple Watch App
+
+Hello,
+
+An Apple Watch companion app would be a great addition. Checking and ticking off tasks from my wrist would save a lot of time.
+
+Thank you
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:46:38.884321+00:00,open,True,TKT-20260323-d2412805-0056
+TKT-20260323-53550a5b-0057,EML-0025,email,"Suggestion: Custom Themes  Hi Team,  Custom color themes beyond light/dark would","**Summary**
+Suggestion: Custom Themes
+
+Hi Team,
+
+Custom color themes beyond light/dark would let users personalise the experience. Custom accent colors would be a nice touch.
+
+Keep up the work!
+
+**Expected Behavior**
+User satisfaction and resolution.",Feature Request,Medium,,Product,email,2026-03-23T20:46:40.437965+00:00,open,True,TKT-20260323-d2412805-0057

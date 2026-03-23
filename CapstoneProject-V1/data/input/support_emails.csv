@@ -1,0 +1,230 @@
+email_id,subject,body,sender_email,timestamp,priority
+EML-0001,App Crash Report — iPhone 15 iOS 17.4,"Hi Support,
+
+I'm experiencing repeated crashes on iPhone 15 running iOS 17.4, app version 3.1.0.
+
+Steps:
+1. Open app
+2. Go to Settings tab
+3. Tap 'Account Details'
+4. App crashes immediately
+
+Device: iPhone 15 | OS: iOS 17.4 | App: 3.1.0
+
+Please fix ASAP.
+John",henry_w@gmail.com,2026-03-19T02:35:40,High
+EML-0002,Login Issue Since v3.0.1 Update,"Hello,
+
+Since v3.0.1 I cannot log in. Enter credentials, spinner appears for 5 seconds then vanishes — not logged in.
+
+Device: Samsung Galaxy S22 | OS: Android 13 | App: 3.0.1
+
+Steps:
+1. Open app
+2. Enter valid credentials
+3. Tap Sign In
+4. Spinner vanishes — not logged in
+
+Tried password reset — same issue.",quinn_h@yahoo.com,2026-02-15T15:08:40,High
+EML-0003,Data Loss Problem — Urgent,"URGENT — Lost 3 weeks of data after the 3.0.5 update. All notes/task history before March 2024 are gone. History tab shows empty state.
+
+Device: Google Pixel 7 | OS: Android 14 | App: 3.0.5
+
+Steps:
+1. Update to 3.0.5
+2. Open app
+3. Navigate to History
+4. All previous entries gone
+
+Critical — need that data for work.",grace_l@work.io,2026-03-06T12:40:40,
+EML-0004,Notification Bug — Not Receiving Alerts,"Hi,
+
+Push notifications stopped working after iOS 17.1 upgrade.
+
+Device: iPhone 14 Pro | OS: iOS 17.1 | App: 3.1.0
+
+Steps:
+1. Enable notifications in app and iOS Settings
+2. Set reminder 5 minutes from now
+3. Wait — no notification arrives
+
+Tried toggling permissions. No improvement.
+Sarah",sam_q@work.io,2026-01-22T04:49:40,Medium
+EML-0005,Sync Failure Between iPad and iPhone,"Hello Support,
+
+Data not syncing between iPhone and iPad. Create item on iPhone — never appears on iPad after 30 minutes.
+
+iPhone 13, iOS 16.6, App v3.0.5
+iPad Pro, iPadOS 16.6, App v3.0.5
+
+Steps:
+1. Create task on iPhone
+2. Open iPad (same account)
+3. Task missing
+4. Pull to refresh — still missing
+
+Both on same WiFi.",peter_g@company.com,2026-02-27T09:33:40,High
+EML-0006,App Freezes on Android 14 — Galaxy S23,"Hi,
+
+App freezes completely on Galaxy S23 running Android 14.
+
+Device: Samsung Galaxy S23 | OS: Android 14 | App: 3.1.0
+
+Steps:
+1. Open app
+2. Go to Dashboard
+3. Scroll down rapidly
+4. App becomes unresponsive — must force-kill
+
+Clearing cache does not help.",noah_d@outlook.com,2026-01-27T23:10:40,
+EML-0007,Search Not Returning Results,"Hi,
+
+Search completely broken. Type exact phrases that are in my notes — get zero results.
+
+Device: OnePlus 10 Pro | OS: Android 13 | App: 3.0.5
+
+Steps:
+1. Navigate to Search
+2. Type 'meeting notes'
+3. Results: 'No items found' (I have 20 notes with that phrase)
+
+Please help.",bob_j@gmail.com,2026-03-15T23:53:40,Medium
+EML-0008,Crash When Uploading Large Files,"Hello,
+
+App crashes uploading files >10MB.
+
+Device: iPhone 13 Pro | OS: iOS 16.6 | App: 3.0.1
+
+Steps:
+1. Tap '+' to add attachment
+2. Select 15MB PDF from Files
+3. Upload progress bar appears
+4. At ~60% progress, app crashes
+
+Consistent across multiple files and network conditions.
+Tom",karen_o@gmail.com,2026-02-20T06:27:40,Medium
+EML-0009,Two-Factor Authentication Not Working,"Hi Support,
+
+2FA SMS codes not delivered. Cannot log in at all.
+
+Device: Samsung Galaxy A52 | OS: Android 12 | App: 3.0.5
+
+Steps:
+1. Open app
+2. Enter email + password
+3. 2FA screen appears — wait for SMS
+4. SMS never arrives (checked spam, tried resend 5×)
+
+This is a blocker — cannot access account.
+David",rachel_i@company.com,2026-03-05T23:28:40,
+EML-0010,Widget Crashes Home Screen,"Hello,
+
+Home screen widget crashes launcher when I try to add it.
+
+Device: Pixel 7a | OS: Android 14 | App: 3.1.0
+
+Steps:
+1. Long press home screen
+2. Select Widgets
+3. Find app widget
+4. Drag to home screen — launcher crashes
+
+Every time.",iris_p@company.com,2026-02-20T10:11:40,Low
+EML-0011,Subscription Price Too High,"Hello,
+
+The recent price increase to $15/month is too much. Competitors charge $5-8/month for more features. Considering cancelling.
+
+Thanks",rachel_i@gmail.com,2026-03-16T16:05:40,Medium
+EML-0012,Very Slow App Performance,"Hi,
+
+The app has become extremely slow. Dashboard takes 8-10 seconds to load, switching tabs takes 3-4 seconds. Considering switching to a competitor.
+
+Frustrated",alice_m@gmail.com,2026-02-21T07:13:40,
+EML-0013,Poor Customer Support Experience,"To Whom It May Concern,
+
+Submitted a ticket 2 weeks ago about a billing issue and received only one automated response. I am a premium subscriber and this level of support is unacceptable.
+
+Disappointed",peter_g@company.com,2026-02-23T23:42:40,High
+EML-0014,Too Many Ads in Free Tier,"Hello,
+
+Ads appear every 2-3 actions in the free tier. This makes the app nearly unusable without paying. Excessive.
+
+Regards",bob_j@yahoo.com,2026-02-03T12:15:40,Low
+EML-0015,App Uses Too Much Storage,"Hi,
+
+The app uses 600MB on my phone. Far too much. Please add a 'Clear Cache' option in settings or reduce the storage footprint.
+
+Thanks",iris_p@company.com,2026-02-14T22:55:40,
+EML-0016,No Refund for Cancelled Subscription,"Hello,
+
+I cancelled my annual subscription mid-year and was told I would not receive a refund for unused months. This is against consumer protection rules in my country. I expect a pro-rata refund.
+
+Regards",rachel_i@company.com,2026-03-04T06:21:40,High
+EML-0017,Quick Question About Storage Limits,"Hi,
+
+I'm a free user — what is the storage limit before I need to upgrade? Can't find this information in the app. Also, love the app — very well designed!
+Thanks",grace_l@gmail.com,2026-01-07T13:05:40,Low
+EML-0018,Feature Request: Dark Mode Support,"Hello,
+
+I love the app but really need dark mode. Use it late at night and the bright white is hard on my eyes. Many apps have this now.
+
+Laura",bob_j@outlook.com,2026-03-16T11:02:40,
+EML-0019,Request: Export to PDF Functionality,"Hi Team,
+
+Exporting task lists and notes as PDF directly from the app would be incredibly useful. I share progress reports with my manager and currently copy everything manually.
+
+A simple export button would save 30 mins/week.",peter_g@work.io,2026-01-15T07:36:40,Medium
+EML-0020,Suggestion: Biometric Login,"Hello,
+
+Face ID / fingerprint login support would improve daily usability. Typing my long password every time is inconvenient, especially on mobile.
+Thanks",quinn_h@gmail.com,2026-02-28T10:01:40,Low
+EML-0021,Suggestion for Improvement: Calendar Integration,"Hi,
+
+Calendar integration (Google/Apple) would make this app a complete productivity solution. Currently switch between two apps to manage tasks and calendar. Even a read-only calendar view would be great.
+
+Best regards",carol_k@yahoo.com,2026-01-31T08:43:40,
+EML-0022,Feature Request: Team Collaboration,"Dear Team,
+
+Our company is evaluating the app for enterprise use. One key missing feature is real-time collaboration — multiple users editing the same project simultaneously. This is a deal-breaker for us.
+
+Enterprise Team",sam_q@yahoo.com,2026-01-07T17:37:40,High
+EML-0023,Feedback: Offline Mode Would Be Great,"Hello,
+
+I travel frequently and often have no internet. Full offline mode with sync when back online would make this perfect for frequent travelers.
+
+Thanks",tina_u@gmail.com,2026-01-28T15:02:40,Medium
+EML-0024,Request: Apple Watch App,"Hello,
+
+An Apple Watch companion app would be a great addition. Checking and ticking off tasks from my wrist would save a lot of time.
+
+Thank you",sam_q@work.io,2026-02-11T04:26:40,
+EML-0025,Suggestion: Custom Themes,"Hi Team,
+
+Custom color themes beyond light/dark would let users personalise the experience. Custom accent colors would be a nice touch.
+
+Keep up the work!",karen_o@yahoo.com,2026-02-18T00:31:40,Low
+EML-0026,Love the New Dashboard Design!,"Hi Team,
+
+The new dashboard in v3.1.0 is absolutely beautiful. The redesign made everything so much more intuitive. Great work by your design team!
+
+Thanks!",jake_n@company.com,2026-02-11T10:39:40,Low
+EML-0027,Outstanding App — Highly Recommend,"Hello,
+
+Been using the app for 18 months and it keeps getting better. v3.0.1 was especially impressive. Performance improvements are noticeable.
+
+Best",olivia_f@work.io,2026-01-10T09:35:40,
+EML-0028,Great Customer Support Experience,"Hi,
+
+Had a billing issue last week and your support team resolved it within 2 hours. Exceptional service. The rep (Alex) was courteous and efficient.
+
+Kind regards",rachel_i@yahoo.com,2026-01-18T04:31:40,Low
+EML-0029,App Has Transformed My Productivity,"Hi,
+
+This app has genuinely changed how I work. Used to miss deadlines and feel overwhelmed. After 6 months with your app, I'm on top of everything.
+
+Thank you!",leo_b@gmail.com,2026-02-20T01:21:40,Low
+EML-0030,Impressed by the Accessibility Features,"Hello Team,
+
+As someone with low vision, thank you for excellent accessibility support. Dynamic text sizing and VoiceOver work flawlessly.
+
+Keep it up!",frank_t@company.com,2026-01-12T14:20:40,

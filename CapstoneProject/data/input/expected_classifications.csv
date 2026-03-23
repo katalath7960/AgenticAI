@@ -1,0 +1,81 @@
+source_id,source_type,category,priority,technical_details,suggested_title
+REV-0045,review,Spam,Low,,Review spam submission
+REV-0003,review,Bug,High,Platform: Unknown | Device: Unknown | OS: Unknown | App Version: 3.0.5 | Steps to reproduce available in feedback text.,Fix data sync and loss issue
+REV-0021,review,Feature Request,Medium,,Add snooze and reminder feature
+REV-0048,review,Spam,Low,,Review spam submission
+REV-0019,review,Feature Request,Medium,,Evaluate and plan requested feature
+REV-0036,review,Complaint,Low,,Review and address user complaint
+REV-0043,review,Spam,Low,,Review spam submission
+REV-0010,review,Bug,Medium,Platform: iOS | Device: iPhone 15 | OS: iOS 17.1 | App Version: 3.1.0 | Steps to reproduce available in feedback text.,Investigate and fix reported bug
+REV-0012,review,Bug,Medium,Platform: iOS | Device: iPhone 12 | OS: iOS 16.4 | App Version: 3.1.0 | Steps to reproduce available in feedback text.,Investigate and fix reported bug
+REV-0001,review,Bug,Critical,Platform: iOS | Device: iPhone 14 | OS: iOS 16.5 | App Version: 3.0.1 | Steps to reproduce available in feedback text.,Fix app crash on affected screen
+REV-0017,review,Feature Request,Medium,,Add home screen widget support
+REV-0039,review,Complaint,Low,,Reduce app storage footprint
+REV-0046,review,Spam,Low,,Review spam submission
+REV-0002,review,Bug,High,Platform: Android | Device: Samsung Galaxy S22 | OS: Android 13 | App Version: 3.1.0 | Steps to reproduce available in feedback text.,Fix login failure after update
+REV-0020,review,Feature Request,Medium,,Evaluate and plan requested feature
+REV-0029,review,Praise,Low,,Log positive user feedback
+REV-0022,review,Feature Request,High,,Add real-time team collaboration
+REV-0009,review,Bug,High,Platform: Android | Device: Pixel 6a | OS: Android 12 | App Version: 3.0.5 | Steps to reproduce available in feedback text.,Investigate and fix reported bug
+REV-0006,review,Bug,Medium,Platform: iOS | Device: iPhone 15 | OS: Unknown | App Version: 3.1.0 | Steps to reproduce available in feedback text.,Fix push notifications not delivered
+REV-0014,review,Feature Request,Medium,,Add calendar integration feature
+REV-0005,review,Bug,Critical,Platform: Android | Device: Unknown | OS: Android 12 | App Version: Unknown | Steps to reproduce available in feedback text.,Fix app crash on affected screen
+REV-0015,review,Feature Request,Medium,,Add PDF export functionality
+REV-0018,review,Feature Request,Medium,,Evaluate and plan requested feature
+REV-0025,review,Praise,Low,,Log positive user feedback
+REV-0034,review,Complaint,High,,Investigate and fix performance issues
+REV-0008,review,Bug,Medium,Platform: iOS | Device: iPhone 13 | OS: iOS 16.6 | App Version: 3.0.1 | Steps to reproduce available in feedback text.,Fix file upload crash on large files
+REV-0033,review,Complaint,Medium,,Review pricing and refund policy
+REV-0038,review,Complaint,High,,Review pricing and refund policy
+REV-0032,review,Praise,Low,,Log positive user feedback
+REV-0011,review,Bug,High,Platform: Android | Device: Unknown | OS: Android 13 | App Version: 3.0.1 | Steps to reproduce available in feedback text.,Investigate and fix reported bug
+REV-0024,review,Praise,Low,,Log positive user feedback
+REV-0026,review,Praise,Low,,Log positive user feedback
+REV-0035,review,Complaint,Medium,,Improve customer support response time
+REV-0041,review,Complaint,Medium,,Improve customer support response time
+REV-0004,review,Bug,High,Platform: Android | Device: Pixel 7 | OS: Android 14 | App Version: Unknown | Steps to reproduce available in feedback text.,Fix app freeze and unresponsiveness
+REV-0030,review,Praise,Low,,Log positive user feedback
+REV-0044,review,Spam,Low,,Review spam submission
+REV-0040,review,Complaint,Low,,Review and address user complaint
+REV-0023,review,Praise,Low,,Log positive user feedback
+REV-0028,review,Praise,Low,,Log positive user feedback
+REV-0042,review,Complaint,Medium,,Review ad frequency in free tier
+REV-0007,review,Bug,High,Platform: Android | Device: OnePlus 10 Pro | OS: Android 13 | App Version: 3.0.5 | Steps to reproduce available in feedback text.,Fix search returning no results
+REV-0013,review,Feature Request,Medium,,Add dark mode to app settings
+REV-0027,review,Praise,Low,,Log positive user feedback
+REV-0050,review,Spam,Low,,Review spam submission
+REV-0016,review,Feature Request,Medium,,Add biometric login support
+REV-0031,review,Praise,Low,,Log positive user feedback
+REV-0049,review,Spam,Low,,Review spam submission
+REV-0037,review,Complaint,Medium,,Review ad frequency in free tier
+REV-0047,review,Spam,Low,,Review spam submission
+EML-0001,email,Bug,Critical,Platform: iOS | Device: iPhone 15 | OS: iOS 17.4 | App Version: 3.1.0 | Steps to reproduce available in feedback text.,Fix app crash on affected screen
+EML-0002,email,Bug,High,Platform: Android | Device: Samsung Galaxy S22 | OS: Android 13 | App Version: 3.0.1 | Steps to reproduce available in feedback text.,Fix login failure after update
+EML-0003,email,Bug,Critical,Platform: Android | Device: Pixel 7 | OS: Android 14 | App Version: 3.0.5 | Steps to reproduce available in feedback text.,Fix data sync and loss issue
+EML-0004,email,Bug,Medium,Platform: iOS | Device: iPhone 14 | OS: iOS 17.1 | App Version: 3.1.0 | Steps to reproduce available in feedback text.,Fix push notifications not delivered
+EML-0005,email,Bug,High,Platform: iOS | Device: iPhone 13 | OS: iOS 16.6 | App Version: 3.0.5 | Steps to reproduce available in feedback text.,Fix data sync and loss issue
+EML-0006,email,Bug,High,Platform: Android | Device: Samsung Galaxy S23 | OS: Android 14 | App Version: 3.1.0 | Steps to reproduce available in feedback text.,Fix app freeze and unresponsiveness
+EML-0007,email,Bug,Critical,Platform: Android | Device: OnePlus 10 Pro | OS: Android 13 | App Version: 3.0.5 | Steps to reproduce available in feedback text.,Fix search returning no results
+EML-0008,email,Feature Request,Medium,,Add dark mode to app settings
+EML-0009,email,Feature Request,High,,Add PDF export functionality
+EML-0010,email,Feature Request,Medium,,Add biometric login support
+EML-0011,email,Feature Request,Medium,,Add calendar integration feature
+EML-0012,email,Feature Request,High,,Add real-time team collaboration
+EML-0013,email,Feature Request,Medium,,Add full offline mode with sync
+EML-0014,email,Complaint,High,,Review pricing and refund policy
+EML-0015,email,Complaint,Medium,,Investigate and fix performance issues
+EML-0016,email,Complaint,High,,Improve customer support response time
+EML-0017,email,Complaint,Medium,,Review ad frequency in free tier
+EML-0018,email,Complaint,Low,,Reduce app storage footprint
+EML-0019,email,Praise,Low,,Log positive user feedback
+EML-0020,email,Praise,Low,,Log positive user feedback
+EML-0021,email,Praise,Low,,Log positive user feedback
+EML-0022,email,Bug,Critical,Platform: iOS | Device: iPhone 13 | OS: iOS 16.6 | App Version: 3.0.1 | Steps to reproduce available in feedback text.,Fix app crash on affected screen
+EML-0023,email,Bug,Critical,Platform: Android | Device: Samsung Galaxy A52 | OS: Android 12 | App Version: 3.0.5 | Steps to reproduce available in feedback text.,Fix 2FA SMS codes not delivered
+EML-0024,email,Bug,Critical,Platform: Android | Device: Pixel 7a | OS: Android 14 | App Version: 3.1.0 | Steps to reproduce available in feedback text.,Fix app crash on affected screen
+EML-0025,email,Feature Request,Medium,,Add Apple Watch companion app
+EML-0026,email,Feature Request,High,,Add dark mode to app settings
+EML-0027,email,Complaint,High,,Review pricing and refund policy
+EML-0028,email,Praise,Low,,Log positive user feedback
+EML-0029,email,Praise,Low,,Log positive user feedback
+EML-0030,email,Complaint,Low,,Reduce app storage footprint

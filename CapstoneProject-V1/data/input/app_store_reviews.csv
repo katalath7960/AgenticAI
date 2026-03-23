@@ -1,0 +1,51 @@
+review_id,platform,rating,review_text,user_name,date,app_version
+REV-0047,App Store,4,Good app good app good app good app good app good app good app good,quinn_h,2026-01-05,3.0.1
+REV-0049,Google Play,5,Follow me on Instagram @cooluser2024 for lifestyle tips! Great app too,rachel_i,2026-01-15,2.1.3
+REV-0003,App Store,1,Data sync completely broken. Notes not syncing between phone and iPad since 3.0.5. Losing important work data. This is critical.,dave_r,2025-12-27,2.1.3
+REV-0040,Google Play,2,Interface is cluttered — too many menus buried inside menus.,mia_c,2026-01-06,3.0.5
+REV-0034,App Store,1,App is very slow to load. Takes 10+ seconds every time. Unacceptable.,sam_q,2026-01-28,3.0.5
+REV-0022,Google Play,4,Collaboration features so teams can share and edit together would be perfect.,grace_l,2025-12-28,3.1.0
+REV-0039,App Store,2,App uses over 500MB storage on my phone. Ridiculous for what it does.,tina_u,2026-03-15,3.0.5
+REV-0014,Google Play,3,Would love a calendar view for tasks. The list gets overwhelming.,bob_j,2026-01-24,2.1.3
+REV-0036,App Store,2,Onboarding is confusing and there are no tutorial videos.,quinn_h,2026-01-19,2.1.3
+REV-0027,Google Play,5,Love the new features in 3.0.1. The team clearly listens to feedback. Keep it up!,bob_j,2026-02-22,2.1.3
+REV-0001,App Store,1,"App crashes every time I open my profile since the 3.0.1 update. Steps: 1) Open app 2) Tap Profile icon 3) App freezes and closes. iPhone 14, iOS 16.5. Very frustrating!",dave_r,2026-03-20,3.1.0
+REV-0041,Google Play,1,No offline support whatsoever. Useless without internet.,quinn_h,2026-02-19,2.1.3
+REV-0050,App Store,1,This review is for another app I accidentally downloaded. Wrong page.,tina_u,2026-02-10,3.0.5
+REV-0029,Google Play,5,Outstanding! Tried 10 other apps — this blows them all out of the water.,carol_k,2026-02-24,3.1.0
+REV-0044,App Store,1,WORST APP EVER!!!! DO NOT DOWNLOAD!!! SCAM SCAM SCAM!!!!,noah_d,2026-03-03,3.0.5
+REV-0045,Google Play,5,asdfghjkl this app is ok i guess lol whatever never mind forget it,alice_m,2026-02-18,3.0.1
+REV-0019,App Store,4,"Siri shortcut integration so I can open items hands-free, please!",dave_r,2026-02-03,3.1.0
+REV-0033,Google Play,2,Premium subscription price is way too high. Competitors offer more for less.,henry_w,2026-01-11,3.1.0
+REV-0015,App Store,4,Export data to PDF directly from the app would be fantastic.,mia_c,2026-03-13,3.1.0
+REV-0012,Google Play,2,"App shows blank white screen after splash. Must reopen 3-4 times before it loads. iPhone 12 Mini, iOS 16.4, v3.1.0.",carol_k,2026-02-03,2.1.3
+REV-0021,App Store,4,Reminder/snooze feature for tasks is desperately needed.,frank_t,2026-02-04,3.1.0
+REV-0013,Google Play,4,Please add dark mode! My eyes hurt at night. Would be a huge improvement.,leo_b,2026-02-07,3.1.0
+REV-0010,App Store,2,"Battery drain extreme after 3.1.0 — phone loses 30%/hr with app in background. iPhone 15, iOS 17.1.",karen_o,2026-02-16,3.0.1
+REV-0026,Google Play,4,"Great app overall. Really helped me stay organized. Minor bugs aside, 5-star quality.",rachel_i,2026-02-23,3.1.0
+REV-0030,App Store,4,Really solid update. App feels much faster and onboarding is much improved.,grace_l,2025-12-30,3.0.5
+REV-0023,Google Play,5,Absolutely love this app! Transformed how I manage daily tasks. Clean UI.,carol_k,2026-01-05,3.0.1
+REV-0048,App Store,2,jkjkjkjkjkjkjk nope nope nope 123456789 test test,eve_s,2026-02-04,3.0.1
+REV-0025,Google Play,5,Amazing update! Everything is snappy and the new design is really polished.,olivia_f,2026-02-03,3.1.0
+REV-0018,App Store,3,Multiple account support for switching between work and personal would be amazing.,jake_n,2026-03-13,3.0.1
+REV-0007,Google Play,1,"Search returns no results even for exact matches. Broken since v3.0.5. OnePlus 10 Pro, Android 13.",rachel_i,2026-02-26,3.0.5
+REV-0038,App Store,1,Cancelled subscription because app keeps losing my data. Completely unreliable.,frank_t,2025-12-26,3.0.5
+REV-0028,Google Play,4,Excellent app. Support team very responsive. Had an issue resolved quickly.,karen_o,2026-01-31,3.1.0
+REV-0017,App Store,4,Widget support for the home screen showing daily summary would be great.,carol_k,2026-03-18,3.0.1
+REV-0011,Google Play,1,"Cannot attach files in messages. Tap attachment icon — nothing happens. Galaxy S21, Android 13, v3.0.1.",grace_l,2026-02-08,2.1.3
+REV-0031,App Store,5,Game changer for my workflow. Highly recommend to anyone in project management.,mia_c,2025-12-31,3.0.5
+REV-0043,Google Play,5,Download my free app at freeapps247.com! Best deals on premium apps!!!,karen_o,2026-03-09,3.1.0
+REV-0009,App Store,1,"Offline mode broken — app shows 'No connection' even with full WiFi. Pixel 6a, Android 12, v3.0.5.",alice_m,2026-03-03,3.0.5
+REV-0035,Google Play,2,Customer support takes days to respond. Had an issue two weeks with no resolution.,leo_b,2026-02-23,3.0.1
+REV-0005,App Store,1,"Crash on startup after latest update. Cleared cache — no help. Galaxy Note 20, Android 12. Steps: just open the app.",alice_m,2026-03-12,3.0.1
+REV-0032,Google Play,4,Impressive how much the team has improved the app over 6 months. Great work!,eve_s,2026-02-18,3.0.1
+REV-0042,App Store,2,Analytics section never loads properly. Always shows 'Data unavailable'.,dave_r,2025-12-26,3.1.0
+REV-0006,Google Play,2,"Push notifications stopped working on iOS 17. Missing important alerts. iPhone 15 Pro, app version 3.1.0.",henry_w,2026-01-18,2.1.3
+REV-0037,App Store,3,Too many ads in the free tier. They interrupt my workflow constantly.,bob_j,2026-03-09,3.0.1
+REV-0046,Google Play,3,I am not a robot. This review is genuine. Buy crypto now at bit-invest.net,quinn_h,2026-03-10,3.1.0
+REV-0004,App Store,2,"App freezes on the home screen after about 30 seconds. Must force-close every time. Pixel 7, Android 14.",sam_q,2026-01-28,2.1.3
+REV-0016,Google Play,3,Please add fingerprint/Face ID login. Typing password every time is annoying.,tina_u,2026-02-05,3.0.1
+REV-0020,App Store,3,Bulk action feature to archive or delete multiple items would save time.,olivia_f,2026-01-01,3.1.0
+REV-0024,Google Play,5,Best productivity app I've ever used. New dashboard in 3.1.0 is gorgeous.,rachel_i,2026-02-20,3.0.1
+REV-0008,App Store,2,"Video upload fails with a generic error. Tried on WiFi and LTE. iPhone 13, iOS 16.6, app v3.0.1.",henry_w,2026-01-25,3.1.0
+REV-0002,Google Play,1,"Cannot login after updating to v3.1.0. Enter credentials, spinner spins forever. Tried uninstall/reinstall — still broken. Samsung Galaxy S22, Android 13.",henry_w,2026-02-23,3.0.1

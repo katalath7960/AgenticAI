@@ -1,0 +1,47 @@
+version: "3.9"
+
+# ── Feedback Intelligence System ─────────────────────────────────────────────
+# Quick start:
+#   1.  cp .env.example .env      # fill in OPENAI_API_KEY
+#   2.  docker-compose up --build # first run (builds image, ~3-5 min)
+#   3.  Open http://localhost:8502
+#
+# Subsequent runs (no code changes):  docker-compose up
+# CLI pipeline only:  docker-compose run --rm app python -m src.main
+# ─────────────────────────────────────────────────────────────────────────────
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: feedback-intelligence
+    image: feedback-intelligence:latest
+
+    ports:
+      - "8502:8501"         # Streamlit UI → http://localhost:8502
+
+    env_file:
+      - .env                # copy from .env.example; must contain OPENAI_API_KEY
+
+    environment:
+      PYTHONUNBUFFERED: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+      # Paths must match volume mount destinations
+      DATA_DIR: /app/data/input
+      OUTPUT_DIR: /app/data/output
+      CHROMA_PATH: /app/data/chroma
+      TECH_DOCS_DIR: /app/docs/product
+
+    volumes:
+      - ./data:/app/data        # input CSVs + output CSVs + ChromaDB (persists)
+      - ./docs:/app/docs        # product docs + user_uploads subdir (persists)
+
+    restart: unless-stopped
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s

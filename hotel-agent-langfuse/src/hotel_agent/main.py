@@ -207,3 +207,8 @@ async def tools_status():
 async def db_status():
     """Get database agent health status."""
     return db_agent.check_health()
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("hotel_agent.main:app", host="127.0.0.1", port=8080, reload=True)

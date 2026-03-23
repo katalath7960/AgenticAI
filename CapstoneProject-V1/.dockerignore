@@ -1,0 +1,35 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Data — mounted as volumes at runtime; don't bake into image
+data/chroma/
+data/output/
+
+# Secrets
+.env
+*.key
+*.pem
+
+# Dev tools
+.git/
+.gitignore
+.vscode/
+.idea/
+*.code-workspace
+
+# Docs build artifacts
+docs/_build/
+
+# Temp files
+*.tmp
+*.log
+*.bak

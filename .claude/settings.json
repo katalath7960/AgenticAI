@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmd /c \"taskkill /PID 13216 /F\")",
+      "Bash(cmd /c \"taskkill /PID 13216 /F 2>&1\")",
+      "Bash(netstat -ano)",
+      "Bash(powershell -Command \"Stop-Process -Id 13216 -Force -ErrorAction SilentlyContinue; Start-Sleep -Seconds 2; \\(Get-NetTCPConnection -LocalPort 8501 -ErrorAction SilentlyContinue\\) -eq $null\")",
+      "Bash(powershell -Command \"Get-Process -Id 13216 | Select-Object Name, Id, MainWindowTitle\")",
+      "Bash(docker ps:*)",
+      "Bash(docker exec feedback-intelligence python3 -c \":*)",
+      "Bash(python3 -c \":*)",
+      "Bash(venv/Scripts/python TestPython.py)",
+      "Bash(docker-compose down:*)",
+      "Bash(docker-compose up:*)",
+      "Bash(grep -E \"\\\\.py$\")",
+      "Bash(python -m pytest tests/ -v --tb=short)",
+      "Bash(docker builder:*)",
+      "Bash(docker build:*)",
+      "Bash(docker images:*)",
+      "Bash(az account:*)",
+      "Bash(chmod +x \"c:/Damu/AppliedAI/Edureka-AgenticAI/Python/CapstoneProject-V1/deployment.sh\")"
+    ]
+  }
+}

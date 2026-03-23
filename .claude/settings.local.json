@@ -1,7 +1,18 @@
 {
   "permissions": {
     "allow": [
-      "Bash(c:DamuAppliedAIEdureka-AgenticAIPython.venvScriptspip.exe install crewai)"
+      "Bash(c:DamuAppliedAIEdureka-AgenticAIPython.venvScriptspip.exe install crewai)",
+      "Bash(python scripts/generate_mock_data.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python scripts/generate_mock_data.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python -c \":*)",
+      "Bash(python -m pytest tests/unit/test_graph_skeleton.py -v)",
+      "Bash(venv/Scripts/python -c \"import streamlit; import plotly; print\\(''streamlit'', streamlit.__version__, ''plotly'', plotly.__version__\\)\")",
+      "Bash(venv/Scripts/python -c \":*)",
+      "Bash(python -c \":*)",
+      "Read(//c/Damu/AppliedAI/**)",
+      "Bash(docker --version)",
+      "Bash(docker-compose --version)",
+      "Bash(docker compose:*)"
     ]
   }
 }
