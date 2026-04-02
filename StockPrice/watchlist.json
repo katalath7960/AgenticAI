@@ -1,0 +1,26 @@
+{
+  "SOXL": {
+    "ticker": "SOXL",
+    "alert_threshold_pct": 1.0,
+    "last_price": 52.74,
+    "alert_count": 0,
+    "last_alert_at": null,
+    "added_at": "2026-04-02T16:12:31.214993"
+  },
+  "SOXS": {
+    "ticker": "SOXS",
+    "alert_threshold_pct": 1.0,
+    "last_price": 35.93,
+    "alert_count": 0,
+    "last_alert_at": null,
+    "added_at": "2026-04-02T16:12:59.643645"
+  },
+  "TMC": {
+    "ticker": "TMC",
+    "alert_threshold_pct": 1.0,
+    "last_price": 4.59,
+    "alert_count": 0,
+    "last_alert_at": null,
+    "added_at": "2026-04-02T16:13:10.637570"
+  }
+}

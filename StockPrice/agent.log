@@ -1,0 +1,8 @@
+2026-04-02 16:12:49,117 [ERROR] HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: SOXSL"}}}
+2026-04-02 16:17:35,029 [INFO] Checking 3 stocks…
+2026-04-02 16:17:35,726 [INFO] SOXL: $52.74  (last=$None)
+2026-04-02 16:17:35,726 [INFO] SOXL: baseline set at $52.74
+2026-04-02 16:17:35,995 [INFO] SOXS: $35.93  (last=$None)
+2026-04-02 16:17:35,996 [INFO] SOXS: baseline set at $35.93
+2026-04-02 16:17:36,194 [INFO] TMC: $4.59  (last=$None)
+2026-04-02 16:17:36,195 [INFO] TMC: baseline set at $4.59

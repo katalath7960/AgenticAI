@@ -18,7 +18,10 @@
       "Bash(docker build:*)",
       "Bash(docker images:*)",
       "Bash(az account:*)",
-      "Bash(chmod +x \"c:/Damu/AppliedAI/Edureka-AgenticAI/Python/CapstoneProject-V1/deployment.sh\")"
+      "Bash(chmod +x \"c:/Damu/AppliedAI/Edureka-AgenticAI/Python/CapstoneProject-V1/deployment.sh\")",
+      "Bash(pip install:*)",
+      "Bash(python -c \"import sys; print\\(sys.executable\\)\")",
+      "Bash(python -c \"import apscheduler; print\\(''ok''\\)\")"
     ]
   }
 }
