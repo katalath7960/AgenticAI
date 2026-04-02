@@ -1,6 +1,7 @@
+import os
 import requests
 
-api_key = "REMOVED_OPENAI_KEY"
+api_key = os.getenv("OPENAI_API_KEY", "")
 
 response = requests.get(
     "https://api.openai.com/v1/models",
