@@ -22,5 +22,13 @@
     "alert_count": 0,
     "last_alert_at": null,
     "added_at": "2026-04-02T16:13:10.637570"
+  },
+  "AAPL": {
+    "ticker": "AAPL",
+    "alert_threshold_pct": 1.0,
+    "last_price": 255.92,
+    "alert_count": 0,
+    "last_alert_at": null,
+    "added_at": "2026-04-02T16:34:01.036034"
   }
 }

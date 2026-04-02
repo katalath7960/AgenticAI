@@ -123,7 +123,7 @@ else:
             st.markdown(f"""
             <div class="metric-card">
                 <div class="ticker-label">{ticker}</div>
-                <div class="price-label">${price:.2f if price else '—'}</div>
+                <div class="price-label">${f"{price:.2f}" if price else "—"}</div>
                 <div class="{css_cls}">{arrow} {sign}{pct:.2f}% from baseline</div>
                 <small style="color:#888">Alert at +{watch.alert_threshold_pct}% &nbsp;|&nbsp; 
                 {watch.alert_count} alerts sent</small>
