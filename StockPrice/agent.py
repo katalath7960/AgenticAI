@@ -36,7 +36,7 @@ log = logging.getLogger(__name__)
 
 
 # ── Config ─────────────────────────────────────────────────────────────────
-WATCHLIST_FILE = "watchlist.json"
+WATCHLIST_FILE = os.getenv("WATCHLIST_FILE", "watchlist.json")
 
 GMAIL_SENDER       = os.getenv("GMAIL_SENDER", "")        # your Gmail address
 GMAIL_APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD", "")  # 16-char App Password

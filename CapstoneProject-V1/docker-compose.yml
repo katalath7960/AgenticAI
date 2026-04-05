@@ -19,7 +19,7 @@ services:
     image: feedback-intelligence:latest
 
     ports:
-      - "8502:8501"         # Streamlit UI → http://localhost:8502
+      - "8503:8501"         # Streamlit UI → http://localhost:8503
 
     env_file:
       - .env                # copy from .env.example; must contain OPENAI_API_KEY

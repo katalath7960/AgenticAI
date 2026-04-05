@@ -1,0 +1,23 @@
+services:
+  agent:
+    build: .
+    command: python agent.py run --interval 60
+    env_file: .env
+    volumes:
+      - stock_data:/app/data
+    restart: unless-stopped
+
+  dashboard:
+    build: .
+    command: streamlit run dashboard.py --server.port=8501 --server.address=0.0.0.0
+    env_file: .env
+    volumes:
+      - stock_data:/app/data
+    ports:
+      - "8502:8501"
+    depends_on:
+      - agent
+    restart: unless-stopped
+
+volumes:
+  stock_data:
