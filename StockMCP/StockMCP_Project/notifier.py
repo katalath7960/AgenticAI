@@ -40,17 +40,28 @@ def send_price_alert(
     """
     smtp_host     = "smtp.gmail.com"
     smtp_port     = 587
-    smtp_user     = os.getenv("GMAIL_SENDER", "").strip()
-    smtp_password = os.getenv("GMAIL_APP_PASSWORD", "").replace(" ", "").strip()
+
+    # Prefer st.secrets (Streamlit Cloud), fall back to env vars (local .env)
+    try:
+        import streamlit as st
+        smtp_user     = st.secrets.get("GMAIL_SENDER", os.getenv("GMAIL_SENDER", "")).strip()
+        smtp_password = st.secrets.get("GMAIL_APP_PASSWORD", os.getenv("GMAIL_APP_PASSWORD", "")).replace(" ", "").strip()
+    except Exception:
+        smtp_user     = os.getenv("GMAIL_SENDER", "").strip()
+        smtp_password = os.getenv("GMAIL_APP_PASSWORD", "").replace(" ", "").strip()
 
     if not smtp_user or not smtp_password:
         raise ValueError(
             "Email not configured. Set GMAIL_SENDER and GMAIL_APP_PASSWORD in your .env file."
         )
 
-    # Resolve recipient list — fall back to env var if nothing passed in
+    # Resolve recipient list — fall back to env/secrets if nothing passed in
     if not recipients:
-        fallback = os.getenv("ALERT_EMAIL", smtp_user).strip()
+        try:
+            import streamlit as st
+            fallback = st.secrets.get("ALERT_EMAIL", os.getenv("ALERT_EMAIL", smtp_user)).strip()
+        except Exception:
+            fallback = os.getenv("ALERT_EMAIL", smtp_user).strip()
         recipients = [fallback] if fallback else [smtp_user]
 
     # Deduplicate while preserving order
