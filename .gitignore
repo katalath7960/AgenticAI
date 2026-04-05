@@ -4,4 +4,7 @@ __pycache__/
 .env
 *.ipynb_checkpoints
 .ipynb_checkpoints/
-.env
+# StockMCP runtime state — generated at runtime, not source code
+StockMCP/StockMCP_Project/state.json
+StockMCP/StockMCP_Project/state.tmp
+StockMCP/StockMCP_Project/__pycache__/
