@@ -2,15 +2,15 @@
   "SOXL": {
     "ticker": "SOXL",
     "alert_threshold_pct": 1.0,
-    "last_price": 52.74,
-    "alert_count": 0,
-    "last_alert_at": null,
+    "last_price": 80.56,
+    "alert_count": 1,
+    "last_alert_at": "2026-04-13T17:15:24.261119",
     "added_at": "2026-04-02T16:12:31.214993"
   },
   "SOXS": {
     "ticker": "SOXS",
     "alert_threshold_pct": 1.0,
-    "last_price": 35.93,
+    "last_price": 22.42,
     "alert_count": 0,
     "last_alert_at": null,
     "added_at": "2026-04-02T16:12:59.643645"
@@ -26,9 +26,17 @@
   "AAPL": {
     "ticker": "AAPL",
     "alert_threshold_pct": 1.0,
-    "last_price": 255.92,
+    "last_price": 259.2,
+    "alert_count": 1,
+    "last_alert_at": "2026-04-13T17:15:24.695903",
+    "added_at": "2026-04-02T16:34:01.036034"
+  },
+  "FANG": {
+    "ticker": "FANG",
+    "alert_threshold_pct": 0.1,
+    "last_price": 189.1,
     "alert_count": 0,
     "last_alert_at": null,
-    "added_at": "2026-04-02T16:34:01.036034"
+    "added_at": "2026-04-13T17:14:14.424014"
   }
 }

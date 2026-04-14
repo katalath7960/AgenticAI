@@ -59,3 +59,16 @@
 2026-04-02 16:57:40,991 [INFO] SOXS: $35.93  (last=$35.93)
 2026-04-02 16:57:41,219 [INFO] TMC: $4.59  (last=$4.59)
 2026-04-02 16:57:41,520 [INFO] AAPL: $255.92  (last=$255.92)
+2026-04-13 17:15:23,798 [INFO] Agent starting — checking every 60s
+2026-04-13 17:15:23,806 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-13 17:15:23,806 [INFO] Added job "check_stocks" to job store "default"
+2026-04-13 17:15:23,806 [INFO] Scheduler started
+2026-04-13 17:15:23,806 [INFO] Checking 5 stocks…
+2026-04-13 17:15:24,251 [INFO] SOXL: $80.56  (last=$52.74)
+2026-04-13 17:15:24,261 [WARNING] Gmail credentials not set — printing alert instead.
+2026-04-13 17:15:24,428 [INFO] SOXS: $22.42  (last=$35.93)
+2026-04-13 17:15:24,523 [INFO] TMC: $4.62  (last=$4.59)
+2026-04-13 17:15:24,689 [INFO] AAPL: $259.20  (last=$255.92)
+2026-04-13 17:15:24,695 [WARNING] Gmail credentials not set — printing alert instead.
+2026-04-13 17:15:24,821 [INFO] FANG: $189.10  (last=$None)
+2026-04-13 17:15:24,821 [INFO] FANG: baseline set at $189.10

@@ -1,0 +1,10 @@
+body { background: #f6f8fa; }
+.color-swatch {
+  display: inline-block;
+  width: 1.2rem; height: 1.2rem; border-radius: 3px;
+  vertical-align: middle; margin-right: .5rem;
+  border: 1px solid rgba(0,0,0,.15);
+}
+.scanner-viewport { max-width: 480px; margin: 0 auto; }
+.result-card .card-body { padding: 1.75rem; }
+.result-card h3 { font-size: 2rem; }
