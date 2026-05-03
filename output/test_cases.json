@@ -1,0 +1,101 @@
+{
+  "site_url": "https://www.google.com/",
+  "test_cases": [
+    {
+      "id": "TC-NEG-008",
+      "category": "Negative",
+      "description": "Access invalid/fuzz route: /admin",
+      "preconditions": [
+        "Site is accessible"
+      ],
+      "steps": [
+        "Navigate to https://www.google.com//admin"
+      ],
+      "expected": "404 page displayed, no server errors or sensitive info exposed",
+      "priority": "Medium",
+      "severity": "Minor",
+      "page_url": "https://www.google.com//admin",
+      "element_ref": ""
+    },
+    {
+      "id": "TC-NEG-009",
+      "category": "Negative",
+      "description": "Access invalid/fuzz route: /wp-admin",
+      "preconditions": [
+        "Site is accessible"
+      ],
+      "steps": [
+        "Navigate to https://www.google.com//wp-admin"
+      ],
+      "expected": "404 page displayed, no server errors or sensitive info exposed",
+      "priority": "Medium",
+      "severity": "Minor",
+      "page_url": "https://www.google.com//wp-admin",
+      "element_ref": ""
+    },
+    {
+      "id": "TC-NEG-010",
+      "category": "Negative",
+      "description": "Access invalid/fuzz route: /api/v1/debug",
+      "preconditions": [
+        "Site is accessible"
+      ],
+      "steps": [
+        "Navigate to https://www.google.com//api/v1/debug"
+      ],
+      "expected": "404 page displayed, no server errors or sensitive info exposed",
+      "priority": "Medium",
+      "severity": "Minor",
+      "page_url": "https://www.google.com//api/v1/debug",
+      "element_ref": ""
+    },
+    {
+      "id": "TC-NEG-011",
+      "category": "Negative",
+      "description": "Access invalid/fuzz route: /.env",
+      "preconditions": [
+        "Site is accessible"
+      ],
+      "steps": [
+        "Navigate to https://www.google.com//.env"
+      ],
+      "expected": "404 page displayed, no server errors or sensitive info exposed",
+      "priority": "Medium",
+      "severity": "Minor",
+      "page_url": "https://www.google.com//.env",
+      "element_ref": ""
+    },
+    {
+      "id": "TC-NEG-012",
+      "category": "Negative",
+      "description": "Access invalid/fuzz route: /nonexistent-page-xyz",
+      "preconditions": [
+        "Site is accessible"
+      ],
+      "steps": [
+        "Navigate to https://www.google.com//nonexistent-page-xyz"
+      ],
+      "expected": "404 page displayed, no server errors or sensitive info exposed",
+      "priority": "Medium",
+      "severity": "Minor",
+      "page_url": "https://www.google.com//nonexistent-page-xyz",
+      "element_ref": ""
+    },
+    {
+      "id": "TC-NEG-013",
+      "category": "Negative",
+      "description": "Access invalid/fuzz route: /../../etc/passwd",
+      "preconditions": [
+        "Site is accessible"
+      ],
+      "steps": [
+        "Navigate to https://www.google.com//../../etc/passwd"
+      ],
+      "expected": "404 page displayed, no server errors or sensitive info exposed",
+      "priority": "Medium",
+      "severity": "Minor",
+      "page_url": "https://www.google.com//../../etc/passwd",
+      "element_ref": ""
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sections>
+  <section>
+    <name>Negative</name>
+    <cases>
+      <case>
+        <title>Access invalid/fuzz route: /admin</title>
+        <template>Test Case (Steps)</template>
+        <type>Negative</type>
+        <priority>Medium</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://www.google.com//admin</content>
+            <expected>404 page displayed, no server errors or sensitive info exposed</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+      <case>
+        <title>Access invalid/fuzz route: /wp-admin</title>
+        <template>Test Case (Steps)</template>
+        <type>Negative</type>
+        <priority>Medium</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://www.google.com//wp-admin</content>
+            <expected>404 page displayed, no server errors or sensitive info exposed</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+      <case>
+        <title>Access invalid/fuzz route: /api/v1/debug</title>
+        <template>Test Case (Steps)</template>
+        <type>Negative</type>
+        <priority>Medium</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://www.google.com//api/v1/debug</content>
+            <expected>404 page displayed, no server errors or sensitive info exposed</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+      <case>
+        <title>Access invalid/fuzz route: /.env</title>
+        <template>Test Case (Steps)</template>
+        <type>Negative</type>
+        <priority>Medium</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://www.google.com//.env</content>
+            <expected>404 page displayed, no server errors or sensitive info exposed</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+      <case>
+        <title>Access invalid/fuzz route: /nonexistent-page-xyz</title>
+        <template>Test Case (Steps)</template>
+        <type>Negative</type>
+        <priority>Medium</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://www.google.com//nonexistent-page-xyz</content>
+            <expected>404 page displayed, no server errors or sensitive info exposed</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+      <case>
+        <title>Access invalid/fuzz route: /../../etc/passwd</title>
+        <template>Test Case (Steps)</template>
+        <type>Negative</type>
+        <priority>Medium</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://www.google.com//../../etc/passwd</content>
+            <expected>404 page displayed, no server errors or sensitive info exposed</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+    </cases>
+  </section>
+</sections>

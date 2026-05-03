@@ -1,0 +1,49 @@
+Summary,Issue Type,Priority,Description,Labels,Component
+Access invalid/fuzz route: /admin,Test,Medium,"*Preconditions:*
+Site is accessible
+
+*Steps:*
+# Navigate to https://www.google.com//admin
+
+*Expected Result:*
+404 page displayed, no server errors or sensitive info exposed",Negative,Automated Tests
+Access invalid/fuzz route: /wp-admin,Test,Medium,"*Preconditions:*
+Site is accessible
+
+*Steps:*
+# Navigate to https://www.google.com//wp-admin
+
+*Expected Result:*
+404 page displayed, no server errors or sensitive info exposed",Negative,Automated Tests
+Access invalid/fuzz route: /api/v1/debug,Test,Medium,"*Preconditions:*
+Site is accessible
+
+*Steps:*
+# Navigate to https://www.google.com//api/v1/debug
+
+*Expected Result:*
+404 page displayed, no server errors or sensitive info exposed",Negative,Automated Tests
+Access invalid/fuzz route: /.env,Test,Medium,"*Preconditions:*
+Site is accessible
+
+*Steps:*
+# Navigate to https://www.google.com//.env
+
+*Expected Result:*
+404 page displayed, no server errors or sensitive info exposed",Negative,Automated Tests
+Access invalid/fuzz route: /nonexistent-page-xyz,Test,Medium,"*Preconditions:*
+Site is accessible
+
+*Steps:*
+# Navigate to https://www.google.com//nonexistent-page-xyz
+
+*Expected Result:*
+404 page displayed, no server errors or sensitive info exposed",Negative,Automated Tests
+Access invalid/fuzz route: /../../etc/passwd,Test,Medium,"*Preconditions:*
+Site is accessible
+
+*Steps:*
+# Navigate to https://www.google.com//../../etc/passwd
+
+*Expected Result:*
+404 page displayed, no server errors or sensitive info exposed",Negative,Automated Tests
