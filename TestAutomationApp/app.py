@@ -15,6 +15,21 @@ from typing import Optional
 import pandas as pd
 import streamlit as st
 
+import subprocess
+import sys
+
+def ensure_playwright_browsers():
+    try:
+        subprocess.run(
+            [sys.executable, "-m", "playwright", "install", "chromium"],
+            check=True,
+            capture_output=True,
+        )
+    except Exception as e:
+        print(f"Playwright install failed: {e}")
+
+ensure_playwright_browsers()
+
 # ─── Page configuration ───────────────────────────────────────────────────────
 
 st.set_page_config(
