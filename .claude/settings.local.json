@@ -12,7 +12,10 @@
       "Read(//c/Damu/AppliedAI/**)",
       "Bash(docker --version)",
       "Bash(docker-compose --version)",
-      "Bash(docker compose:*)"
+      "Bash(docker compose:*)",
+      "Bash(python -c ' *)",
+      "Bash(python -m py_compile app.py excel/excel_reader.py excel/excel_writer.py automation/locator_manager.py automation/playwright_engine.py automation/test_executor.py create_sample.py)",
+      "Bash(python -m py_compile automation/test_executor.py app.py)"
     ]
   }
 }

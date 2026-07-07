@@ -1,8 +1,172 @@
 <?xml version='1.0' encoding='utf-8'?>
 <sections>
   <section>
+    <name>Functional</name>
+    <cases>
+      <case>
+        <title>Submit form with all valid inputs on https://qafjdforum.courts.phila.gov/</title>
+        <template>Test Case (Steps)</template>
+        <type>Functional</type>
+        <priority>High</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://qafjdforum.courts.phila.gov/</content>
+            <expected />
+          </step>
+          <step>
+            <index>2</index>
+            <content>Enter 'Test Value' in field '' (text)</content>
+            <expected />
+          </step>
+          <step>
+            <index>3</index>
+            <content>Enter 'P@ssw0rd123' in field '' (password)</content>
+            <expected />
+          </step>
+          <step>
+            <index>4</index>
+            <content>Click submit</content>
+            <expected>Form submits successfully without errors</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+      <case>
+        <title>Enter invalid value in '' (text)</title>
+        <template>Test Case (Steps)</template>
+        <type>Functional</type>
+        <priority>Medium</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://qafjdforum.courts.phila.gov/</content>
+            <expected />
+          </step>
+          <step>
+            <index>2</index>
+            <content>Enter '' in field ''</content>
+            <expected />
+          </step>
+          <step>
+            <index>3</index>
+            <content>Click submit</content>
+            <expected>Validation error shown for field ''</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+      <case>
+        <title>Enter invalid value in '' (password)</title>
+        <template>Test Case (Steps)</template>
+        <type>Functional</type>
+        <priority>Medium</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://qafjdforum.courts.phila.gov/</content>
+            <expected />
+          </step>
+          <step>
+            <index>2</index>
+            <content>Enter '' in field ''</content>
+            <expected />
+          </step>
+          <step>
+            <index>3</index>
+            <content>Click submit</content>
+            <expected>Validation error shown for field ''</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+      <case>
+        <title>Leave required field '' empty and submit</title>
+        <template>Test Case (Steps)</template>
+        <type>Functional</type>
+        <priority>High</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://qafjdforum.courts.phila.gov/</content>
+            <expected />
+          </step>
+          <step>
+            <index>2</index>
+            <content>Leave field '' empty</content>
+            <expected />
+          </step>
+          <step>
+            <index>3</index>
+            <content>Fill all other required fields with valid data</content>
+            <expected />
+          </step>
+          <step>
+            <index>4</index>
+            <content>Click submit</content>
+            <expected>Validation error displayed for required field ''</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+      <case>
+        <title>Leave required field '' empty and submit</title>
+        <template>Test Case (Steps)</template>
+        <type>Functional</type>
+        <priority>High</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://qafjdforum.courts.phila.gov/</content>
+            <expected />
+          </step>
+          <step>
+            <index>2</index>
+            <content>Leave field '' empty</content>
+            <expected />
+          </step>
+          <step>
+            <index>3</index>
+            <content>Fill all other required fields with valid data</content>
+            <expected />
+          </step>
+          <step>
+            <index>4</index>
+            <content>Click submit</content>
+            <expected>Validation error displayed for required field ''</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+    </cases>
+  </section>
+  <section>
     <name>Negative</name>
     <cases>
+      <case>
+        <title>Submit form completely empty on https://qafjdforum.courts.phila.gov/</title>
+        <template>Test Case (Steps)</template>
+        <type>Negative</type>
+        <priority>High</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://qafjdforum.courts.phila.gov/</content>
+            <expected />
+          </step>
+          <step>
+            <index>2</index>
+            <content>Leave all fields empty</content>
+            <expected />
+          </step>
+          <step>
+            <index>3</index>
+            <content>Click submit</content>
+            <expected>Validation errors shown for required fields, form does not submit</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
       <case>
         <title>Access invalid/fuzz route: /admin</title>
         <template>Test Case (Steps)</template>
@@ -12,7 +176,7 @@
         <custom_steps_separated>
           <step>
             <index>1</index>
-            <content>Navigate to https://www.google.com//admin</content>
+            <content>Navigate to https://qafjdforum.courts.phila.gov//admin</content>
             <expected>404 page displayed, no server errors or sensitive info exposed</expected>
           </step>
         </custom_steps_separated>
@@ -26,7 +190,7 @@
         <custom_steps_separated>
           <step>
             <index>1</index>
-            <content>Navigate to https://www.google.com//wp-admin</content>
+            <content>Navigate to https://qafjdforum.courts.phila.gov//wp-admin</content>
             <expected>404 page displayed, no server errors or sensitive info exposed</expected>
           </step>
         </custom_steps_separated>
@@ -40,7 +204,7 @@
         <custom_steps_separated>
           <step>
             <index>1</index>
-            <content>Navigate to https://www.google.com//api/v1/debug</content>
+            <content>Navigate to https://qafjdforum.courts.phila.gov//api/v1/debug</content>
             <expected>404 page displayed, no server errors or sensitive info exposed</expected>
           </step>
         </custom_steps_separated>
@@ -54,7 +218,7 @@
         <custom_steps_separated>
           <step>
             <index>1</index>
-            <content>Navigate to https://www.google.com//.env</content>
+            <content>Navigate to https://qafjdforum.courts.phila.gov//.env</content>
             <expected>404 page displayed, no server errors or sensitive info exposed</expected>
           </step>
         </custom_steps_separated>
@@ -68,7 +232,7 @@
         <custom_steps_separated>
           <step>
             <index>1</index>
-            <content>Navigate to https://www.google.com//nonexistent-page-xyz</content>
+            <content>Navigate to https://qafjdforum.courts.phila.gov//nonexistent-page-xyz</content>
             <expected>404 page displayed, no server errors or sensitive info exposed</expected>
           </step>
         </custom_steps_separated>
@@ -82,8 +246,297 @@
         <custom_steps_separated>
           <step>
             <index>1</index>
-            <content>Navigate to https://www.google.com//../../etc/passwd</content>
+            <content>Navigate to https://qafjdforum.courts.phila.gov//../../etc/passwd</content>
             <expected>404 page displayed, no server errors or sensitive info exposed</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+    </cases>
+  </section>
+  <section>
+    <name>Security</name>
+    <cases>
+      <case>
+        <title>SQL injection in '': ' OR 1=1 --</title>
+        <template>Test Case (Steps)</template>
+        <type>Security</type>
+        <priority>Critical</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://qafjdforum.courts.phila.gov/</content>
+            <expected />
+          </step>
+          <step>
+            <index>2</index>
+            <content>Enter '' OR 1=1 --' in field ''</content>
+            <expected />
+          </step>
+          <step>
+            <index>3</index>
+            <content>Submit the form</content>
+            <expected>No SQL error exposed, input sanitized, no data leak</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+      <case>
+        <title>SQL injection in '': "; DROP TABLE users; --</title>
+        <template>Test Case (Steps)</template>
+        <type>Security</type>
+        <priority>Critical</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://qafjdforum.courts.phila.gov/</content>
+            <expected />
+          </step>
+          <step>
+            <index>2</index>
+            <content>Enter '"; DROP TABLE users; --' in field ''</content>
+            <expected />
+          </step>
+          <step>
+            <index>3</index>
+            <content>Submit the form</content>
+            <expected>No SQL error exposed, input sanitized, no data leak</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+      <case>
+        <title>SQL injection in '': ' UNION SELECT NULL,NULL--</title>
+        <template>Test Case (Steps)</template>
+        <type>Security</type>
+        <priority>Critical</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://qafjdforum.courts.phila.gov/</content>
+            <expected />
+          </step>
+          <step>
+            <index>2</index>
+            <content>Enter '' UNION SELECT NULL,NULL--' in field ''</content>
+            <expected />
+          </step>
+          <step>
+            <index>3</index>
+            <content>Submit the form</content>
+            <expected>No SQL error exposed, input sanitized, no data leak</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+      <case>
+        <title>SQL injection in '': ' OR 1=1 --</title>
+        <template>Test Case (Steps)</template>
+        <type>Security</type>
+        <priority>Critical</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://qafjdforum.courts.phila.gov/</content>
+            <expected />
+          </step>
+          <step>
+            <index>2</index>
+            <content>Enter '' OR 1=1 --' in field ''</content>
+            <expected />
+          </step>
+          <step>
+            <index>3</index>
+            <content>Submit the form</content>
+            <expected>No SQL error exposed, input sanitized, no data leak</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+      <case>
+        <title>SQL injection in '': "; DROP TABLE users; --</title>
+        <template>Test Case (Steps)</template>
+        <type>Security</type>
+        <priority>Critical</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://qafjdforum.courts.phila.gov/</content>
+            <expected />
+          </step>
+          <step>
+            <index>2</index>
+            <content>Enter '"; DROP TABLE users; --' in field ''</content>
+            <expected />
+          </step>
+          <step>
+            <index>3</index>
+            <content>Submit the form</content>
+            <expected>No SQL error exposed, input sanitized, no data leak</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+      <case>
+        <title>SQL injection in '': ' UNION SELECT NULL,NULL--</title>
+        <template>Test Case (Steps)</template>
+        <type>Security</type>
+        <priority>Critical</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://qafjdforum.courts.phila.gov/</content>
+            <expected />
+          </step>
+          <step>
+            <index>2</index>
+            <content>Enter '' UNION SELECT NULL,NULL--' in field ''</content>
+            <expected />
+          </step>
+          <step>
+            <index>3</index>
+            <content>Submit the form</content>
+            <expected>No SQL error exposed, input sanitized, no data leak</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+      <case>
+        <title>XSS injection in '': &lt;script&gt;alert('XSS')&lt;/script&gt;</title>
+        <template>Test Case (Steps)</template>
+        <type>Security</type>
+        <priority>Critical</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://qafjdforum.courts.phila.gov/</content>
+            <expected />
+          </step>
+          <step>
+            <index>2</index>
+            <content>Enter '&lt;script&gt;alert('XSS')&lt;/script&gt;' in field ''</content>
+            <expected />
+          </step>
+          <step>
+            <index>3</index>
+            <content>Submit the form</content>
+            <expected />
+          </step>
+          <step>
+            <index>4</index>
+            <content>Check the response/rendered page for unescaped script execution</content>
+            <expected>Input is sanitized, no script execution in browser</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+      <case>
+        <title>XSS injection in '': &lt;img src=x onerror="alert(1)"&gt;</title>
+        <template>Test Case (Steps)</template>
+        <type>Security</type>
+        <priority>Critical</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://qafjdforum.courts.phila.gov/</content>
+            <expected />
+          </step>
+          <step>
+            <index>2</index>
+            <content>Enter '&lt;img src=x onerror="alert(1)"&gt;' in field ''</content>
+            <expected />
+          </step>
+          <step>
+            <index>3</index>
+            <content>Submit the form</content>
+            <expected />
+          </step>
+          <step>
+            <index>4</index>
+            <content>Check the response/rendered page for unescaped script execution</content>
+            <expected>Input is sanitized, no script execution in browser</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+      <case>
+        <title>XSS injection in '': javascript:alert(1)</title>
+        <template>Test Case (Steps)</template>
+        <type>Security</type>
+        <priority>Critical</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Navigate to https://qafjdforum.courts.phila.gov/</content>
+            <expected />
+          </step>
+          <step>
+            <index>2</index>
+            <content>Enter 'javascript:alert(1)' in field ''</content>
+            <expected />
+          </step>
+          <step>
+            <index>3</index>
+            <content>Submit the form</content>
+            <expected />
+          </step>
+          <step>
+            <index>4</index>
+            <content>Check the response/rendered page for unescaped script execution</content>
+            <expected>Input is sanitized, no script execution in browser</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+      <case>
+        <title>Access protected pages without authentication</title>
+        <template>Test Case (Steps)</template>
+        <type>Security</type>
+        <priority>Critical</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Clear all cookies and session data</content>
+            <expected />
+          </step>
+          <step>
+            <index>2</index>
+            <content>Navigate directly to https://qafjdforum.courts.phila.gov/</content>
+            <expected />
+          </step>
+          <step>
+            <index>3</index>
+            <content>Attempt to access pages that require authentication</content>
+            <expected>Redirected to login page or shown 401/403 error</expected>
+          </step>
+        </custom_steps_separated>
+      </case>
+      <case>
+        <title>Test session expiry after logout</title>
+        <template>Test Case (Steps)</template>
+        <type>Security</type>
+        <priority>High</priority>
+        <custom />
+        <custom_steps_separated>
+          <step>
+            <index>1</index>
+            <content>Log in with valid credentials</content>
+            <expected />
+          </step>
+          <step>
+            <index>2</index>
+            <content>Log out</content>
+            <expected />
+          </step>
+          <step>
+            <index>3</index>
+            <content>Press browser back button</content>
+            <expected />
+          </step>
+          <step>
+            <index>4</index>
+            <content>Try to access a protected resource</content>
+            <expected>Session is invalidated, access denied</expected>
           </step>
         </custom_steps_separated>
       </case>

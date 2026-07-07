@@ -11,7 +11,7 @@ def browser_page(browser):
     page.close()
 
 
-def test_tc_func_001(browser_page: Page):
+def test_tc_func_011(browser_page: Page):
     """Submit form with all valid inputs on https://qafjdforum.courts.phila.gov/"""
     page = browser_page
     page.goto("https://qafjdforum.courts.phila.gov/")
@@ -19,21 +19,21 @@ def test_tc_func_001(browser_page: Page):
     page.fill("[name=\"\"]", "P@ssw0rd123")
     page.click("form")
 
-def test_tc_func_002(browser_page: Page):
+def test_tc_func_012(browser_page: Page):
     """Enter invalid value in '' (text)"""
     page = browser_page
     page.goto("https://qafjdforum.courts.phila.gov/")
     page.fill("[name=\"\"]", "")
     page.click("#username")
 
-def test_tc_func_003(browser_page: Page):
+def test_tc_func_013(browser_page: Page):
     """Enter invalid value in '' (password)"""
     page = browser_page
     page.goto("https://qafjdforum.courts.phila.gov/")
     page.fill("[name=\"\"]", "")
     page.click("#password")
 
-def test_tc_func_004(browser_page: Page):
+def test_tc_func_014(browser_page: Page):
     """Leave required field '' empty and submit"""
     page = browser_page
     page.goto("https://qafjdforum.courts.phila.gov/")
@@ -41,7 +41,7 @@ def test_tc_func_004(browser_page: Page):
     # Fill all other required fields with valid data
     page.click("#username")
 
-def test_tc_func_005(browser_page: Page):
+def test_tc_func_015(browser_page: Page):
     """Leave required field '' empty and submit"""
     page = browser_page
     page.goto("https://qafjdforum.courts.phila.gov/")

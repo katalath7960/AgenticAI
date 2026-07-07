@@ -1,9 +1,196 @@
 Summary,Issue Type,Priority,Description,Labels,Component
+Submit form with all valid inputs on https://qafjdforum.courts.phila.gov/,Test,High,"*Preconditions:*
+Page is loaded
+User is on the correct page
+
+*Steps:*
+# Navigate to https://qafjdforum.courts.phila.gov/
+# Enter 'Test Value' in field '' (text)
+# Enter 'P@ssw0rd123' in field '' (password)
+# Click submit
+
+*Expected Result:*
+Form submits successfully without errors",Functional,Automated Tests
+Enter invalid value in '' (text),Test,Medium,"*Preconditions:*
+Page is loaded
+
+*Steps:*
+# Navigate to https://qafjdforum.courts.phila.gov/
+# Enter '' in field ''
+# Click submit
+
+*Expected Result:*
+Validation error shown for field ''",Functional,Automated Tests
+Enter invalid value in '' (password),Test,Medium,"*Preconditions:*
+Page is loaded
+
+*Steps:*
+# Navigate to https://qafjdforum.courts.phila.gov/
+# Enter '' in field ''
+# Click submit
+
+*Expected Result:*
+Validation error shown for field ''",Functional,Automated Tests
+Leave required field '' empty and submit,Test,High,"*Preconditions:*
+Page is loaded
+
+*Steps:*
+# Navigate to https://qafjdforum.courts.phila.gov/
+# Leave field '' empty
+# Fill all other required fields with valid data
+# Click submit
+
+*Expected Result:*
+Validation error displayed for required field ''",Functional,Automated Tests
+Leave required field '' empty and submit,Test,High,"*Preconditions:*
+Page is loaded
+
+*Steps:*
+# Navigate to https://qafjdforum.courts.phila.gov/
+# Leave field '' empty
+# Fill all other required fields with valid data
+# Click submit
+
+*Expected Result:*
+Validation error displayed for required field ''",Functional,Automated Tests
+Submit form completely empty on https://qafjdforum.courts.phila.gov/,Test,High,"*Preconditions:*
+Page is loaded
+
+*Steps:*
+# Navigate to https://qafjdforum.courts.phila.gov/
+# Leave all fields empty
+# Click submit
+
+*Expected Result:*
+Validation errors shown for required fields, form does not submit",Negative,Automated Tests
+SQL injection in '': ' OR 1=1 --,Test,Critical,"*Preconditions:*
+Page is loaded
+Security testing is authorized
+
+*Steps:*
+# Navigate to https://qafjdforum.courts.phila.gov/
+# Enter '' OR 1=1 --' in field ''
+# Submit the form
+
+*Expected Result:*
+No SQL error exposed, input sanitized, no data leak",Security,Automated Tests
+"SQL injection in '': ""; DROP TABLE users; --",Test,Critical,"*Preconditions:*
+Page is loaded
+Security testing is authorized
+
+*Steps:*
+# Navigate to https://qafjdforum.courts.phila.gov/
+# Enter '""; DROP TABLE users; --' in field ''
+# Submit the form
+
+*Expected Result:*
+No SQL error exposed, input sanitized, no data leak",Security,Automated Tests
+"SQL injection in '': ' UNION SELECT NULL,NULL--",Test,Critical,"*Preconditions:*
+Page is loaded
+Security testing is authorized
+
+*Steps:*
+# Navigate to https://qafjdforum.courts.phila.gov/
+# Enter '' UNION SELECT NULL,NULL--' in field ''
+# Submit the form
+
+*Expected Result:*
+No SQL error exposed, input sanitized, no data leak",Security,Automated Tests
+SQL injection in '': ' OR 1=1 --,Test,Critical,"*Preconditions:*
+Page is loaded
+Security testing is authorized
+
+*Steps:*
+# Navigate to https://qafjdforum.courts.phila.gov/
+# Enter '' OR 1=1 --' in field ''
+# Submit the form
+
+*Expected Result:*
+No SQL error exposed, input sanitized, no data leak",Security,Automated Tests
+"SQL injection in '': ""; DROP TABLE users; --",Test,Critical,"*Preconditions:*
+Page is loaded
+Security testing is authorized
+
+*Steps:*
+# Navigate to https://qafjdforum.courts.phila.gov/
+# Enter '""; DROP TABLE users; --' in field ''
+# Submit the form
+
+*Expected Result:*
+No SQL error exposed, input sanitized, no data leak",Security,Automated Tests
+"SQL injection in '': ' UNION SELECT NULL,NULL--",Test,Critical,"*Preconditions:*
+Page is loaded
+Security testing is authorized
+
+*Steps:*
+# Navigate to https://qafjdforum.courts.phila.gov/
+# Enter '' UNION SELECT NULL,NULL--' in field ''
+# Submit the form
+
+*Expected Result:*
+No SQL error exposed, input sanitized, no data leak",Security,Automated Tests
+XSS injection in '': <script>alert('XSS')</script>,Test,Critical,"*Preconditions:*
+Page is loaded
+Security testing is authorized
+
+*Steps:*
+# Navigate to https://qafjdforum.courts.phila.gov/
+# Enter '<script>alert('XSS')</script>' in field ''
+# Submit the form
+# Check the response/rendered page for unescaped script execution
+
+*Expected Result:*
+Input is sanitized, no script execution in browser",Security,Automated Tests
+"XSS injection in '': <img src=x onerror=""alert(1)"">",Test,Critical,"*Preconditions:*
+Page is loaded
+Security testing is authorized
+
+*Steps:*
+# Navigate to https://qafjdforum.courts.phila.gov/
+# Enter '<img src=x onerror=""alert(1)"">' in field ''
+# Submit the form
+# Check the response/rendered page for unescaped script execution
+
+*Expected Result:*
+Input is sanitized, no script execution in browser",Security,Automated Tests
+XSS injection in '': javascript:alert(1),Test,Critical,"*Preconditions:*
+Page is loaded
+Security testing is authorized
+
+*Steps:*
+# Navigate to https://qafjdforum.courts.phila.gov/
+# Enter 'javascript:alert(1)' in field ''
+# Submit the form
+# Check the response/rendered page for unescaped script execution
+
+*Expected Result:*
+Input is sanitized, no script execution in browser",Security,Automated Tests
+Access protected pages without authentication,Test,Critical,"*Preconditions:*
+User is NOT logged in
+
+*Steps:*
+# Clear all cookies and session data
+# Navigate directly to https://qafjdforum.courts.phila.gov/
+# Attempt to access pages that require authentication
+
+*Expected Result:*
+Redirected to login page or shown 401/403 error",Security,Automated Tests
+Test session expiry after logout,Test,High,"*Preconditions:*
+User was logged in and then logged out
+
+*Steps:*
+# Log in with valid credentials
+# Log out
+# Press browser back button
+# Try to access a protected resource
+
+*Expected Result:*
+Session is invalidated, access denied",Security,Automated Tests
 Access invalid/fuzz route: /admin,Test,Medium,"*Preconditions:*
 Site is accessible
 
 *Steps:*
-# Navigate to https://www.google.com//admin
+# Navigate to https://qafjdforum.courts.phila.gov//admin
 
 *Expected Result:*
 404 page displayed, no server errors or sensitive info exposed",Negative,Automated Tests
@@ -11,7 +198,7 @@ Access invalid/fuzz route: /wp-admin,Test,Medium,"*Preconditions:*
 Site is accessible
 
 *Steps:*
-# Navigate to https://www.google.com//wp-admin
+# Navigate to https://qafjdforum.courts.phila.gov//wp-admin
 
 *Expected Result:*
 404 page displayed, no server errors or sensitive info exposed",Negative,Automated Tests
@@ -19,7 +206,7 @@ Access invalid/fuzz route: /api/v1/debug,Test,Medium,"*Preconditions:*
 Site is accessible
 
 *Steps:*
-# Navigate to https://www.google.com//api/v1/debug
+# Navigate to https://qafjdforum.courts.phila.gov//api/v1/debug
 
 *Expected Result:*
 404 page displayed, no server errors or sensitive info exposed",Negative,Automated Tests
@@ -27,7 +214,7 @@ Access invalid/fuzz route: /.env,Test,Medium,"*Preconditions:*
 Site is accessible
 
 *Steps:*
-# Navigate to https://www.google.com//.env
+# Navigate to https://qafjdforum.courts.phila.gov//.env
 
 *Expected Result:*
 404 page displayed, no server errors or sensitive info exposed",Negative,Automated Tests
@@ -35,7 +222,7 @@ Access invalid/fuzz route: /nonexistent-page-xyz,Test,Medium,"*Preconditions:*
 Site is accessible
 
 *Steps:*
-# Navigate to https://www.google.com//nonexistent-page-xyz
+# Navigate to https://qafjdforum.courts.phila.gov//nonexistent-page-xyz
 
 *Expected Result:*
 404 page displayed, no server errors or sensitive info exposed",Negative,Automated Tests
@@ -43,7 +230,7 @@ Access invalid/fuzz route: /../../etc/passwd,Test,Medium,"*Preconditions:*
 Site is accessible
 
 *Steps:*
-# Navigate to https://www.google.com//../../etc/passwd
+# Navigate to https://qafjdforum.courts.phila.gov//../../etc/passwd
 
 *Expected Result:*
 404 page displayed, no server errors or sensitive info exposed",Negative,Automated Tests

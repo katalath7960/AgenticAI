@@ -1,0 +1,37 @@
+# Core automation
+playwright>=1.44.0
+
+# Excel handling
+pandas>=2.2.0
+openpyxl>=3.1.2
+xlsxwriter>=3.2.0
+
+# Testing framework
+pytest>=8.2.0
+pytest-asyncio>=0.23.0
+
+# AI / LLM
+anthropic>=0.28.0
+
+# Report generation
+Jinja2>=3.1.4
+weasyprint>=62.0
+
+# Configuration & environment
+python-dotenv>=1.0.0
+PyYAML>=6.0.1
+
+# Logging
+loguru>=0.7.2
+
+# Async file I/O
+aiofiles>=23.2.0
+
+# Retry logic
+tenacity>=8.3.0
+
+# Image handling
+Pillow>=10.3.0
+
+# Utilities
+python-dateutil>=2.9.0

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Test Execution Report — {{ run.run_id }}</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',Arial,sans-serif;background:#f4f6f9;color:#222;font-size:13px}
+  header{background:#1a3a6b;color:#fff;padding:20px 30px}
+  header h1{font-size:22px;font-weight:700}
+  header p{margin-top:4px;opacity:.8;font-size:12px}
+  .container{max-width:1400px;margin:0 auto;padding:20px}
+  .summary-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin:20px 0}
+  .card{background:#fff;border-radius:8px;padding:16px;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+  .card .num{font-size:32px;font-weight:700;margin-bottom:4px}
+  .card .label{font-size:11px;color:#666;text-transform:uppercase;letter-spacing:.5px}
+  .pass .num{color:#1e8a44}
+  .fail .num{color:#c0392b}
+  .skip .num{color:#d68910}
+  .pct .num{color:#1a3a6b}
+  table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.08);margin:20px 0}
+  th{background:#1a3a6b;color:#fff;padding:10px 12px;text-align:left;font-size:12px;font-weight:600;white-space:nowrap}
+  td{padding:9px 12px;border-bottom:1px solid #eee;vertical-align:top;font-size:12px}
+  tr:last-child td{border-bottom:none}
+  tr:hover td{background:#f8f9fa}
+  .badge{display:inline-block;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:700;letter-spacing:.3px}
+  .PASS{background:#d5f5e3;color:#1e8a44}
+  .FAIL{background:#fde8e8;color:#c0392b}
+  .SKIP{background:#fef9e7;color:#d68910}
+  .NOT\.RUN,.NOT_RUN{background:#eee;color:#666}
+  .flaky{background:#fff3cd;color:#856404;font-size:10px;padding:2px 6px;border-radius:8px;margin-left:6px}
+  .screenshot-thumb{width:80px;height:50px;object-fit:cover;border-radius:4px;cursor:pointer;border:1px solid #ddd}
+  .section-title{font-size:16px;font-weight:700;color:#1a3a6b;margin:28px 0 10px;border-left:4px solid #1a3a6b;padding-left:10px}
+  .meta{background:#fff;border-radius:8px;padding:16px 20px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(3,1fr);gap:10px;font-size:12px}
+  .meta span{color:#666}
+  .analysis{font-size:11px;color:#555;font-style:italic}
+  footer{text-align:center;padding:20px;color:#999;font-size:11px}
+</style>
+</head>
+<body>
+<header>
+  <h1>AI-Powered Test Execution Report</h1>
+  <p>Run ID: {{ run.run_id }} &nbsp;|&nbsp; Generated: {{ run.end_time }}</p>
+</header>
+
+<div class="container">
+
+  <div class="meta">
+    <div><span>Target URL:</span> {{ run.url }}</div>
+    <div><span>Browser:</span> {{ run.browser }}</div>
+    <div><span>Start:</span> {{ run.start_time }}</div>
+    <div><span>End:</span> {{ run.end_time }}</div>
+    <div><span>Duration:</span> {{ run.total_time_human }}</div>
+    <div><span>Excel Files:</span> {{ run.excel_files }}</div>
+  </div>
+
+  <div class="summary-grid">
+    <div class="card"><div class="num">{{ run.total }}</div><div class="label">Total</div></div>
+    <div class="card pass"><div class="num">{{ run.passed }}</div><div class="label">Passed</div></div>
+    <div class="card fail"><div class="num">{{ run.failed }}</div><div class="label">Failed</div></div>
+    <div class="card skip"><div class="num">{{ run.skipped }}</div><div class="label">Skipped</div></div>
+    <div class="card pct"><div class="num">{{ run.pass_pct }}%</div><div class="label">Pass Rate</div></div>
+    <div class="card"><div class="num">{{ run.total_time_human }}</div><div class="label">Exec Time</div></div>
+  </div>
+
+  <div class="section-title">Test Case Results</div>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th><th>TC ID</th><th>Test Case</th><th>Steps</th>
+        <th>Expected</th><th>Actual Result</th><th>Status</th>
+        <th>Error</th><th>Screenshot</th><th>Time (ms)</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for tc in test_cases %}
+      <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ tc.tc_id }}</td>
+        <td>{{ tc.test_case_name }}{% if tc.is_flaky %}<span class="flaky">FLAKY</span>{% endif %}</td>
+        <td style="max-width:200px;word-break:break-word">{{ tc.steps }}</td>
+        <td style="max-width:150px">{{ tc.expected_result }}</td>
+        <td style="max-width:200px;word-break:break-word">{{ tc.actual_result }}</td>
+        <td><span class="badge {{ tc.status.replace(' ','_') }}">{{ tc.status }}</span></td>
+        <td style="max-width:200px;word-break:break-word;color:#c0392b">{{ tc.error_message }}</td>
+        <td>
+          {% if tc.screenshot_path %}
+            <a href="{{ tc.screenshot_path }}" target="_blank">
+              <img class="screenshot-thumb" src="{{ tc.screenshot_path }}" alt="screenshot"
+                   onerror="this.style.display='none'"/>
+            </a>
+          {% endif %}
+        </td>
+        <td>{{ tc.execution_time_ms }}</td>
+      </tr>
+      {% if tc.failure_analysis %}
+      <tr>
+        <td colspan="10" class="analysis">AI Analysis: {{ tc.failure_analysis }}</td>
+      </tr>
+      {% endif %}
+    {% endfor %}
+    </tbody>
+  </table>
+
+  {% if flaky_ids %}
+  <div class="section-title">Flaky Tests</div>
+  <table>
+    <thead><tr><th>TC ID</th><th>Test Case Name</th><th>Note</th></tr></thead>
+    <tbody>
+    {% for tc in test_cases if tc.is_flaky %}
+      <tr>
+        <td>{{ tc.tc_id }}</td>
+        <td>{{ tc.test_case_name }}</td>
+        <td>This test has both PASS and FAIL results across recent runs.</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+
+</div>
+<footer>Generated by AI-Powered Test Automation Framework &nbsp;|&nbsp; {{ run.end_time }}</footer>
+</body>
+</html>

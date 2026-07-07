@@ -1,100 +1,423 @@
 {
-  "site_url": "https://www.google.com/",
+  "site_url": "https://qafjdforum.courts.phila.gov/",
   "test_cases": [
     {
-      "id": "TC-NEG-008",
+      "id": "TC-FUNC-011",
+      "category": "Functional",
+      "description": "Submit form with all valid inputs on https://qafjdforum.courts.phila.gov/",
+      "preconditions": [
+        "Page is loaded",
+        "User is on the correct page"
+      ],
+      "steps": [
+        "Navigate to https://qafjdforum.courts.phila.gov/",
+        "Enter 'Test Value' in field '' (text)",
+        "Enter 'P@ssw0rd123' in field '' (password)",
+        "Click submit"
+      ],
+      "expected": "Form submits successfully without errors",
+      "priority": "High",
+      "severity": "Major",
+      "page_url": "https://qafjdforum.courts.phila.gov/",
+      "element_ref": "form"
+    },
+    {
+      "id": "TC-FUNC-012",
+      "category": "Functional",
+      "description": "Enter invalid value in '' (text)",
+      "preconditions": [
+        "Page is loaded"
+      ],
+      "steps": [
+        "Navigate to https://qafjdforum.courts.phila.gov/",
+        "Enter '' in field ''",
+        "Click submit"
+      ],
+      "expected": "Validation error shown for field ''",
+      "priority": "Medium",
+      "severity": "Minor",
+      "page_url": "https://qafjdforum.courts.phila.gov/",
+      "element_ref": "#username"
+    },
+    {
+      "id": "TC-FUNC-013",
+      "category": "Functional",
+      "description": "Enter invalid value in '' (password)",
+      "preconditions": [
+        "Page is loaded"
+      ],
+      "steps": [
+        "Navigate to https://qafjdforum.courts.phila.gov/",
+        "Enter '' in field ''",
+        "Click submit"
+      ],
+      "expected": "Validation error shown for field ''",
+      "priority": "Medium",
+      "severity": "Minor",
+      "page_url": "https://qafjdforum.courts.phila.gov/",
+      "element_ref": "#password"
+    },
+    {
+      "id": "TC-FUNC-014",
+      "category": "Functional",
+      "description": "Leave required field '' empty and submit",
+      "preconditions": [
+        "Page is loaded"
+      ],
+      "steps": [
+        "Navigate to https://qafjdforum.courts.phila.gov/",
+        "Leave field '' empty",
+        "Fill all other required fields with valid data",
+        "Click submit"
+      ],
+      "expected": "Validation error displayed for required field ''",
+      "priority": "High",
+      "severity": "Major",
+      "page_url": "https://qafjdforum.courts.phila.gov/",
+      "element_ref": "#username"
+    },
+    {
+      "id": "TC-FUNC-015",
+      "category": "Functional",
+      "description": "Leave required field '' empty and submit",
+      "preconditions": [
+        "Page is loaded"
+      ],
+      "steps": [
+        "Navigate to https://qafjdforum.courts.phila.gov/",
+        "Leave field '' empty",
+        "Fill all other required fields with valid data",
+        "Click submit"
+      ],
+      "expected": "Validation error displayed for required field ''",
+      "priority": "High",
+      "severity": "Major",
+      "page_url": "https://qafjdforum.courts.phila.gov/",
+      "element_ref": "#password"
+    },
+    {
+      "id": "TC-NEG-033",
+      "category": "Negative",
+      "description": "Submit form completely empty on https://qafjdforum.courts.phila.gov/",
+      "preconditions": [
+        "Page is loaded"
+      ],
+      "steps": [
+        "Navigate to https://qafjdforum.courts.phila.gov/",
+        "Leave all fields empty",
+        "Click submit"
+      ],
+      "expected": "Validation errors shown for required fields, form does not submit",
+      "priority": "High",
+      "severity": "Major",
+      "page_url": "https://qafjdforum.courts.phila.gov/",
+      "element_ref": "form"
+    },
+    {
+      "id": "TC-SEC-001",
+      "category": "Security",
+      "description": "SQL injection in '': ' OR 1=1 --",
+      "preconditions": [
+        "Page is loaded",
+        "Security testing is authorized"
+      ],
+      "steps": [
+        "Navigate to https://qafjdforum.courts.phila.gov/",
+        "Enter '' OR 1=1 --' in field ''",
+        "Submit the form"
+      ],
+      "expected": "No SQL error exposed, input sanitized, no data leak",
+      "priority": "Critical",
+      "severity": "Blocker",
+      "page_url": "https://qafjdforum.courts.phila.gov/",
+      "element_ref": "#username"
+    },
+    {
+      "id": "TC-SEC-002",
+      "category": "Security",
+      "description": "SQL injection in '': \"; DROP TABLE users; --",
+      "preconditions": [
+        "Page is loaded",
+        "Security testing is authorized"
+      ],
+      "steps": [
+        "Navigate to https://qafjdforum.courts.phila.gov/",
+        "Enter '\"; DROP TABLE users; --' in field ''",
+        "Submit the form"
+      ],
+      "expected": "No SQL error exposed, input sanitized, no data leak",
+      "priority": "Critical",
+      "severity": "Blocker",
+      "page_url": "https://qafjdforum.courts.phila.gov/",
+      "element_ref": "#username"
+    },
+    {
+      "id": "TC-SEC-003",
+      "category": "Security",
+      "description": "SQL injection in '': ' UNION SELECT NULL,NULL--",
+      "preconditions": [
+        "Page is loaded",
+        "Security testing is authorized"
+      ],
+      "steps": [
+        "Navigate to https://qafjdforum.courts.phila.gov/",
+        "Enter '' UNION SELECT NULL,NULL--' in field ''",
+        "Submit the form"
+      ],
+      "expected": "No SQL error exposed, input sanitized, no data leak",
+      "priority": "Critical",
+      "severity": "Blocker",
+      "page_url": "https://qafjdforum.courts.phila.gov/",
+      "element_ref": "#username"
+    },
+    {
+      "id": "TC-SEC-004",
+      "category": "Security",
+      "description": "SQL injection in '': ' OR 1=1 --",
+      "preconditions": [
+        "Page is loaded",
+        "Security testing is authorized"
+      ],
+      "steps": [
+        "Navigate to https://qafjdforum.courts.phila.gov/",
+        "Enter '' OR 1=1 --' in field ''",
+        "Submit the form"
+      ],
+      "expected": "No SQL error exposed, input sanitized, no data leak",
+      "priority": "Critical",
+      "severity": "Blocker",
+      "page_url": "https://qafjdforum.courts.phila.gov/",
+      "element_ref": "#password"
+    },
+    {
+      "id": "TC-SEC-005",
+      "category": "Security",
+      "description": "SQL injection in '': \"; DROP TABLE users; --",
+      "preconditions": [
+        "Page is loaded",
+        "Security testing is authorized"
+      ],
+      "steps": [
+        "Navigate to https://qafjdforum.courts.phila.gov/",
+        "Enter '\"; DROP TABLE users; --' in field ''",
+        "Submit the form"
+      ],
+      "expected": "No SQL error exposed, input sanitized, no data leak",
+      "priority": "Critical",
+      "severity": "Blocker",
+      "page_url": "https://qafjdforum.courts.phila.gov/",
+      "element_ref": "#password"
+    },
+    {
+      "id": "TC-SEC-006",
+      "category": "Security",
+      "description": "SQL injection in '': ' UNION SELECT NULL,NULL--",
+      "preconditions": [
+        "Page is loaded",
+        "Security testing is authorized"
+      ],
+      "steps": [
+        "Navigate to https://qafjdforum.courts.phila.gov/",
+        "Enter '' UNION SELECT NULL,NULL--' in field ''",
+        "Submit the form"
+      ],
+      "expected": "No SQL error exposed, input sanitized, no data leak",
+      "priority": "Critical",
+      "severity": "Blocker",
+      "page_url": "https://qafjdforum.courts.phila.gov/",
+      "element_ref": "#password"
+    },
+    {
+      "id": "TC-SEC-007",
+      "category": "Security",
+      "description": "XSS injection in '': <script>alert('XSS')</script>",
+      "preconditions": [
+        "Page is loaded",
+        "Security testing is authorized"
+      ],
+      "steps": [
+        "Navigate to https://qafjdforum.courts.phila.gov/",
+        "Enter '<script>alert('XSS')</script>' in field ''",
+        "Submit the form",
+        "Check the response/rendered page for unescaped script execution"
+      ],
+      "expected": "Input is sanitized, no script execution in browser",
+      "priority": "Critical",
+      "severity": "Blocker",
+      "page_url": "https://qafjdforum.courts.phila.gov/",
+      "element_ref": "#username"
+    },
+    {
+      "id": "TC-SEC-008",
+      "category": "Security",
+      "description": "XSS injection in '': <img src=x onerror=\"alert(1)\">",
+      "preconditions": [
+        "Page is loaded",
+        "Security testing is authorized"
+      ],
+      "steps": [
+        "Navigate to https://qafjdforum.courts.phila.gov/",
+        "Enter '<img src=x onerror=\"alert(1)\">' in field ''",
+        "Submit the form",
+        "Check the response/rendered page for unescaped script execution"
+      ],
+      "expected": "Input is sanitized, no script execution in browser",
+      "priority": "Critical",
+      "severity": "Blocker",
+      "page_url": "https://qafjdforum.courts.phila.gov/",
+      "element_ref": "#username"
+    },
+    {
+      "id": "TC-SEC-009",
+      "category": "Security",
+      "description": "XSS injection in '': javascript:alert(1)",
+      "preconditions": [
+        "Page is loaded",
+        "Security testing is authorized"
+      ],
+      "steps": [
+        "Navigate to https://qafjdforum.courts.phila.gov/",
+        "Enter 'javascript:alert(1)' in field ''",
+        "Submit the form",
+        "Check the response/rendered page for unescaped script execution"
+      ],
+      "expected": "Input is sanitized, no script execution in browser",
+      "priority": "Critical",
+      "severity": "Blocker",
+      "page_url": "https://qafjdforum.courts.phila.gov/",
+      "element_ref": "#username"
+    },
+    {
+      "id": "TC-SEC-010",
+      "category": "Security",
+      "description": "Access protected pages without authentication",
+      "preconditions": [
+        "User is NOT logged in"
+      ],
+      "steps": [
+        "Clear all cookies and session data",
+        "Navigate directly to https://qafjdforum.courts.phila.gov/",
+        "Attempt to access pages that require authentication"
+      ],
+      "expected": "Redirected to login page or shown 401/403 error",
+      "priority": "Critical",
+      "severity": "Blocker",
+      "page_url": "https://qafjdforum.courts.phila.gov/",
+      "element_ref": ""
+    },
+    {
+      "id": "TC-SEC-011",
+      "category": "Security",
+      "description": "Test session expiry after logout",
+      "preconditions": [
+        "User was logged in and then logged out"
+      ],
+      "steps": [
+        "Log in with valid credentials",
+        "Log out",
+        "Press browser back button",
+        "Try to access a protected resource"
+      ],
+      "expected": "Session is invalidated, access denied",
+      "priority": "High",
+      "severity": "Major",
+      "page_url": "https://qafjdforum.courts.phila.gov/",
+      "element_ref": ""
+    },
+    {
+      "id": "TC-NEG-034",
       "category": "Negative",
       "description": "Access invalid/fuzz route: /admin",
       "preconditions": [
         "Site is accessible"
       ],
       "steps": [
-        "Navigate to https://www.google.com//admin"
+        "Navigate to https://qafjdforum.courts.phila.gov//admin"
       ],
       "expected": "404 page displayed, no server errors or sensitive info exposed",
       "priority": "Medium",
       "severity": "Minor",
-      "page_url": "https://www.google.com//admin",
+      "page_url": "https://qafjdforum.courts.phila.gov//admin",
       "element_ref": ""
     },
     {
-      "id": "TC-NEG-009",
+      "id": "TC-NEG-035",
       "category": "Negative",
       "description": "Access invalid/fuzz route: /wp-admin",
       "preconditions": [
         "Site is accessible"
       ],
       "steps": [
-        "Navigate to https://www.google.com//wp-admin"
+        "Navigate to https://qafjdforum.courts.phila.gov//wp-admin"
       ],
       "expected": "404 page displayed, no server errors or sensitive info exposed",
       "priority": "Medium",
       "severity": "Minor",
-      "page_url": "https://www.google.com//wp-admin",
+      "page_url": "https://qafjdforum.courts.phila.gov//wp-admin",
       "element_ref": ""
     },
     {
-      "id": "TC-NEG-010",
+      "id": "TC-NEG-036",
       "category": "Negative",
       "description": "Access invalid/fuzz route: /api/v1/debug",
       "preconditions": [
         "Site is accessible"
       ],
       "steps": [
-        "Navigate to https://www.google.com//api/v1/debug"
+        "Navigate to https://qafjdforum.courts.phila.gov//api/v1/debug"
       ],
       "expected": "404 page displayed, no server errors or sensitive info exposed",
       "priority": "Medium",
       "severity": "Minor",
-      "page_url": "https://www.google.com//api/v1/debug",
+      "page_url": "https://qafjdforum.courts.phila.gov//api/v1/debug",
       "element_ref": ""
     },
     {
-      "id": "TC-NEG-011",
+      "id": "TC-NEG-037",
       "category": "Negative",
       "description": "Access invalid/fuzz route: /.env",
       "preconditions": [
         "Site is accessible"
       ],
       "steps": [
-        "Navigate to https://www.google.com//.env"
+        "Navigate to https://qafjdforum.courts.phila.gov//.env"
       ],
       "expected": "404 page displayed, no server errors or sensitive info exposed",
       "priority": "Medium",
       "severity": "Minor",
-      "page_url": "https://www.google.com//.env",
+      "page_url": "https://qafjdforum.courts.phila.gov//.env",
       "element_ref": ""
     },
     {
-      "id": "TC-NEG-012",
+      "id": "TC-NEG-038",
       "category": "Negative",
       "description": "Access invalid/fuzz route: /nonexistent-page-xyz",
       "preconditions": [
         "Site is accessible"
       ],
       "steps": [
-        "Navigate to https://www.google.com//nonexistent-page-xyz"
+        "Navigate to https://qafjdforum.courts.phila.gov//nonexistent-page-xyz"
       ],
       "expected": "404 page displayed, no server errors or sensitive info exposed",
       "priority": "Medium",
       "severity": "Minor",
-      "page_url": "https://www.google.com//nonexistent-page-xyz",
+      "page_url": "https://qafjdforum.courts.phila.gov//nonexistent-page-xyz",
       "element_ref": ""
     },
     {
-      "id": "TC-NEG-013",
+      "id": "TC-NEG-039",
       "category": "Negative",
       "description": "Access invalid/fuzz route: /../../etc/passwd",
       "preconditions": [
         "Site is accessible"
       ],
       "steps": [
-        "Navigate to https://www.google.com//../../etc/passwd"
+        "Navigate to https://qafjdforum.courts.phila.gov//../../etc/passwd"
       ],
       "expected": "404 page displayed, no server errors or sensitive info exposed",
       "priority": "Medium",
       "severity": "Minor",
-      "page_url": "https://www.google.com//../../etc/passwd",
+      "page_url": "https://qafjdforum.courts.phila.gov//../../etc/passwd",
       "element_ref": ""
     }
   ]

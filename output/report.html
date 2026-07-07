@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Test Suite Report — https://www.google.com/</title>
+<title>Test Suite Report — https://qafjdforum.courts.phila.gov/</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, 'Segoe UI', sans-serif; background: #f5f6fa; color: #2d3436; padding: 20px; }
@@ -26,73 +26,291 @@
 </head>
 <body>
 <h1>Test Suite Report</h1>
-<p>Target: <strong>https://www.google.com/</strong> | Total: <strong>6</strong> test cases</p>
+<p>Target: <strong>https://qafjdforum.courts.phila.gov/</strong> | Total: <strong>23</strong> test cases</p>
 
 <div class="summary">
 
-  <div class="card"><div class="number">6</div><div class="label">Negative</div></div>
+  <div class="card"><div class="number">5</div><div class="label">Functional</div></div>
+
+  <div class="card"><div class="number">7</div><div class="label">Negative</div></div>
+
+  <div class="card"><div class="number">11</div><div class="label">Security</div></div>
 
 </div>
 
 
 <div class="category">
-  <h2>Negative (6)</h2>
+  <h2>Functional (5)</h2>
   <table>
     <thead><tr><th>ID</th><th>Description</th><th>Steps</th><th>Expected</th><th>Priority</th></tr></thead>
     <tbody>
     
       <tr>
-        <td>TC-NEG-008</td>
+        <td>TC-FUNC-011</td>
+        <td>Submit form with all valid inputs on https://qafjdforum.courts.phila.gov/</td>
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov/
+2. Enter &#39;Test Value&#39; in field &#39;&#39; (text)
+3. Enter &#39;P@ssw0rd123&#39; in field &#39;&#39; (password)
+4. Click submit
+</td>
+        <td>Form submits successfully without errors</td>
+        <td><span class="badge High">High</span></td>
+      </tr>
+    
+      <tr>
+        <td>TC-FUNC-012</td>
+        <td>Enter invalid value in &#39;&#39; (text)</td>
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov/
+2. Enter &#39;&#39; in field &#39;&#39;
+3. Click submit
+</td>
+        <td>Validation error shown for field &#39;&#39;</td>
+        <td><span class="badge Medium">Medium</span></td>
+      </tr>
+    
+      <tr>
+        <td>TC-FUNC-013</td>
+        <td>Enter invalid value in &#39;&#39; (password)</td>
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov/
+2. Enter &#39;&#39; in field &#39;&#39;
+3. Click submit
+</td>
+        <td>Validation error shown for field &#39;&#39;</td>
+        <td><span class="badge Medium">Medium</span></td>
+      </tr>
+    
+      <tr>
+        <td>TC-FUNC-014</td>
+        <td>Leave required field &#39;&#39; empty and submit</td>
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov/
+2. Leave field &#39;&#39; empty
+3. Fill all other required fields with valid data
+4. Click submit
+</td>
+        <td>Validation error displayed for required field &#39;&#39;</td>
+        <td><span class="badge High">High</span></td>
+      </tr>
+    
+      <tr>
+        <td>TC-FUNC-015</td>
+        <td>Leave required field &#39;&#39; empty and submit</td>
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov/
+2. Leave field &#39;&#39; empty
+3. Fill all other required fields with valid data
+4. Click submit
+</td>
+        <td>Validation error displayed for required field &#39;&#39;</td>
+        <td><span class="badge High">High</span></td>
+      </tr>
+    
+    </tbody>
+  </table>
+</div>
+
+<div class="category">
+  <h2>Negative (7)</h2>
+  <table>
+    <thead><tr><th>ID</th><th>Description</th><th>Steps</th><th>Expected</th><th>Priority</th></tr></thead>
+    <tbody>
+    
+      <tr>
+        <td>TC-NEG-033</td>
+        <td>Submit form completely empty on https://qafjdforum.courts.phila.gov/</td>
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov/
+2. Leave all fields empty
+3. Click submit
+</td>
+        <td>Validation errors shown for required fields, form does not submit</td>
+        <td><span class="badge High">High</span></td>
+      </tr>
+    
+      <tr>
+        <td>TC-NEG-034</td>
         <td>Access invalid/fuzz route: /admin</td>
-        <td class="steps">1. Navigate to https://www.google.com//admin
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov//admin
 </td>
         <td>404 page displayed, no server errors or sensitive info exposed</td>
         <td><span class="badge Medium">Medium</span></td>
       </tr>
     
       <tr>
-        <td>TC-NEG-009</td>
+        <td>TC-NEG-035</td>
         <td>Access invalid/fuzz route: /wp-admin</td>
-        <td class="steps">1. Navigate to https://www.google.com//wp-admin
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov//wp-admin
 </td>
         <td>404 page displayed, no server errors or sensitive info exposed</td>
         <td><span class="badge Medium">Medium</span></td>
       </tr>
     
       <tr>
-        <td>TC-NEG-010</td>
+        <td>TC-NEG-036</td>
         <td>Access invalid/fuzz route: /api/v1/debug</td>
-        <td class="steps">1. Navigate to https://www.google.com//api/v1/debug
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov//api/v1/debug
 </td>
         <td>404 page displayed, no server errors or sensitive info exposed</td>
         <td><span class="badge Medium">Medium</span></td>
       </tr>
     
       <tr>
-        <td>TC-NEG-011</td>
+        <td>TC-NEG-037</td>
         <td>Access invalid/fuzz route: /.env</td>
-        <td class="steps">1. Navigate to https://www.google.com//.env
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov//.env
 </td>
         <td>404 page displayed, no server errors or sensitive info exposed</td>
         <td><span class="badge Medium">Medium</span></td>
       </tr>
     
       <tr>
-        <td>TC-NEG-012</td>
+        <td>TC-NEG-038</td>
         <td>Access invalid/fuzz route: /nonexistent-page-xyz</td>
-        <td class="steps">1. Navigate to https://www.google.com//nonexistent-page-xyz
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov//nonexistent-page-xyz
 </td>
         <td>404 page displayed, no server errors or sensitive info exposed</td>
         <td><span class="badge Medium">Medium</span></td>
       </tr>
     
       <tr>
-        <td>TC-NEG-013</td>
+        <td>TC-NEG-039</td>
         <td>Access invalid/fuzz route: /../../etc/passwd</td>
-        <td class="steps">1. Navigate to https://www.google.com//../../etc/passwd
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov//../../etc/passwd
 </td>
         <td>404 page displayed, no server errors or sensitive info exposed</td>
         <td><span class="badge Medium">Medium</span></td>
+      </tr>
+    
+    </tbody>
+  </table>
+</div>
+
+<div class="category">
+  <h2>Security (11)</h2>
+  <table>
+    <thead><tr><th>ID</th><th>Description</th><th>Steps</th><th>Expected</th><th>Priority</th></tr></thead>
+    <tbody>
+    
+      <tr>
+        <td>TC-SEC-001</td>
+        <td>SQL injection in &#39;&#39;: &#39; OR 1=1 --</td>
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov/
+2. Enter &#39;&#39; OR 1=1 --&#39; in field &#39;&#39;
+3. Submit the form
+</td>
+        <td>No SQL error exposed, input sanitized, no data leak</td>
+        <td><span class="badge Critical">Critical</span></td>
+      </tr>
+    
+      <tr>
+        <td>TC-SEC-002</td>
+        <td>SQL injection in &#39;&#39;: &#34;; DROP TABLE users; --</td>
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov/
+2. Enter &#39;&#34;; DROP TABLE users; --&#39; in field &#39;&#39;
+3. Submit the form
+</td>
+        <td>No SQL error exposed, input sanitized, no data leak</td>
+        <td><span class="badge Critical">Critical</span></td>
+      </tr>
+    
+      <tr>
+        <td>TC-SEC-003</td>
+        <td>SQL injection in &#39;&#39;: &#39; UNION SELECT NULL,NULL--</td>
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov/
+2. Enter &#39;&#39; UNION SELECT NULL,NULL--&#39; in field &#39;&#39;
+3. Submit the form
+</td>
+        <td>No SQL error exposed, input sanitized, no data leak</td>
+        <td><span class="badge Critical">Critical</span></td>
+      </tr>
+    
+      <tr>
+        <td>TC-SEC-004</td>
+        <td>SQL injection in &#39;&#39;: &#39; OR 1=1 --</td>
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov/
+2. Enter &#39;&#39; OR 1=1 --&#39; in field &#39;&#39;
+3. Submit the form
+</td>
+        <td>No SQL error exposed, input sanitized, no data leak</td>
+        <td><span class="badge Critical">Critical</span></td>
+      </tr>
+    
+      <tr>
+        <td>TC-SEC-005</td>
+        <td>SQL injection in &#39;&#39;: &#34;; DROP TABLE users; --</td>
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov/
+2. Enter &#39;&#34;; DROP TABLE users; --&#39; in field &#39;&#39;
+3. Submit the form
+</td>
+        <td>No SQL error exposed, input sanitized, no data leak</td>
+        <td><span class="badge Critical">Critical</span></td>
+      </tr>
+    
+      <tr>
+        <td>TC-SEC-006</td>
+        <td>SQL injection in &#39;&#39;: &#39; UNION SELECT NULL,NULL--</td>
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov/
+2. Enter &#39;&#39; UNION SELECT NULL,NULL--&#39; in field &#39;&#39;
+3. Submit the form
+</td>
+        <td>No SQL error exposed, input sanitized, no data leak</td>
+        <td><span class="badge Critical">Critical</span></td>
+      </tr>
+    
+      <tr>
+        <td>TC-SEC-007</td>
+        <td>XSS injection in &#39;&#39;: &lt;script&gt;alert(&#39;XSS&#39;)&lt;/script&gt;</td>
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov/
+2. Enter &#39;&lt;script&gt;alert(&#39;XSS&#39;)&lt;/script&gt;&#39; in field &#39;&#39;
+3. Submit the form
+4. Check the response/rendered page for unescaped script execution
+</td>
+        <td>Input is sanitized, no script execution in browser</td>
+        <td><span class="badge Critical">Critical</span></td>
+      </tr>
+    
+      <tr>
+        <td>TC-SEC-008</td>
+        <td>XSS injection in &#39;&#39;: &lt;img src=x onerror=&#34;alert(1)&#34;&gt;</td>
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov/
+2. Enter &#39;&lt;img src=x onerror=&#34;alert(1)&#34;&gt;&#39; in field &#39;&#39;
+3. Submit the form
+4. Check the response/rendered page for unescaped script execution
+</td>
+        <td>Input is sanitized, no script execution in browser</td>
+        <td><span class="badge Critical">Critical</span></td>
+      </tr>
+    
+      <tr>
+        <td>TC-SEC-009</td>
+        <td>XSS injection in &#39;&#39;: javascript:alert(1)</td>
+        <td class="steps">1. Navigate to https://qafjdforum.courts.phila.gov/
+2. Enter &#39;javascript:alert(1)&#39; in field &#39;&#39;
+3. Submit the form
+4. Check the response/rendered page for unescaped script execution
+</td>
+        <td>Input is sanitized, no script execution in browser</td>
+        <td><span class="badge Critical">Critical</span></td>
+      </tr>
+    
+      <tr>
+        <td>TC-SEC-010</td>
+        <td>Access protected pages without authentication</td>
+        <td class="steps">1. Clear all cookies and session data
+2. Navigate directly to https://qafjdforum.courts.phila.gov/
+3. Attempt to access pages that require authentication
+</td>
+        <td>Redirected to login page or shown 401/403 error</td>
+        <td><span class="badge Critical">Critical</span></td>
+      </tr>
+    
+      <tr>
+        <td>TC-SEC-011</td>
+        <td>Test session expiry after logout</td>
+        <td class="steps">1. Log in with valid credentials
+2. Log out
+3. Press browser back button
+4. Try to access a protected resource
+</td>
+        <td>Session is invalidated, access denied</td>
+        <td><span class="badge High">High</span></td>
       </tr>
     
     </tbody>

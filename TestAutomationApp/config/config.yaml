@@ -1,0 +1,24 @@
+browser:
+  default_type: "chromium"      # chromium | firefox | webkit
+  headless: false
+  timeout_ms: 30000
+  slow_mo_ms: 0
+  viewport_width: 1920
+  viewport_height: 1080
+
+execution:
+  retry_count: 3
+  retry_delay_ms: 1000
+  screenshot_on_pass: false
+  screenshot_on_fail: true
+  continue_on_failure: true
+  html_snapshot_on_critical: true
+
+paths:
+  screenshots: "screenshots"
+  logs: "logs"
+  reports: "reports"
+
+ai:
+  model: "claude-sonnet-4-6"
+  max_tokens: 512

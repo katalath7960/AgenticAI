@@ -1,0 +1,31 @@
+app:
+  url: "https://qafjdforum.courts.phila.gov/"
+  username: "${APP_USERNAME}"
+  password: "${APP_PASSWORD}"
+
+browser:
+  type: "chromium"          # chromium | firefox | webkit
+  headless: false
+  timeout_ms: 30000
+  slow_mo_ms: 0
+
+paths:
+  excel_folder: "excel_inputs/"
+  screenshot_folder: "screenshots/"
+  report_folder: "reports/output/"
+  log_folder: "logs/"
+
+ai:
+  provider: "anthropic"
+  model: "claude-sonnet-4-6"
+  api_key: "${AI_API_KEY}"
+  max_tokens: 1024
+  cache_file: "logs/step_cache.json"
+
+execution:
+  retry_count: 3
+  retry_delay_ms: 1000
+  screenshot_on_pass: false
+  screenshot_on_fail: true
+  continue_on_failure: true
+  html_snapshot_on_critical: true
