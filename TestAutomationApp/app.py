@@ -29,6 +29,21 @@ def ensure_playwright_browsers():
         print(f"Playwright install failed: {e}")
 
 ensure_playwright_browsers()
+def diagnose_chromium():
+    import subprocess
+    chrome_path = "/home/appuser/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome"
+    try:
+        result = subprocess.run(["ldd", chrome_path], capture_output=True, text=True, timeout=10)
+        missing = [line for line in result.stdout.splitlines() if "not found" in line]
+        if missing:
+            print("=== MISSING SHARED LIBRARIES ===")
+            for line in missing:
+                print(line)
+            print("=================================")
+    except Exception as e:
+        print(f"ldd diagnostic failed: {e}")
+
+diagnose_chromium()
 
 # ─── Page configuration ───────────────────────────────────────────────────────
 
