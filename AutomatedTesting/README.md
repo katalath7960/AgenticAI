@@ -83,7 +83,7 @@ folder), or from inside `AutomatedTesting/` itself:
 
 ```bash
 # Basic run — crawl a site and generate test cases as JSON
-python -m AutomatedTesting --url https://example.com
+python -m AutomatedTesting --url https://qafjdforum.courts.phila.gov/
 
 # Full run with security tests, Excel output, depth 5
 python -m AutomatedTesting \

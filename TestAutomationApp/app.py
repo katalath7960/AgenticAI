@@ -21,7 +21,7 @@ import sys
 def ensure_playwright_browsers():
     try:
         subprocess.run(
-            [sys.executable, "-m", "playwright", "install", "chromium"],
+             [sys.executable, "-m", "playwright", "install", "--with-deps", "chromium"],
             check=True,
             capture_output=True,
         )
