@@ -194,7 +194,7 @@ def render_sidebar():
             "WebKit (Safari-engine)": "webkit",
         }
         browser_type = browser_map[browser_label]
-        headless = st.checkbox("Headless Mode", value=False,
+        headless = st.checkbox("Headless Mode", value=True,
                                help="Run browser without visible window")
         timeout = st.slider("Element Timeout (s)", 10, 60, 30)
 
